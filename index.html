@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<title>The Modern Attire - Collection of Handworked Unstitched Suits and Kurtis from Kolkata - Work from Local Karigars</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="lightbox.css">
+<head>
+  <meta name="facebook-domain-verification" content="wewbr8oru0wwn1d0a00jdm1gwmxf9b" />
+</head>
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<script src="lightbox.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '837966090480815');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=837966090480815&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+  let fabric_type = "All";
+  var spData = null;
+  function doData(json) {
+      spData = json["values"];
+  }
+
+
+//d16xrgwxsji1em.cloudfront.net?export=view&id=1NUoIosZV280TQF6QuxEr3Iq96-oxn3WV
+//1Z7FAtRY15Fdp_m3UEG9kkVLHcH4xyFZP
+
+  function drawWidget(image_id, section_id, product_name, in_stock, modified_date) {
+
+    var display_msg = "";
+    var dd = new Date().getTime();
+
+    if(in_stock == "FALSE") 
+    display_msg = "Sold Out"; 
+    else
+      if((dd - parseInt(modified_date)) < 7 * 24 * 60 * 60 * 1000 )
+        display_msg = "New";
+    
+
+    var widget_html =  '<div onclick="openModal('+product_name.split(";")[0].split("-")[2]+');currentSlide(1)" style="padding: 16px;"><div class="w3-display-container"><img src="MA/designs/' + product_name.split(";")[0].split("-")[0] + '/' +  product_name.split(";")[0].split("-")[2] +'.jpeg" style="width:100%"> <span class="w3-tag w3-display-topleft">'+display_msg+'</span><div class="w3-display-middle w3-display-hover"><button class="w3-button w3-black">Zoom In<i class="fa fa-plus-square-o"></i></button></div></div><p>'+product_name.split(";")[1]+'<br><b>'+product_name.split(";")[2].split(".")[0]+'</b></p> </div>';
+    $('#'+'section-'+section_id).append(widget_html);
+
+  }
+  function readData(fabric_filter = '') {
+    w3_close();
+    document.getElementById("section-1").innerHTML = '';
+    document.getElementById("section-2").innerHTML = '';
+    document.getElementById("section-3").innerHTML = '';
+    document.getElementById("section-4").innerHTML = '';
+      var data = spData;
+      var alldata = [];
+      var rowData = [];
+      var section = 0;
+      var display = 0;
+
+      for(var r=0; r<data.length; r++) {
+          var row = data[r];
+         
+            if(row[0].split(";").length > 1 && row[0].includes(fabric_filter))
+            {
+              drawWidget(row[1], section, row[0],  row[3], row[4]);
+
+            }
+            section = section%4+1;
+          
+      }
+      document.getElementById("no_of_items").innerText = data.length-1 + " item(s)";
+  
+  }
+  $(document).ready(function(){
+     readData('');
+
+     
+      //drawWidget("1YIxyN3kk7B9_AzZ4M4zh2hqWpUEcHbmq", 1);
+  })
+  </script>
+<script src="https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/Sheet1?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI&callback=doData"></script>
+
+
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="width:250px;z-index:3;" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img src="Logonew.png" width="100%"></img>
+    <!--h16 class="w3-wide"><b>Handwork Collection</b></h16-->
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" id="fabric_nav"  style="font-weight:bold">
+    <a href="javascript:void(readData(''))" class="w3-button w3-block w3-white w3-left-align">All</a>
+    <a href="javascript:void(readData('Kurti'))" class="w3-bar-item w3-button">Kurtis</a>
+    <a href="javascript:void(readData('Upcoming'))" class="w3-bar-item w3-button">Upcoming</a>
+    <a   class="w3-button w3-left-align"> 
+      Unstitched<i class="fa fa-caret-down"></i>
+    </a>
+    <div id="expand_Unstitched" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="javascript:void(readData('Unstitched'))" class="w3-bar-item w3-button">All</a>
+      <a href="javascript:void(readData('Georgette'))" class="w3-bar-item w3-button">Georgette</a>
+      <a href="javascript:void(readData('Jarkan'))" class="w3-bar-item w3-button">Jarkan</a>
+      <a href="javascript:void(readData('Silk'))" class="w3-bar-item w3-button">Silk Based</a>
+      <a href="javascript:void(readData('Heavy Dupatta'))" class="w3-bar-item w3-button">Heavy Dupatta</a>
+    </div>
+    <a href="javascript:void(readData('Dola'))" class="w3-bar-item w3-button">Dola Silk</a>
+    <a href="javascript:void(readData('Digital'))" class="w3-bar-item w3-button">Surat Digital Prints</a>
+    <a href="javascript:void(readData('Jacquard'))" class="w3-bar-item w3-button">Banarsi Jacquard</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Get Catalog Updates</a> 
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black" style="font-size: 22px!important;">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-left" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  <div href="https://themodernattire.com" class="w3-bar-item w3-padding-24 w3-wide">The Modern Attire</div>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Handwork Collection from Kolkata</p>
+    <!--p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p-->
+  </header>
+
+  <!-- Image header -->
+  <!--div class="w3-display-container w3-container">
+    <img src="Eid_Banner.png" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+      <h1 class="w3-hide-small">COLLECTION 2016</h1>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+    </div>
+  </div-->
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p id="no_of_items">0 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row" id="product_grid">
+    <div class="w3-col l3 s12" id= "section-1">
+    
+    </div>
+
+    <div class="w3-col l3 s12" id= "section-2">
+     
+    </div>
+
+    <div class="w3-col l3 s12" id= "section-3">
+      
+    </div>
+
+    <div class="w3-col l3 s12" id= "section-4">
+     
+    </div>
+  </div>
+
+  <!-- Lightbox View Section -->
+
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal" style="z-index: 4">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="loader" id="image_loader" style="display: none;"></div>
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img id="lightbox1" src="" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img id="lightbox2" src="" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img id="lightbox3" src="" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img id="lightbox4" src="" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+
+    <p>
+      <img src="Whatsapp.png" style="width:5%">
+      <a id="product_contact" href="https://wa.me/919830702746?text=Hello%2C%20I%20am%20interested%20in%20product%20%20%2Cplease%20give%20me%20more%20details">Contact on whatsapp for this product</a> 
+    
+  </p>
+    </div>
+
+
+    
+<!-- Thumbnail image controls 
+  <div class="column">
+      <img class="demo" src="https://drive.google.com/uc?export=view&id=1qdLUCS9j4qGDMnw_u-UYecjpoLq1LtW8" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo" src="https://drive.google.com/uc?export=view&id=1qdLUCS9j4qGDMnw_u-UYecjpoLq1LtW8" onclick="currentSlide(2)" >
+    </div>
+
+    <div class="column">
+      <img class="demo" src="https://drive.google.com/uc?export=view&id=1qdLUCS9j4qGDMnw_u-UYecjpoLq1LtW8" onclick="currentSlide(3)" >
+    </div>
+
+    <div class="column">
+      <img class="demo" src="https://drive.google.com/uc?export=view&id=1qdLUCS9j4qGDMnw_u-UYecjpoLq1LtW8" onclick="currentSlide(4)" >
+    </div>
+  
+-->
+</div>
+</div>
+
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32" id="subscribe_section">
+    <h1>Subscribe</h1>
+    <p>Join our whatsapp list to receive regular catalog updates:</p>
+    <p><input class="w3-input w3-border" type="text" id="whatsapp_no" placeholder="Enter whatsapp number" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom"  onclick="sendEmail(document.getElementById('whatsapp_no').value)">Subscribe</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <!-- <div class="w3-col s4">
+        <h4>Contact</h4>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Phone" name="Phone" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div> -->
+
+      <div class="w3-col m8 w3-justify">
+        <h4>About</h4>
+        <div><div><p>We are manufacturers of India ethnic wear (Salwar Suits and Kurtis) with major focus on handwork. Local karigars from around Kolkata have known expertise on handwork and embroidery which we apply in our designs.</p>
+</div></div>
+<p><a href="https://docs.google.com/document/u/3/d/e/2PACX-1vTEI5I10qHbs3pGz1DsbFPrVlFn8RdlMrb-x8t9xzNkUc18P2KER5HXyxg-HrJwot0bdK7CYAQ66f5D/pub">We're hiring : We are looking for designers.</a></p>
+        <p><a href="https://wa.me/919830702746">Support: Connect with us on whatsapp</a></p>
+       
+      </div>
+
+      <div class="w3-col m4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> The Modern Attire, PS Arcade, 2nd Floor, </br>11 Sudder Street, Kolkata - 700016</p>
+        <p><i class="fa fa-fw fa-phone"></i> 9830702746</p>
+        <p><i class="fa fa-fw fa-envelope"></i> themodernattire@gmail.com</p>
+         
+      </div>
+    </div>
+  </footer>
+
+  <!--div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div-->
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center" id="catalog_update">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">CATALOG UPDATES</h2>
+      <p>Join our whatsapp list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter phone number"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="sendEmail(document.getElementById('whatsapp_no').value);document.getElementById('newsletter').style.display='none';">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+
+document.getElementById("fabric_nav").onclick = function(event)
+{
+  var target = event.target || event.srcElement;
+  var type =  ( target.innerText || target.textContent || target.parentElement.innerText) ; 
+  var x = document.getElementById("expand_"+type);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+
+
+};
+
+function sendEmail(value) {
+      Email.send({
+        SecureToken : "feaccbc1-4136-4abb-b037-974f46d7237d",
+        To: 'rachit.iitkgp@gmail.com',
+        From: "catalog@themodernattire.com",
+        Subject: "Received Catalog Request",
+        Body: value,
+      })
+        .then(function (message) {
+          document.getElementById("subscribe_section").innerHTML = "Thanks for subscribing to our catalog."
+
+
+          //alert("mail sent successfully")
+        });
+    }
+
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+//document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
