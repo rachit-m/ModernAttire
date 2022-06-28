@@ -11,7 +11,7 @@ function openModal(image_name) {
 
   for(var index=0; index< images.length; index++)
   { 
-    document.getElementById("lightbox"+(index+1)).src=("designs/"+images[index]+".jpeg");
+    document.getElementById("lightbox"+(index+1)).src=("designs/MA/"+images[index]+".jpeg");
   }
 
     $('#image_loader').show();
