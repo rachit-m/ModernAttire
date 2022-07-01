@@ -101,15 +101,16 @@ section {
 .slide1 {
   background-image: url(./image\ 2.png); 
   background-repeat:no-repeat;
-background-size:100% 100%;
-background-position:center;
+background-size: cover;
+  background-position:center;
+
 
 }
 
 .slide2 {
 background-image: url(./d078705c172a131d88c67bd19986172d.jpg); 
 background-repeat:no-repeat;
-background-size:100% 100%;
+background-size:cover;
 background-position:center;
 }
 
@@ -127,16 +128,25 @@ background-position:center;
 }
 
 .top-nav p {
-text-align: center;
+/* text-align: center; */
+display: inline-block;
   margin-bottom: 0;
   margin-right: 10px;
  
+}
+@media only screen and (max-width: 600px) {
+ 
+  #logoimage{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
 }
 .navbar {
   background: #F3E9E3;
   height: 80px;
   display: flex;
-  align-items: center;
 }
 
 
