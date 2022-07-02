@@ -141,8 +141,19 @@ display: inline-block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  align-items: center;
+  }
+  #bottomnavcontainer{
+left:20%;
+top:200%;
   }
 }
+#navbarNav{
+background-color: #F3E9E3;
+padding: 0px 30px 0px 30px;
+margin-left: -1px;
+}
+
 .navbar {
   background: #F3E9E3;
   height: 80px;

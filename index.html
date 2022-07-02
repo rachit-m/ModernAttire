@@ -132,7 +132,7 @@ src="https://www.facebook.com/tr?id=837966090480815&ev=PageView&noscript=1"
   </div>
 
   <!-- BOTTOM NAV -->
-  <nav class="navbar navbar-expand-lg navbar-light  sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
       <div class="container " >
         <img src="./modern attire logo-03.png" style="width: 60px; background-color: #F3E9E3; " id="logoimage" alt="logo">
         <div class="w3-display-left w3-padding-small">
@@ -141,18 +141,16 @@ src="https://www.facebook.com/tr?id=837966090480815&ev=PageView&noscript=1"
               <span class="navbar-toggler-icon float-left"></span>
           </button>
         </div>
-        <div class="w3-display-middle">
-          <div class="collapse navbar-collapse " id="navbarNav" style="background-color:#F3E9E3 ; width:100%; align-items:center; " >
+        <div class="w3-display-middle" id="bottomnavcontainer">
+          <div class="collapse navbar-collapse " id="navbarNav" >
   <ul class="navbar-nav ms-auto " >
                   <li class="nav-item">
                     
                     <a class="nav-link" href="#home" >Home</a>
                   </li>
                   <li class="nav-item"  >
-                    <!-- <a class="nav-link" href="#about">About</a> -->
-                    <div class="menu"  >
-                      <!-- <button class="dropbtn">Dropdown &nbsp; -->
-                    <a class="nav-link" href="">Catagories &nbsp;  <i class="fa fa-caret-down"></i></a>
+                    <!-- <div class="menu"  >
+                     <div class="nav-link"> Catagories <i class="fa fa-caret-down"></i></div>
                       <div class="menu-content" >
                         
                         <div class="row"  >
@@ -174,15 +172,45 @@ src="https://www.facebook.com/tr?id=837966090480815&ev=PageView&noscript=1"
                           </div>
                         </div>
                       </div>
+                    </div> -->
+                   
+                    <div class="w3-dropdown-hover" style="  background: #F3E9E3;
+                    " >
+                    <div class="nav-link" style="background-color:#F3E9E3 ;">Catagories</div>
+                      <div class="w3-dropdown-content  w3-card-4" >
+                        <div class="w3-row" style=" display: flex;
+                        justify-content: center;" >
+                        <div id="mySidebar"></div>
+                          <div class="w3-col s6 " id="mySidebar" >
+                            <p>
+                              <a href="javascript:void(readData(''))" class="w3-button w3-block w3-white w3-left-align">All</a>
+                              <a href="javascript:void(readData('Kurti'))" class="w3-bar-item w3-button">Kurtis</a>
+                                          <a href="javascript:void(readData('Georgette'))" class="w3-bar-item w3-button">Georgette</a>
+                                          <a href="javascript:void(readData('Jarkan'))" class="w3-bar-item w3-button">Jarkan</a>
+                        
+                                  <a href="javascript:void(readData('Silk'))" class="w3-bar-item w3-button">Silk Based</a>
+                            </p>
+                          </div>
+                          <div class="w3-col s6  "  style=" display: flex;
+                          justify-content: center; padding-right:10px;" id="mySidebar">
+                            <p>
+                              <a href="javascript:void(readData('Heavy Dupatta'))" class="w3-bar-item w3-button">Heavy Dupatta</a>
+                              <a href="javascript:void(readData('Dola'))" class="w3-bar-item w3-button">Dola Silk</a>
+                              <a href="javascript:void(readData('Digital'))" class="w3-bar-item w3-button">Surat Digital Prints</a>
+                              <a href="javascript:void(readData('Jacquard'))" class="w3-bar-item w3-button">Banarsi Jacquard</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div> 
-                    </li>
+                  </li>
                      <li class="nav-item">
 
                 </li>
                 <li class="nav-item">
                     <div class="w3-dropdown-hover" style="  background: #F3E9E3;
                     ">
-                      <a class="nav-link" href="">Product</a>
+                    <div class="nav-link" style="background-color:#F3E9E3 ;">Product</div>
                       <div class="w3-dropdown-content  w3-card-4">
                         <a href="#latest" class="w3-bar-item w3-button">Latest</a>
                         <a href="#upcoming" class="w3-bar-item w3-button">Upcoming</a>
@@ -198,10 +226,11 @@ src="https://www.facebook.com/tr?id=837966090480815&ev=PageView&noscript=1"
                       <a class="nav-link" href="javascript:void(0)"  onclick="document.getElementById('newsletter').style.display='block'">New Updates</a>
                   </li>
                 </ul>
-              </div>
-            </div>
-              <div class="nav-link" style="width: 40px;" > 
-                <i class="fa fa-search"  ></i></div>
+                
+                </div>
+                </div>
+                <div  > 
+                  <i class="fa fa-search"  ></i></div>
               </div>
                 </div>
             
