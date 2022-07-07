@@ -65,18 +65,20 @@
       var rowData = [];
       var section = 0;
       var display = 0;
-
-      for(var r=0; r<data.length; r++) {
-          var row = data[r];
-         
-            if(row[0].split(";").length > 1 && row[0].includes(fabric_filter))
-            {
-              drawWidget(row[1], section, row[0],  row[3], row[4]);
-
-            }
-            section = section%4+1;
-          
-      }
+      setTimeout(() => {
+        
+        for(var r=0; r<data.length; r++) {
+            var row = data[r];
+           
+              if(row[0].split(";").length > 1 && row[0].includes(fabric_filter))
+              {
+                drawWidget(row[1], section, row[0],  row[3], row[4]);
+  
+              }
+              section = section%4+1;
+            
+        }
+      }, 1000);
       document.getElementById("no_of_items").innerText = data.length-1 + " total item(s)";
   
   }
@@ -87,39 +89,20 @@
       //drawWidget("1YIxyN3kk7B9_AzZ4M4zh2hqWpUEcHbmq", 1);
   })
 
-//   $(function(){
-//     // get stored value or make it empty string if not available
-//     var storedValue = localStorage.getItem('INR') || '';
-
-//     $('#currency').change(function () {
-//          // store current value
-//          var currValue = $(this).val();
-//          localStorage.setItem('INR', currValue );
-//          // now reload and all this code runs again
-//          location.reload();
-//     })
-//     // set stored value when page loads
-//     .val(storedValue)
-
-// });
-
-// window.onload = function() {
-//   var selItem = localStorage.getItem("mytime");
-//   $('#currency').val(selItem);
-//   };
-  
-//   $('#currency').on('change', function() { 
-//       var selVal = $(this).val();
-//       localStorage.setItem("mytime", selVal);
-//      location.reload();
-//   });
-
-// document.querySelector('#currency').addEventListener('onchange', changeSelected);
 function changeSelected(){
   var n=document.getElementById("currency").value;
   sessionStorage.setItem("mytime", n);
   document. location. reload(true);
 }
 window.onload = function() {
-  var selItem = sessionStorage.getItem("mytime");
-document.getElementById("currency").value=selItem;};
+  // return new Promise(function(resolve, reject){
+
+    var selItem = sessionStorage.getItem("mytime")
+  document.getElementById("currency").value=selItem
+ 
+  //   resolve()
+  
+
+  // })
+}
+// loading().then(readData);
