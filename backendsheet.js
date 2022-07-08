@@ -54,6 +54,29 @@
     }
   
   }
+//   window.onload= function () {
+//     return new Promise(function(resolve, reject) {
+     
+//       var error =true;
+//       if(!error){
+// console.log('problem resolved')
+// var selItem = sessionStorage.getItem("mytime");
+// document.getElementById("currency").value=selItem;
+//         resolve();
+//       }
+//          else{
+// console.log('problem rejected')
+
+// reject('error shown');
+//          }
+//     });
+// }
+ 
+window.onload= function () {
+  var selItem = sessionStorage.getItem("mytime");
+document.getElementById("currency").value=selItem;
+datareading();
+}
   function readData(fabric_filter = '') {
     w3_close();
     document.getElementById("section-1").innerHTML = '';
@@ -65,7 +88,7 @@
       var rowData = [];
       var section = 0;
       var display = 0;
-      setTimeout(() => {
+      // setTimeout(() => {
         
         for(var r=0; r<data.length; r++) {
             var row = data[r];
@@ -78,31 +101,39 @@
               section = section%4+1;
             
         }
-      }, 1000);
+      // }, 1000);
       document.getElementById("no_of_items").innerText = data.length-1 + " total item(s)";
   
   }
+ function wait(){
+  var selItem = sessionStorage.getItem("mytime");
+  document.getElementById("currency").value=selItem;
+ }
   $(document).ready(function(){
-     readData('');
-
-     
-      //drawWidget("1YIxyN3kk7B9_AzZ4M4zh2hqWpUEcHbmq", 1);
-  })
-
+  //   var waitvar;
+  //  waitvar= await wait();
+  //drawWidget("1YIxyN3kk7B9_AzZ4M4zh2hqWpUEcHbmq", 1);
+  readData('');
+})
+async function datareading(){
+  await wait();
+  readData('');
+};
+datareading().then(function(){
+  console.log('problem resolved');
+})
 function changeSelected(){
   var n=document.getElementById("currency").value;
   sessionStorage.setItem("mytime", n);
   document. location. reload(true);
 }
-window.onload = function() {
-  // return new Promise(function(resolve, reject){
 
-    var selItem = sessionStorage.getItem("mytime")
-  document.getElementById("currency").value=selItem
- 
-  //   resolve()
+// load().then(readData);
+// onload().then(function() {
+//   // Do things after onload
   
-
-  // })
-}
-// loading().then(readData);
+//   console.log('resolved');
+//   readData('');
+// }).catch((error)=>{
+//   // readData('');
+//   console.log('rakesh moond')});
