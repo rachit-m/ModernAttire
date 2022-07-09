@@ -3,7 +3,7 @@
   function doData(json) {
       spData = json["values"];
   }
-
+  // sessionStorage.setItem("mytime", document.getElementById("currency").value);
  
 //d16xrgwxsji1em.cloudfront.net?export=view&id=1NUoIosZV280TQF6QuxEr3Iq96-oxn3WV
 //1Z7FAtRY15Fdp_m3UEG9kkVLHcH4xyFZP
@@ -106,16 +106,17 @@ datareading();
   
   }
  function wait(){
-  var selItem = sessionStorage.getItem("mytime");
+  var selItem = localStorage.getItem("mytime");
   document.getElementById("currency").value=selItem;
  }
   $(document).ready(function(){
+    readData('');
   //   var waitvar;
   //  waitvar= await wait();
   //drawWidget("1YIxyN3kk7B9_AzZ4M4zh2hqWpUEcHbmq", 1);
-  readData('');
 })
 async function datareading(){
+  // readData('');
   await wait();
   readData('');
 };
@@ -124,7 +125,7 @@ datareading().then(function(){
 })
 function changeSelected(){
   var n=document.getElementById("currency").value;
-  sessionStorage.setItem("mytime", n);
+  localStorage.setItem("mytime", n);
   document. location. reload(true);
 }
 
