@@ -1,0 +1,40 @@
+@import url('http://fonts.cdnfonts.com/css/trirong');
+
+:root
+{
+    --coconut : #955448;
+    --garnet : #683A32;
+    --linen : #FFEEEB;
+    --spanis_pink : #FFC7BD;
+    --pale_chestnut : #D5BOA9;
+}
+
+@media screen and (max-width: 360px) {
+    body
+    {
+        font-family: 'Trirong', sans-serif;  
+    }
+    #salwaar-suits-container
+    {
+        border-top: 2px solid var(--garnet);
+    }
+    .products-container1, .products-container2, .products-container3
+        {
+            display: flex;
+        }
+    .product h4
+    {
+        font-size: 12px;
+        text-align: center;
+        font-family: 'Trirong', sans-serif;
+        color: var(--garnet);
+    }
+    .product
+    {
+        border-left : 2px solid white;
+        border-right : 2px solid white;
+    }
+
+
+}
+
