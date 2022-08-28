@@ -1,0 +1,466 @@
+@import url('http://fonts.cdnfonts.com/css/trirong');
+
+.row > .column {
+  padding: 0 8px;
+}
+/* home slideshow  */
+/* Css of top nav and bottom nav and home page product page  */
+:root {
+  --brand: #a3250c;
+  --dark: #092032;
+  --body: #516171;
+  --border: rgba(0,0,0,0.08);
+  --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+  
+}
+body {
+  font-family: 'Trirong', sans-serif;  
+  color: var(--body);
+  line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6,
+.display-1,.display-2,.display-3,.display-4 {
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: var(--dark);
+  transition: all 0.4s ease;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--brand);
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.text-brand {
+  color: var(--brand) !important;
+}
+
+
+.hero-slider .owl-prev,
+.hero-slider .owl-next{
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  width: 60px !important;
+  height: 60px !important;
+  display: block;
+  display: grid;
+  place-items: center;
+  color: #fff !important;
+  border-radius: 100px;
+  line-height: 0;
+  border-radius: 100px !important;
+  position: absolute;
+  top: 50%;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  transition: all 0.4s ease;
+  margin-top: -30px !important;
+}
+
+.owl-prev {
+  left: 0;
+}
+.owl-next {
+  right: 0;
+}
+
+.hero-slider .owl-prev:hover,
+.hero-slider .owl-next:hover {
+  background-color: var(--brand) !important; 
+}
+
+.owl-dot.active span{
+  background-color: var(--brand) !important;
+}
+
+
+/* slide */
+.slide {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.slide1 {
+  background-image: url(./image\ 2.png); 
+  background-repeat:no-repeat;
+background-size: cover;
+  background-position:center;
+
+
+}
+
+.slide2 {
+background-image: url(./d078705c172a131d88c67bd19986172d.jpg); 
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+}
+
+.slide .display-3 {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* navbar */
+.top-nav {
+  background: #50182D;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.top-nav p {
+/* text-align: center; */
+display: inline-block;
+  margin-bottom: 0;
+  margin-right: 10px;
+ 
+}
+@media only screen and (max-width: 600px) {
+ 
+  #logoimage{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  align-items: center;
+  }
+  #bottomnavcontainer{
+left:20%;
+top:200%;
+  }
+}
+#navbarNav{
+background-color: #F3E9E3;
+padding: 0px 30px 0px 30px;
+margin-left: -1px;
+}
+
+.navbar {
+  background: #F3E9E3;
+  height: 80px;
+  display: flex;
+}
+.navbar .navbar-nav .nav-link 
+  {
+  color: #50182D;
+  font-family: 'Trirong', sans-serif; 
+  margin-left: 10px; 
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  }
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--brand);
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: var(--brand);
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+
+
+.bg-light{
+  padding-top: 15px;
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.project h6 {
+  font-weight: 400;
+}
+
+.project h6::before {
+  content: "";
+  height: 2px;
+  width: 30px;
+  display: inline-block;
+  background: var(--brand);
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+.project .overlay {
+  width: 100%;
+  height: 220px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(255, 76, 41, 0) 0%, var(--dark) 100%);
+}
+.project .content {
+  position: absolute;
+  left: 10%;
+  bottom: 10%
+}
+
+.project h2,
+.project h6 {
+  color: #fff;
+}
+
+
+
+/*   Subscribe color 484242 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: right;
+  width: 25%;
+}
+
+/* Loader for image loading */
+
+.loader {
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #000000; /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 60px;
+  padding-left: 8%;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+
+/* home page mega menu design  */
+* {
+  box-sizing: border-box;
+}
+.menu {
+  
+  overflow: hidden;
+}
+
+
+
+
+.menu-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width:100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menu:hover .menu-content {
+  display: block;
+  
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 40px;
+}
+
+.column a {
+  float:left;
+  color: black;
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/* #owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
