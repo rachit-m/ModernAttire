@@ -1,0 +1,22 @@
+@import url('http://fonts.cdnfonts.com/css/trirong');
+
+:root
+{
+    --coconut : #955448;
+    --garnet : #683A32;
+    --linen : #FFEEEB;
+    --spanis_pink : #FFC7BD;
+    --pale_chestnut : #D5BOA9;
+} 
+
+.card 
+{
+    height: 594.94px;
+    max-width: 354px;
+    text-align: center;
+    color: var(--garnet);
+    border-radius: 18px;
+}
+.card:hover{
+
+}

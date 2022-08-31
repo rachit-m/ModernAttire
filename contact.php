@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="The Modern Attire - Collection of Handworked Unstitched Suits and Kurtis from Kolkata - Work from Local Karigars, suits, sarees, lehangas">
-<meta name="keywords" content="web fashion,sari , modern clothes, clothes deals online, fashion clothes, export">
-<meta name="robots" content="index,follow">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Modern Attire - Collection of Handworked Unstitched Suits and Kurtis from Kolkata - Work from Local Karigars, suits, sarees, lehangas">
+  <meta name="keywords" content="web fashion,sari , modern clothes, clothes deals online, fashion clothes, export">
+  <meta name="robots" content="index,follow">
 
-<link rel="stylesheet" href="./about.css">
+<!-- Stylesheets  -->
+<link rel="stylesheet" href="stylesheet/about.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <title>contact page</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="./contactus.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </head>
 <body>
@@ -110,6 +108,12 @@
       <!-- location added -->
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.557250436732!2d88.35100231491064!3d22.55825238519019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027706022f9025%3A0xea9a41556aff50bc!2sThe%20Modern%20Attire!5e0!3m2!1sen!2sin!4v1657271915258!5m2!1sen!2sin"  height="350" style="border:0; width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <!-- location ended  -->
+
+
+<!-- Scripts  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script/contactus.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </body>
 </html>
