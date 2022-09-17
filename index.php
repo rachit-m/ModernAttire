@@ -38,7 +38,7 @@
         <h1 class="title-text">Shop by Category</h1>
         <div class="categories">
             <div class="category1">
-                <h1>Salwaar Suits</h1>
+                <a href="salwaar-suits.php"><h1>Salwaar Suits</h1></a>
             </div>
             <div class="category2">
                 <h1>Designer Dresses</h1>
@@ -103,6 +103,7 @@
                 <a href="#">Contact us</a>
                 <a href="#">Mail us</a>
             </div>
+            <div class="breaker2"><img src="images/modern attire logo-03.png"></div>
         </div>
         <div class="bottom-footer">
             <div class="left">
@@ -112,6 +113,9 @@
                 <a href="#">Terms</a>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Accessibility</a>
+            </div>
+            <div class="copyright2">
+                <h6>Modern Attire 2022. All rights reserved</h6>
             </div>
         </div>
     </div>
