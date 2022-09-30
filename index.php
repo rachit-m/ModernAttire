@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="stylesheet/searchboxcurr.css">
     <link rel="stylesheet" href="stylesheet/index.css">
     <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/footer.css">
 
     <title>The Modern Attire - Collection of Handworked Unstitched Suits and Kurtis from Kolkata - Work from Local Karigars</title>
     <link rel="shortcut icon" href="images/modern attire logo-03.png" type="image/x-icon">
@@ -30,8 +31,8 @@
     ?>
 
     <!-- Hero Section  -->
-    <div id="hero-image">
-    </div>
+    <!-- <div id="hero-image">
+    </div> -->
 
     <!-- Shop By Category -->
     <div id="shop-category">
@@ -47,39 +48,39 @@
     </div>
 
     <!-- Dresses Section  -->
-    <div id="dress-section">
+    <!-- <div id="dress-section">
       <div class="sect1">
         <h2>DRESSES</h2>
         <button type="submit">Discover</button>
       </div>
       <div class="sect2">
       </div>
-    </div>
+    </div> -->
 
     <!-- Salwaar Suits Section  -->
-    <div id="salwaar-section">
+    <!-- <div id="salwaar-section">
         <div class="sect2">
             </div> 
         <div class="sect1">
               <h2>SALWAAR DRESSES</h2>
               <button type="submit">Discover</button>
         </div>
-    </div>
+    </div> -->
 
     <!-- Latest Collection  -->
     <div id="latest-collection">
     <h1 class="title-text">Latest Collection</h1>
     <?php
-        include "./carousel.html";
+        //include "./carousel.html";
     ?>
     
 
     <!-- Modern Attire Section  -->
-    <div id="ma-branding">
+    <!-- <div id="ma-branding">
         <div class="branding-text">
             <h1>MODERN ATTIRE</h1>
         </div>
-    </div>
+    </div> -->
 
     <!-- Discover Banner  -->
     <div id="discover-banner">
@@ -90,7 +91,8 @@
     </div>
 
     <!-- Footer Section  -->
-    <div id="footer-section">
+    <?php include("footer.html") ?>
+    <!-- <div id="footer-section">
         <div class="top-footer">
             <div class="collection">
                 <h2>COLLECTION</h2>
@@ -118,7 +120,7 @@
                 <h6>Modern Attire 2022. All rights reserved</h6>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Whatsapp icon added  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -131,13 +133,9 @@
     <!-- SCRIPTS  -->
     <script src="script/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script/lightbox.js"></script>
-    <script src="script/app.js"></script>
     <script src="script/search.js"></script>
-    <script src="script/backendsheet.js"></script>
-    <script src="https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/Sheet1?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI&callback=doData"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/BestSelling?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI&callback=populateBestSelling"></script>
+
 
 </body>
 
