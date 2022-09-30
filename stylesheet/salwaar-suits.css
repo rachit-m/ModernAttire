@@ -1,0 +1,86 @@
+@import url('http://fonts.cdnfonts.com/css/trirong');
+
+:root
+{
+    --coconut : #955448;
+    --garnet : #683A32;
+    --linen : #FFEEEB;
+    --spanis_pink : #FFC7BD;
+    --pale_chestnut : #D5BOA9;
+}
+.header h1{
+    font-family: 'Trirong';
+    text-align: center;
+    color: var(--garnet);
+    margin-top: 20px;
+}
+#super-container
+{
+    padding-top: 30px;
+}
+#salwaar-suits-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.products-container h4{
+    text-align: center;
+    color : var(--garnet);
+    font-size: 16px;
+    font-weight: 350;
+    cursor: pointer;
+}
+.products-container h4:hover{
+    font-weight: 450;
+}
+.products-container{
+    display: flex;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.product img
+{
+    height: 450px;
+    width: 295px;
+}
+
+
+@media screen and (min-width: 1000px) {
+    #super-container{
+        padding: 5px 50px 5px 50px;
+    }
+}
+/* @media screen and (max-width: 360px) {
+    body
+    {
+        font-family: 'Trirong';  
+    }
+    #salwaar-suits-container
+    {
+        border-top: 2px solid var(--garnet);
+    }
+    .products-container1, .products-container2, .products-container3
+        {
+            display: flex;
+        }
+    .product h4
+    {
+        font-size: 12px;
+        text-align: center;
+        font-family: 'Trirong', sans-serif;
+        color: var(--garnet);
+    }
+    .product
+    {
+        border-left : 2px solid white;
+        border-right : 2px solid white;
+    }   
+} */
+
+   

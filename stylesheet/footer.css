@@ -1,0 +1,164 @@
+@import url('http://fonts.cdnfonts.com/css/trirong');
+
+:root
+{
+    --coconut : #955448;
+    --garnet : #683A32;
+    --linen : #FFEEEB;
+    --spanis_pink : #FFC7BD;
+    --pale_chestnut : #D5BOA9;
+}
+
+
+@media screen and (min-width: 500px) {
+    #footer-section-phone{
+        height: 375px;
+        margin-top: 400px;
+      }
+      #footer-section-phone h2{
+        font-family: 'Trirong', sans-serif;
+        color: var(--garnet);   
+      }
+      #footer-section-phone .top-footer{
+        margin-top: 100px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Trirong', sans-serif;   
+        color: var(--garnet);
+      }
+      .collection{
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+      }
+      .collection a{ 
+        text-decoration: none;
+        color: var(--coconut);
+      }
+      .contact{
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+      }
+      .contact a{
+        text-decoration: none;
+        color: var(--coconut);
+      }
+      .breaker img
+      {
+        width: 200px;
+        height: 200px;
+      }
+      /* Bottom Footer  */
+      #footer-section-phone .bottom-footer{
+        margin-top: 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .left{
+        font-family: 'Trirong', sans-serif;  
+      }
+      .left h6{
+        color: black;
+    
+      }
+      .right a{
+        margin-left: 40px;
+        
+      }
+      .right a{
+        text-decoration: none;
+        color: black;
+      }
+      
+}
+
+
+@media screen and (max-width:360px) {
+  #footer-section{
+    height: 375px;
+    margin-top: 50px;
+  }
+  #footer-section h2{
+    font-family: 'Trirong', sans-serif;
+    color: var(--garnet);   
+    font-size: 16px;
+  }
+  #footer-section .top-footer{
+    font-family: 'Trirong', sans-serif;   
+    color: var(--garnet);
+    font-size: 16px;
+  }
+  .collection{
+    display: flex;
+    margin-left: 10px;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .collection a{
+    text-decoration: none;
+    color: var(--coconut);
+    font-size: 12px;
+  }
+  .contact{
+    display: flex;
+    margin: 10px 0px 0px 10px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contact a{
+    text-decoration: none;
+    color: var(--coconut);
+    font-size: 12px;
+  }
+  .breaker2{
+    display: block;
+    height: 84px;
+    width: 65px;
+    margin: auto;
+  }
+
+  /* Bottom Footer  */
+  .bottom-footer{
+    align-items: center;
+  }
+  .left{
+    display: none;
+  }
+  .left h6{
+    color: var(--coconut);
+    font-size: 12px;
+    text-align: center;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+  }
+  .right a{
+    text-decoration: none;
+    color: var(--coconut);
+    font-size: 12px;
+  }
+
+  /* Breaker  */
+  .breaker{
+    display: none;
+  }
+  .copyright2{
+    display: block;
+    text-align: center;
+  }
+  .copyright2 h6{
+    font-size: 12px;
+    color: var(--coconut);
+    margin-top: 10px;
+  }
+}
