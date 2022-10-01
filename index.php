@@ -31,8 +31,8 @@
     ?>
 
     <!-- Hero Section  -->
-    <!-- <div id="hero-image">
-    </div> -->
+    <div id="hero-image">
+    </div>
 
     <!-- Shop By Category -->
     <div id="shop-category">
@@ -48,39 +48,39 @@
     </div>
 
     <!-- Dresses Section  -->
-    <!-- <div id="dress-section">
+    <div id="dress-section">
       <div class="sect1">
         <h2>DRESSES</h2>
         <button type="submit">Discover</button>
       </div>
       <div class="sect2">
       </div>
-    </div> -->
+    </div>
 
     <!-- Salwaar Suits Section  -->
-    <!-- <div id="salwaar-section">
+    <div id="salwaar-section">
         <div class="sect2">
             </div> 
         <div class="sect1">
               <h2>SALWAAR DRESSES</h2>
               <button type="submit">Discover</button>
         </div>
-    </div> -->
+    </div>
 
     <!-- Latest Collection  -->
     <div id="latest-collection">
     <h1 class="title-text">Latest Collection</h1>
     <?php
-        //include "./carousel.html";
+        include "./carousel.html";
     ?>
     
 
     <!-- Modern Attire Section  -->
-    <!-- <div id="ma-branding">
+    <div id="ma-branding">
         <div class="branding-text">
             <h1>MODERN ATTIRE</h1>
         </div>
-    </div> -->
+    </div>
 
     <!-- Discover Banner  -->
     <div id="discover-banner">
