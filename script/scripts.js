@@ -1,4 +1,6 @@
 
+
+
 // Accordion
 document.getElementById("fabric_nav").onclick = function (event) {
   var target = event.target || event.srcElement;
