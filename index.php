@@ -35,7 +35,7 @@
     </div>
 
     <!-- Shop By Category -->
-    <div id="shop-category">
+    <div id="shop-category-desktop">
         <h1 class="title-text">Shop by Category</h1>
         <div class="categories">
             <div class="category1">
@@ -43,6 +43,19 @@
             </div>
             <div class="category2">
                 <h1>Designer Dresses</h1>
+            </div>
+        </div>
+    </div>
+    <div id="shop-category-phone">
+        <h1 class="title-text">Shop by Category</h1>
+        <div class="categories-container">
+            <div class="cat">
+                <img src="images/png/salwaar.png" alt="">
+                <h3>Designer Dresses</h3>
+            </div>
+            <div class="cat">
+            <img src="images/png/dress.png" alt="">
+                <h3>Salwaar-Suits</h3>
             </div>
         </div>
     </div>
@@ -58,7 +71,7 @@
     </div>
 
     <!-- Salwaar Suits Section  -->
-    <div id="salwaar-section">
+    <div id="salwaar-section"> 
         <div class="sect2">
             </div> 
         <div class="sect1">
@@ -72,7 +85,7 @@
     <h1 class="title-text">Latest Collection</h1>
     <?php
         include "./carousel.html";
-    ?>
+    ?><div>
     
 
     <!-- Modern Attire Section  -->

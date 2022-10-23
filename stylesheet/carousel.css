@@ -17,6 +17,8 @@
     color: var(--garnet);
     border-radius: 18px;
 }
-.card:hover{
-
+@media screen and (max-width: 450px) {
+    .owl-carousel.owl-drag .owl-item{
+        align-items: center;
+    }
 }

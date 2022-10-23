@@ -10,7 +10,7 @@
 }
 
 /* DESKTOP WIDTH QUERIES  */
-@media screen and (min-width: 401px) {
+@media screen and (min-width: 451px) {
    #footer-section-phone{display: none;}
    body{margin: 0;padding: 0;}
    #footer-section-desktop{padding: 2rem; width: 100%;margin-top: 200px;;font-family: 'Trirong', sans-serif; }
@@ -31,7 +31,7 @@
 }
 
 /* PHONE WIDTH QUERIES */
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
   #footer-section-desktop{display: none;}
   body{margin: 0; padding: 0;}
   #footer-section-phone{

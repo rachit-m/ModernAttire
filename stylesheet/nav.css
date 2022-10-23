@@ -1,0 +1,98 @@
+@import url('http://fonts.cdnfonts.com/css/trirong');
+
+:root
+{
+    --coconut : #955448;
+    --garnet : #683A32;
+    --linen : #FFEEEB;
+    --spanis_pink : #FFC7BD;
+    --pale_chestnut : #D5BOA9;
+}
+body{margin: 2px; padding: 2px;font-family: sans-serif;}
+/* Queries for Phone Screen  */
+@media screen and (max-width: 400px){
+    #navigation-desktop{display: none;}
+    #navigation-phone{
+        height: 104px;
+        
+    }
+    .topnav{
+        text-align: center; 
+        color: white; 
+        background: var(--coconut); 
+        margin: 0; padding: 1px;
+    }
+    h4{font-weight: 150; letter-spacing: 0.8px;}
+    #bottomnav{
+        display: flex;
+        align-items: center;
+        background: var(--linen);
+    }
+    #menubtn div{
+        background: var(--coconut);
+        width: 35px;
+        height: 5px;
+        margin: 5px 5px 5px 10px;
+    }
+    #malogo img{
+        height: 70px; width: 70px;
+        margin-left: 112px;
+    }
+    #links{
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        margin: auto;
+    }
+    #links a{
+        text-decoration: none;
+        margin: 15px;
+        text-align: center;
+        color: var(--coconut);
+    }
+    .bottomnavph{
+        transition: 0.5s;
+        height: 270px;
+        
+    }
+    
+}
+
+    /* Queries for Desktop Screen  */
+@media screen and (min-width: 401px){
+    #navigation-phone{display: none;}
+    #navigation-desktop{
+        height: 40px; width: 100%;
+        margin: 0; padding: 0;
+    }
+    .topnav{
+        text-align: center;
+        color: white;
+        background: var(--garnet); 
+        padding: 0.1px;
+    }
+    h4{font-weight: 130; letter-spacing: 1px;}
+    .bottomnav{
+        background: var(--linen);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #links{
+        margin-right: 150px;
+    }
+    #links a{
+        text-decoration: none;
+        margin: 20px;
+        color: var(--coconut);
+        cursor: pointer;
+    }
+    #links a:hover{
+        color: var(--garnet);
+    }
+    #malogo img{
+        height: 70px; width: 70px;
+        margin-left: 112px;
+    }
+    
+}

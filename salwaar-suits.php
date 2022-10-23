@@ -8,13 +8,11 @@
     <link rel="stylesheet" href="stylesheet/salwaar-suits.css">
     <link rel="stylesheet" href="stylesheet/index.css">
     <link rel="stylesheet" href="stylesheet/footer.css">
+    <!-- <link rel="stylesheet" href="stylesheet/nav.css"> -->
 </head>
 <body>
 
-    <!-- Header Section -->
-    <?php
-        include "./header.html";
-    ?>
+    
 <div id="super-container">
     <!-- Heading  -->
     <div class="header">
