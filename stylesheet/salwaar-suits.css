@@ -8,23 +8,28 @@
     --spanis_pink : #FFC7BD;
     --pale_chestnut : #D5BOA9;
 }
+
+body{min-width: fit-content;}
+.header{margin-top: 130px;}
 .header h1{
     font-family: 'Trirong';
     text-align: center;
     color: var(--garnet);
-    margin-top: 20px;
+    
 }
-#super-container
-{
-    padding-top: 30px;
+.supreme{
+    
 }
-#salwaar-suits-container
-{
+#salwaar-suits-container{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    justify-self: center;
+    padding: 5px;
+}
+.products-container{
+    margin: 20px;
+    margin-top: 50px;
 }
 .products-container h4{
     text-align: center;
@@ -36,51 +41,18 @@
 .products-container h4:hover{
     font-weight: 450;
 }
-.products-container{
-    display: flex;
-}
+
 .product{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
+    border: 1px solid lightgrey;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2), 0px 0px 2px rgba(0,0,0,0.2);
 }
 .product img
 {
-    height: 450px;
+    
+    height: 435px;
     width: 295px;
 }
 
 
-@media screen and (min-width: 1000px) {
-    #super-container{
-        padding: 5px 50px 5px 50px;
-    }
-}
-/* @media screen and (max-width: 360px) {
-    body
-    {
-        font-family: 'Trirong';  
-    }
-    #salwaar-suits-container
-    {
-        border-top: 2px solid var(--garnet);
-    }
-    .products-container1, .products-container2, .products-container3
-        {
-            display: flex;
-        }
-    .product h4
-    {
-        font-size: 12px;
-        text-align: center;
-        font-family: 'Trirong', sans-serif;
-        color: var(--garnet);
-    }
-    .product
-    {
-        border-left : 2px solid white;
-        border-right : 2px solid white;
-    }   
-} */
 
    

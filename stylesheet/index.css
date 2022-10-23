@@ -8,15 +8,12 @@
     --spanis_pink : #FFC7BD;
     --pale_chestnut : #D5BOA9;
 }
-body{
-  overflow: hidden;
-}
+
 /* MQUERIES FOR PHONE WIDTH  */
 @media screen and (max-width: 450px) 
 { 
    /* Hero Section  */
    body{
-    overflow: hidden;
     text-align: center;
     font-family: 'Trirong', sans-serif; 
    }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,17 @@
     <link rel="stylesheet" href="stylesheet/salwaar-suits.css">
     <link rel="stylesheet" href="stylesheet/index.css">
     <link rel="stylesheet" href="stylesheet/footer.css">
-    <!-- <link rel="stylesheet" href="stylesheet/nav.css"> -->
+    <link rel="stylesheet" href="stylesheet/nav.css">
 </head>
+
 <body>
 
-    
-<div id="super-container">
+    <div class="nav">
+        <?php
+            include 'navigation.html'
+        ?>
+    </div>
+
     <!-- Heading  -->
     <div class="header">
         <h1>Salwaar Suits</h1>
@@ -29,27 +35,33 @@
         $totalProd = count($response);
         // echo $totalProd;
         // $count = 5;
-    ?> 
-    
+    ?>
+
     <!-- Products Container -->
-     <div id="salwaar-suits-container">
+    <div class="supreme">
+    <div id="salwaar-suits-container">
         <?php
             for($i=1; $i < $totalProd; $i++)
             {         
         ?>
         <div class="products-container">
-            <div class="product"><img src="images/collection2.jpg"><h4><?php echo ($response[$i][1]);  ?></h4></div>
+            <div class="product">
+                <img src="images/collection2.jpg">
+                <h4><?php echo ($response[$i][1]);  ?></h4>
+            </div>
         </div>
         <?php
             }
-        ?>      
-    </div>   
+        ?>
+    </div>
+    </div>
+   
 
     <!-- Footer Section  -->
-    <?php include("footer.html") ?>
-</div>
+    <?php
+        include 'footer.html'
+    ?>
+
 </body>
+
 </html>
-
-
-
