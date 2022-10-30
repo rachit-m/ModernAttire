@@ -15,20 +15,23 @@ body{margin: 0; padding: 0;font-family: sans-serif;}
     #navigation-desktop{display: none;}
     #navigation-phone{
         height: 104px;
-        position: relative; width: 100%;
+        position: fixed; width: 100%;
+        z-index: 1000;
 
     }
     .topnav{
         text-align: center; 
         color: white; 
         background: var(--coconut); 
-        margin: 0; padding: 1px;
+        margin: -10px; padding: 1px;
+        font-family: 'Trirong', sans-serif; 
     }
     h4{font-weight: 150; letter-spacing: 0.8px;}
     #bottomnav{
         display: flex;
         align-items: center;
         background: var(--linen);
+        font-family: 'Trirong', sans-serif; 
     }
     #menubtn div{
         background: var(--coconut);
@@ -51,6 +54,7 @@ body{margin: 0; padding: 0;font-family: sans-serif;}
         margin: 15px;
         text-align: center;
         color: var(--coconut);
+        font-family: 'Trirong', sans-serif; 
     }
     .bottomnavph{
         transition: 0.5s;
@@ -76,6 +80,7 @@ body{margin: 0; padding: 0;font-family: sans-serif;}
         color: white;
         background: var(--garnet); 
         padding: 0.1px;
+        font-family: 'Trirong', sans-serif; 
     }
     h4{font-weight: 130; letter-spacing: 1px;}
     .bottomnav{
@@ -84,7 +89,7 @@ body{margin: 0; padding: 0;font-family: sans-serif;}
         justify-content: space-evenly;
         align-items: center;
         border-bottom: 1px solid lightgrey;
-        box-shadow: 0 5px 10px #ddd;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.2), 0px 0px 5px rgba(0,0,0,0.2);
     }
     #links{
         margin-right: 150px;
@@ -94,6 +99,7 @@ body{margin: 0; padding: 0;font-family: sans-serif;}
         margin: 20px;
         color: var(--coconut);
         cursor: pointer;
+        font-family: 'Trirong', sans-serif; 
     }
     #links a:hover{
         color: var(--garnet);

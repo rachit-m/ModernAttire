@@ -11,8 +11,8 @@
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">  -->
     <!-- <link rel="stylesheet" href="stylesheet/lightbox.css"> -->
     <!-- <link rel="stylesheet" href="stylesheet/searchboxcurr.css"> -->
     <link rel="stylesheet" href="stylesheet/index-desktop.css">
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="stylesheet/footer.css">
     <link rel="stylesheet" href="stylesheet/nav.css">
+    <link rel="stylesheet" href="stylesheet/carousel.css">
 
     <title>The Modern Attire - Collection of Handworked Unstitched Suits and Kurtis from Kolkata - Work from Local Karigars</title>
     <link rel="shortcut icon" href="images/modern attire logo-03.png" type="image/x-icon">
@@ -35,15 +36,13 @@
         include './navigation.html'
     ?>
     </div>
-    
 
-    
     <!-- Hero Section  -->
     <div id="hero-image">
     </div>
 
     <!-- Shop By Category -->
-    <div id="shop-category-desktop">
+    <!-- <div id="shop-category-desktop">
         <h1 class="title-text">Shop by Category</h1>
         <div class="categories">
             <div class="category1">
@@ -53,7 +52,7 @@
                 <h1>Designer Dresses</h1>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div id="shop-category-phone">
         <h1 class="title-text">Shop by Category</h1>
@@ -69,34 +68,17 @@
         </div>
     </div>
 
-    <!-- Dresses Section  -->
-    <div id="dress-section">
-      <div class="sect1">
-        <h2>DRESSES</h2>
-        <button type="submit">Discover</button>
-      </div>
-      <div class="sect2">
-      </div>
-    </div>
-
-    <!-- Salwaar Suits Section  -->
-    <div id="salwaar-section"> 
-        <div class="sect2">
-            </div> 
-        <div class="sect1">
-              <h2>SALWAAR DRESSES</h2>
-              <button type="submit">Discover</button>
-        </div>
-    </div>
+ 
 
     <!-- Latest Collection  -->
     <div id="latest-collection">
     <h1 class="title-text">Latest Collection</h1>
 
-    //! High Loadtime
-    <!-- <php
+    <!--  Corousel -->
+    <?php
         include "./carousel.html";
-    ><div> -->
+    ?>
+    </div>
     
 
     <!-- Modern Attire Section  -->

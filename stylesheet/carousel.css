@@ -15,7 +15,13 @@
     max-width: 354px;
     text-align: center;
     color: var(--garnet);
+    border-right: 5px solid white;
     border-radius: 18px;
+    font-family: 'Trirong', sans-serif; 
+}
+.card h5{
+    font-size: 15px;
+    font-weight: 380;
 }
 @media screen and (max-width: 450px) {
     .owl-carousel.owl-drag .owl-item{
