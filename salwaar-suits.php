@@ -13,6 +13,7 @@
 </head>
 
 <body>
+<div class="preloader"> </div>
 
     <div class="nav">
         <?php
@@ -38,9 +39,9 @@
     ?>
 
     <!-- Products Container -->
-    <div class="main-container">
-        <div class="filtersec">
-            <h2>Filter</h2>
+    <div class="main-container"> 
+    <div class="filtersec">
+            <h2>Filters</h2>
         </div>
     <div id="salwaar-suits-container">
         <?php
@@ -64,6 +65,12 @@
     <?php
         include 'footer.html'
     ?>
+
+<script>
+    window.addEventListener("load",()=>{
+        document.querySelector(".preloader").classList.add("preloader--hidden");
+    })
+</script>
 
 </body>
 
