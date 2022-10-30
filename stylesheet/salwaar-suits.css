@@ -17,8 +17,20 @@ body{min-width: fit-content;}
     color: var(--garnet);
     
 }
-.supreme{
-    
+.main-container{
+    display: flex;
+    justify-content: space-around;
+}
+.filtersec{
+    width: 25vw;
+    margin: 5px;
+    border: 1px solid lightgrey;
+}
+.filtersec h2{
+    text-align: center;
+    font-weight: 150;
+    font-size: 25px;
+    font-family: 'Trirong';
 }
 #salwaar-suits-container{
     display: flex;
@@ -26,6 +38,9 @@ body{min-width: fit-content;}
     justify-content: flex-start;
     justify-self: center;
     padding: 5px;
+    width: 75vw;
+    margin: 5px;
+    border: 1px solid lightgrey;
 }
 .products-container{
     margin: 20px;

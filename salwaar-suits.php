@@ -38,7 +38,10 @@
     ?>
 
     <!-- Products Container -->
-    <div class="supreme">
+    <div class="main-container">
+        <div class="filtersec">
+            <h2>Filter</h2>
+        </div>
     <div id="salwaar-suits-container">
         <?php
             for($i=1; $i < $totalProd; $i++)
