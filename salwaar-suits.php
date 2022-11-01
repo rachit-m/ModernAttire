@@ -15,11 +15,14 @@
 <body>
 <div class="preloader"> </div>
 
-    <div class="nav">
-        <?php
-            include 'navigation.html'
-        ?>
+    <!-- Navigation  -->
+    <div class="navs">
+    <?php
+        include 'navigation.html'
+    ?>
     </div>
+   
+ 
 
     <!-- Heading  -->
     <div class="header">
@@ -49,7 +52,7 @@
             {         
         ?>
         <div class="products-container">
-            <div class="product">
+            <div class="product" onclick="redirect();fetchdata(key='<?php echo ($i) ?>')">
                 <img src="images/collection2.jpg">
                 <h4><?php echo ($response[$i][1]);  ?></h4>
             </div>
@@ -66,11 +69,7 @@
         include 'footer.html'
     ?>
 
-<script>
-    window.addEventListener("load",()=>{
-        document.querySelector(".preloader").classList.add("preloader--hidden");
-    })
-</script>
+<script src="./script/fetchdata.js"></script>
 
 </body>
 

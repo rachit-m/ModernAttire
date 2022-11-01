@@ -106,7 +106,7 @@
         class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
     </a> -->
-    <script>
+   <script>
     window.addEventListener("load",()=>{
         document.querySelector(".preloader").classList.add("preloader--hidden");
     })
