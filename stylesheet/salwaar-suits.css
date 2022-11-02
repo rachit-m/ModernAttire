@@ -59,13 +59,49 @@
 .filtersec{
     width: 25vw;
     margin: 5px;
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
     border: 1px solid lightgrey;
+}
+#search-box{
+    padding: 7px;
+    width: 280px;
+    outline: none;
+    border: 1px solid var(--garnet);
+    color: var(--garnet);
+    margin: 10px;
+}
+#search-btn{
+    padding: 7px;
+    background: var(--coconut);
+    color: white;
+    border: 1px solid var(--coconut);
+    cursor: pointer;
+}
+#search-btn:hover{
+    background: var(--garnet);
+    border: 1px solid var(--garnet);
 }
 .filtersec h2{
     text-align: center;
     font-weight: 150;
     font-size: 25px;
     font-family: 'Trirong';
+}
+.filtersec h5{
+    margin-left: 15px;
+}
+.filtersec a{
+    color: var(--coconut);
+    font-size: 13.5px;
+    margin: 7px 0px 0px 20px;
+    text-decoration: none;
+}
+.filtersec a:hover{
+    text-decoration: underline;
 }
 #salwaar-suits-container{
     display: flex;
@@ -80,25 +116,27 @@
 .products-container{
     margin: 20px;
     margin-top: 50px;
-    transition: 0.2s;
-    /* max-width: 275px; 
-    max-height: 392px;  */
+    transition: 0.3s;
 }
 .products-container:hover{
     cursor: pointer;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.2),0px 0px 20px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    /* border: 1px solid lightgrey; */
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
 }
 .products-container h4{
     text-align: left;
     padding: 5px;
     text-overflow: clip;
     color : var(--garnet);
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 300;
     cursor: pointer;
+    text-align: center;
 }
 .products-container h4:hover{
-    font-weight: 450;
+    font-weight: 550;
+    
 }
 
 .product{

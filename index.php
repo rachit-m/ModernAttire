@@ -73,7 +73,7 @@
     <h1 class="title-text">Latest Collection</h1>
     <!--  Corousel -->
     <?php
-        $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/AllProducts?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
+        $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/LatestCollection?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
         $response = json_decode($response);
         $response = $response->{'values'};
         $totalProd = count($response);
@@ -81,20 +81,23 @@
         include "carousel.php";
     ?>
     </div>
+    
+<div class="breaker"></div>
 
     <!-- Best Selling -->
+    <div id="best-selling">
     <h1 class="title-text">Best Selling</h1>
     <!--  Corousel -->
     <?php
-        $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/AllProducts?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
+        $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/BestSelling?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
         $response = json_decode($response);
         $response = $response->{'values'};
         $totalProd = count($response);
-        
+
         include "carousel.php";
     ?>
     </div>
-
+   
 
  
 
@@ -132,6 +135,7 @@
         document.querySelector(".preloader").classList.add("preloader--hidden");
     })
     </script>
+    <!-- <script src="./script/reveal.js"></script> -->
 </body>
 
 </html>

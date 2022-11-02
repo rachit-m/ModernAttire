@@ -45,6 +45,23 @@
     <div class="main-container"> 
     <div class="filtersec">
             <h2>Filters</h2>
+            <form action="salwaar-suits.php">
+                <input type="text" name="search-box" id="search-box" onkeyup="search()">
+                <button type="submit" id="search-btn" >Search</button>
+            </form>
+            <h5>Categories</h5>
+            <a href="#">Women's Salwaar Suits</a>
+            <a href="#">Women's Dresses Unstitched</a>
+            <a href="#">Women's Kurtas and Kurtis</a>
+            <a href="#">MA Fashion</a>
+            <h5>Clothing Material</h5>
+            <a href="#">Art Silk</a>
+            <a href="#">Georgette</a>
+            <a href="#">Cotton</a>
+            <a href="#">Linen</a>
+            <h5>New arrivals</h5>
+            
+
         </div>
     <div id="salwaar-suits-container">
         <?php
@@ -52,9 +69,9 @@
             {         
         ?>
         <div class="products-container">
-            <div class="product" onclick="redirect();sendkey(key=<?php echo $i ?>)">
-                <img src="images/collection2.jpg">
-                <h4><?php echo ($response[$i][1]);  ?></h4>
+            <div class="product" onclick="redirect()">
+                <img src="<?php echo $response[$i][11] ?>">
+                <h4 class="product-name"><?php echo ($response[$i][1]);  ?></h4>
             </div>
         </div>
         <?php
@@ -70,6 +87,7 @@
     ?>
 
 <script src="./script/fetchdata.js"></script>
+<script src="./script/filter.js"></script>
 <script>
     window.addEventListener("load",()=>{
     document.querySelector(".preloader").classList.add("preloader--hidden");

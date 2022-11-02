@@ -12,7 +12,7 @@
         <?php  for($i=1; $i < $totalProd; $i++)
             {    
         ?>
-        <div class="card"><img src="images/collection1.jpg" alt=""><h5><?php echo ($response[$i][1]); ?></h5></div>
+        <div class="card"><img src="<?php echo ($response[$i][6]); ?>" alt=""><h5><?php echo ($response[$i][1]); ?></h5></div>
         <?php
             }
         ?>
