@@ -113,7 +113,7 @@
 
 
 @media screen and (max-width: 450px) {
-    .main-container{display: flex; flex-direction: column;}
+    .main-container{display: flex; flex-direction: column; align-items: center;}
     .filtersec{width: 100%;}
 }
 

@@ -206,45 +206,8 @@ box-shadow: 0px 10px 161px -17px;
     transform: translate(-50%, -50%);
     font-family: 'Trirong', sans-serif;                                               
     font-size: 80px;
-
-    background: linear-gradient(
-    90deg,
-    rgb(121, 255, 19),
-    rgba(245, 73, 30, 0.912),
-    rgb(245, 241, 13),
-    rgba(11, 168, 231, 0.912)
-  );
-  -webkit-background-clip: text;
-  background-size: 400%;
-  -webkit-text-fill-color: transparent;
-  pointer-events: none;
-  animation: fade 3s ease-in 0s;
-  animation: linearclr 10s linear infinite;
 }
 
-@keyframes fade {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 50;
-    }
-    100% {
-      opacity: 100;
-    }
-  }
-  
-  @keyframes linearclr {
-    0% {
-      background-position: 0%;
-    }
-    50% {
-      background-position: 200%;
-    }
-    100% {
-      background-position: 400%;
-    }
-  }
 
 /* Discover Banner Section  */
 #discover-banner{

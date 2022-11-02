@@ -68,17 +68,38 @@
         </div>
     </div>
 
- 
-
     <!-- Latest Collection  -->
     <div id="latest-collection">
     <h1 class="title-text">Latest Collection</h1>
-
     <!--  Corousel -->
     <?php
-        include "./carousel.html";
+        $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/AllProducts?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
+        $response = json_decode($response);
+        $response = $response->{'values'};
+        $totalProd = count($response);
+        
+        include "carousel.php";
     ?>
     </div>
+
+    <!-- Best Selling -->
+    <h1 class="title-text">Best Selling</h1>
+    <!--  Corousel -->
+    <?php
+        $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/AllProducts?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
+        $response = json_decode($response);
+        $response = $response->{'values'};
+        $totalProd = count($response);
+        
+        include "carousel.php";
+    ?>
+    </div>
+
+
+ 
+
+
+
     
 
     <!-- Modern Attire Section  -->

@@ -43,7 +43,7 @@
             <img src="./images/collection4.jpg" alt="">
         </div>
         <div class="sp-right">
-            <h1 id="product-name"><?php echo ($response[0][1]) ?></h1>
+            <h1 id="product-name"><?php echo $response[0][1] ?></h1>
             <h4>Description</h4>
             <p id="product-desc">Wearing this heaenly green fancy Kurta on Georgette 
                 fabric, adorned with digital print and synchronized 
@@ -72,12 +72,13 @@
     ?>
 
 
+<script src="./script/fetchdata.js"></script>
     <script>
         window.addEventListener("load", () => {
             document.querySelector(".preloader").classList.add("preloader--hidden");
+            document.write(vals)
         })
     </script>
-    <script src="./script/fetchdata.js"></script>
 </body>
 
 </html>

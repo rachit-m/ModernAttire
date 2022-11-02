@@ -52,7 +52,7 @@
             {         
         ?>
         <div class="products-container">
-            <div class="product" onclick="redirect();fetchdata(key='<?php echo ($i) ?>')">
+            <div class="product" onclick="redirect();sendkey(key=<?php echo $i ?>)">
                 <img src="images/collection2.jpg">
                 <h4><?php echo ($response[$i][1]);  ?></h4>
             </div>
@@ -70,7 +70,11 @@
     ?>
 
 <script src="./script/fetchdata.js"></script>
-
+<script>
+    window.addEventListener("load",()=>{
+    document.querySelector(".preloader").classList.add("preloader--hidden");
+})
+</script>
 </body>
 
 </html>
