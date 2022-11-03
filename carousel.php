@@ -41,7 +41,7 @@
                 nav: false
             },
             1400:{
-                items: 5,
+                items: 6,
                 nav: false
             }
         }

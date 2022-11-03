@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,15 +51,15 @@
                 <button type="submit" id="search-btn" >Search</button>
             </form>
             <h5>Categories</h5>
-            <a href="#">Women's Salwaar Suits</a>
+            <a href="./salwaar-suits.php">Women's Salwaar Suits</a>
             <a href="#">Women's Dresses Unstitched</a>
             <a href="#">Women's Kurtas and Kurtis</a>
             <a href="#">MA Fashion</a>
             <h5>Clothing Material</h5>
-            <a href="#">Art Silk</a>
-            <a href="#">Georgette</a>
-            <a href="#">Cotton</a>
-            <a href="#">Linen</a>
+            <a href="#" class='cloth-type' onclick="filter('SILK')">Silk</a>
+            <a href="#" class='cloth-type' onclick="filter('GEORGETTE')">Georgette</a>
+            <a href="#" class='cloth-type' onclick="filter('COTTON')">Cotton</a>
+            <a href="#" class='cloth-type' onclick="filter('LINEN')">Linen</a>
             <h5>New arrivals</h5>
             
 
@@ -69,29 +70,35 @@
             {         
         ?>
         <div class="products-container">
-            <div class="product" onclick="redirect()">
+            <div class="product" onclick="redirect();sendkey('<?php echo $i ?>');">
                 <img src="<?php echo $response[$i][11] ?>">
                 <h4 class="product-name"><?php echo ($response[$i][1]);  ?></h4>
+                <p class='material' style="display: none" ><?php echo ($response[$i][5]) ?></p>
             </div>
+            
         </div>
+               
         <?php
             }
         ?>
+        
     </div>
     </div>
    
 
     <!-- Footer Section  -->
     <?php
+        
         include 'footer.html'
     ?>
 
-<script src="./script/fetchdata.js"></script>
+<script src="./script/custom_filters.js"></script>
 <script src="./script/filter.js"></script>
 <script>
     window.addEventListener("load",()=>{
     document.querySelector(".preloader").classList.add("preloader--hidden");
 })
+
 </script>
 </body>
 
