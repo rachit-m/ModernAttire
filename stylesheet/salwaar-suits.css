@@ -68,18 +68,14 @@
 }
 #search-box{
     padding: 7px;
-    width: 280px;
+    width: 350px;
     outline: none;
     border: 1px solid var(--garnet);
     color: var(--garnet);
     margin: 10px;
 }
-#search-btn{
-    padding: 7px;
-    background: var(--coconut);
-    color: white;
-    border: 1px solid var(--coconut);
-    cursor: pointer;
+::placeholder{
+    color: var(--coconut);
 }
 #search-btn:hover{
     background: var(--garnet);
@@ -147,6 +143,15 @@
 { 
     height: 392px;
     width: 275px;
+}
+#output-txt{
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    margin: 5px 0px -10px 22px;
+    color: var(--garnet);
+    font-family: 'Trirong',sans-serif;
+    display: none;
 }
 
 

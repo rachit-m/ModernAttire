@@ -3,8 +3,11 @@ var productsC = document.getElementsByClassName('products-container')
 
 function search(){
     var input = document.getElementById('search-box')
-    var filter = input.value.toUpperCase();
-    
+    var outputR = document.getElementById('output-txt')
+
+    outputR.innerHTML = "Search : "+input.value;
+    outputR.style.display = "block";
+    var filter = input.value.toUpperCase()
 
     for(i=0; i<productsN.length; i++){
         txtval = productsN[i].textContent || productsN[i].innerText;
@@ -18,6 +21,10 @@ function search(){
     }
 }
 
+reset = () => {
+    var outputR = document.getElementById('output-txt')
+    outputR.style.display = "none";
+}
 
 
 

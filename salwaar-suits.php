@@ -46,25 +46,42 @@
     <div class="main-container"> 
     <div class="filtersec">
             <h2>Filters</h2>
-            <form action="salwaar-suits.php">
-                <input type="text" name="search-box" id="search-box" onkeyup="search()">
-                <button type="submit" id="search-btn" >Search</button>
-            </form>
+            <input type="text" name="search-box" id="search-box" onkeyup="search()" ondblclick="reset()" placeholder="Search products" >
             <h5>Categories</h5>
             <a href="./salwaar-suits.php">Women's Salwaar Suits</a>
             <a href="#">Women's Dresses Unstitched</a>
             <a href="#">Women's Kurtas and Kurtis</a>
             <a href="#">MA Fashion</a>
             <h5>Clothing Material</h5>
-            <a href="#" class='cloth-type' onclick="filter('SILK')">Silk</a>
-            <a href="#" class='cloth-type' onclick="filter('GEORGETTE')">Georgette</a>
-            <a href="#" class='cloth-type' onclick="filter('COTTON')">Cotton</a>
-            <a href="#" class='cloth-type' onclick="filter('LINEN')">Linen</a>
-            <h5>New arrivals</h5>
-            
+            <a href="#" class='cloth-type' onclick="filter('Silk')">Silk</a>
+            <a href="#" class='cloth-type' onclick="filter('Georgette')">Georgette</a>
+            <a href="#" class='cloth-type' onclick="filter('Cotton')">Cotton</a>
+            <a href="#" class='cloth-type' onclick="filter('Linen')">Linen</a>
 
+            <!-- <h5>Apparels</h5>
+            <?php
+            for($i=1; $response[$i][14] != null ; $i++)
+            {         
+            ?>
+            <a href="#" class='apparel'><?php echo $response[$i][14] ?></a>
+            <?php 
+            }
+            ?> -->
+
+            <h5>New arrivals</h5>
+            <?php
+            for($i=1; $i < $totalProd; $i++)
+            {         
+                if($response[$i][10] == 'New'){
+            ?>
+
+            <a href="#" class='new-arrivals'><?php echo $response[$i][1] ?></a>
+            <?php }
+            }
+            ?>
         </div>
     <div id="salwaar-suits-container">
+        <h3 id="output-txt">he</h3>
         <?php
             for($i=1; $i < $totalProd; $i++)
             {         
