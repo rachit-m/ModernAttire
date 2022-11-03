@@ -38,6 +38,7 @@
         $response = $response->{'values'};
      
         $totalProd = count($response);
+        
         // echo $totalProd;
         // $count = 5;
     ?>
@@ -52,23 +53,32 @@
             <a href="#">Women's Dresses Unstitched</a>
             <a href="#">Women's Kurtas and Kurtis</a>
             <a href="#">MA Fashion</a>
-            <h5>Clothing Material</h5>
-            <a href="#" class='cloth-type' onclick="filter('Silk')">Silk</a>
-            <a href="#" class='cloth-type' onclick="filter('Georgette')">Georgette</a>
-            <a href="#" class='cloth-type' onclick="filter('Cotton')">Cotton</a>
-            <a href="#" class='cloth-type' onclick="filter('Linen')">Linen</a>
 
-            <!-- <h5>Apparels</h5>
+            <!-- Clothing Materials  -->
+            <h5>Clothing Materials</h5>
             <?php
-            for($i=1; $response[$i][14] != null ; $i++)
+            $count = $response[0][17];
+            for($i=1; $i <= $count; $i++)
+            {         
+            ?>
+            <a href="#" class='cloth-type' onclick="filter('<?php echo $response[$i][16] ?>')"><?php echo $response[$i][16] ?></a>
+            <?php 
+            }
+            ?>
+
+            <!-- Apparels  -->
+            <h5>Apparels</h5>
+            <?php
+            $count = $response[0][15];
+            for($i=1; $i <= $count; $i++)
             {         
             ?>
             <a href="#" class='apparel'><?php echo $response[$i][14] ?></a>
             <?php 
             }
-            ?> -->
+            ?>
 
-            <h5>New arrivals</h5>
+            <h5>New Arrivals</h5>
             <?php
             for($i=1; $i < $totalProd; $i++)
             {         
@@ -80,8 +90,10 @@
             }
             ?>
         </div>
+
+
     <div id="salwaar-suits-container">
-        <h3 id="output-txt">he</h3>
+        <h3 id="output-txt"></h3>
         <?php
             for($i=1; $i < $totalProd; $i++)
             {         

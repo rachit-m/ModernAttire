@@ -54,7 +54,7 @@
 .main-container{
     display: flex;
     justify-content: space-around;
-    margin-top: 73px;
+    margin-top: 30px;
 }
 .filtersec{
     width: 25vw;

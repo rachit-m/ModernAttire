@@ -5,8 +5,8 @@ function search(){
     var input = document.getElementById('search-box')
     var outputR = document.getElementById('output-txt')
 
-    outputR.innerHTML = "Search : "+input.value;
-    outputR.style.display = "block";
+    // outputR.innerHTML = "Search : "+input.value;
+    // outputR.style.display = "block";
     var filter = input.value.toUpperCase()
 
     for(i=0; i<productsN.length; i++){
