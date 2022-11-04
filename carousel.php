@@ -12,7 +12,7 @@
         <?php  for($i=1; $i < $totalProd; $i++)
             {    
         ?>
-        <div class="card"><img src="<?php echo ($response[$i][6]); ?>" alt=""><h5><?php echo ($response[$i][1]); ?></h5></div>
+        <div class="card"><img src="<?php echo ($response[$i][6]); ?>" alt="img-not-found"><h5><?php echo ($response[$i][1]); ?></h5></div>
         <?php
             }
         ?>
@@ -33,11 +33,11 @@
                 nav: false
             },
             600:{
-                items: 2,
+                items: 3,
                 nav: false
             },
             1000:{
-                items: 4,
+                items: 5,
                 nav: false
             },
             1400:{

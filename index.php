@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The Modern Attire - Collection of Handworked Unstitched Suits and Kurtis from Kolkata - Work from Local Karigars, suits, sarees, lehangas">
-  <meta name="keywords" content="web fashion,sari , modern clothes, clothes deals online, fashion clothes, export">
-  <meta name="robots" content="index,follow">
-  <meta name="facebook-domain-verification" content="wewbr8oru0wwn1d0a00jdm1gwmxf9b" />
+  <meta name="keywords" content="web fashion,sari , modern clothes, clothes deals online, fashion clothes, export"> 
+  <!-- <meta name="robots" content="index,follow">
+  <!-- <meta name="facebook-domain-verification" content="wewbr8oru0wwn1d0a00jdm1gwmxf9b" /> -->
 <!-- Stylesheets -->
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="stylesheet/carousel.css">
 
     <title>The Modern Attire - Collection of Handworked Unstitched Suits and Kurtis from Kolkata - Work from Local Karigars</title>
-    <link rel="shortcut icon" href="images/modern attire logo-03.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="images/modern attire logo-03.png" type="image/x-icon"> -->
 </head>
 
 <body>
@@ -54,23 +54,9 @@
         </div>
     </div> -->
 
-    <div id="shop-category-phone">
-        <h1 class="title-text">Shop by Category</h1>
-        <div class="categories-container">
-            <div class="cat">
-                <img src="images/png/salwaar.png" alt="">
-                <h3>Designer Dresses</h3>
-            </div>
-            <div class="cat">
-            <img src="images/png/dress.png" alt="">
-                <h3>Salwaar-Suits</h3>
-            </div>
-        </div>
-    </div>
-
     <!-- Latest Collection  -->
     <div id="latest-collection">
-    <h1 class="title-text">Latest Collection</h1>
+    <h1 class="title-text">Latest Collections</h1>
     <!--  Corousel -->
     <?php
         $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/LatestCollection?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
@@ -81,10 +67,33 @@
         include "carousel.php";
     ?>
     </div>
-    
-<div class="breaker"></div>
 
-    <!-- Best Selling -->
+    <div id="shop-category-phone">
+        <h1 class="title-text">Shop by Category</h1>
+        <div class="categories-container">
+            <div class="cat">
+                <img src="images/png/salwaar.png" alt="">
+                <h3>Designer Dresses</h3>
+            </div>
+            <div class="cat">
+            <img src="images/png/dress.png" alt="">
+                <a href="./salwaar-suits.php">Salwaar-Suits</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Dresses Section  -->
+    <div id="dress-section">
+        <div class="sect1">
+          <h2>DRESSES</h2>
+          <button type="submit">Discover</button>
+        </div>
+        <div class="sect2">
+        </div>
+      </div>
+  
+      <!-- Best Selling -->
     <div id="best-selling">
     <h1 class="title-text">Best Selling</h1>
     <!--  Corousel -->
@@ -97,20 +106,33 @@
         include "carousel.php";
     ?>
     </div>
-   
 
- 
-
-
+      <!-- Salwaar Suits Section  -->
+      <div id="salwaar-section"> 
+          <div class="sect2">
+              </div> 
+          <div class="sect1">
+                <h2>SALWAAR DRESSES</h2>
+                <button type="submit">Discover</button>
+          </div>
+      </div>
 
     
+    
+<div class="breaker"></div>
 
+    
+   
     <!-- Modern Attire Section  -->
     <div id="ma-branding">
         <div class="branding-text">
             <h1>MODERN ATTIRE</h1>
         </div> 
     </div>
+
+
+     
+
 
     <!-- Discover Banner  -->
     <div id="discover-banner">

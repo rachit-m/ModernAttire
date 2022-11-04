@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Attire | Salwaar Suits</title>
     <link rel="stylesheet" href="stylesheet/salwaar-suits.css">
-    <link rel="stylesheet" href="stylesheet/index.css">
     <link rel="stylesheet" href="stylesheet/footer.css">
     <link rel="stylesheet" href="stylesheet/nav.css">
 </head>
@@ -73,7 +72,7 @@
             for($i=1; $i <= $count; $i++)
             {         
             ?>
-            <a href="#" class='apparel'><?php echo $response[$i][14] ?></a>
+            <a href="#" class='apparel' onclick="filter('<?php echo $response[$i][14] ?>')"><?php echo $response[$i][14] ?></a>
             <?php 
             }
             ?>
@@ -99,12 +98,13 @@
             {         
         ?>
         <div class="products-container">
-            <div class="product" onclick="redirect();sendkey('<?php echo $i ?>');">
+            
+            <div class="product" onclick="redirect()">
                 <img src="<?php echo $response[$i][11] ?>">
-                <h4 class="product-name"><?php echo ($response[$i][1]);  ?></h4>
+                <a href="singleprod.php?key=<?php echo $i ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
                 <p class='material' style="display: none" ><?php echo ($response[$i][5]) ?></p>
             </div>
-            
+          
         </div>
                
         <?php
@@ -117,7 +117,6 @@
 
     <!-- Footer Section  -->
     <?php
-        
         include 'footer.html'
     ?>
 

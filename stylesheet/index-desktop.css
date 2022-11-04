@@ -49,7 +49,7 @@ box-shadow: 0px 10px 161px -17px;
 
 /* Hero Section  */
 #hero-image {
-    background: url("https://github.com/ChandanP007/ModernAttire/blob/main/images/hero-img.jpg?raw=true");
+    background: url("https://ik.imagekit.io/modernattire/hero-img.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667536603955");
     height: 800px;
     width: 100%;
     background-position: center;
@@ -72,14 +72,15 @@ box-shadow: 0px 10px 161px -17px;
     text-align: center;
 }
 #dress-section .sect1{
-    background: url("../images/dresses-bg.jpg");
+    /* tr:w-300,h-300 */
+    background: url("https://ik.imagekit.io/modernattire/dresses-bg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538940932");
     width: 50%;
     height: 930px;
     margin-top: 10px;
     position: relative;
 }
 #dress-section .sect2{
-    background: url("../images/dresses-bg.jpg");
+    background: url("https://ik.imagekit.io/modernattire/dresses-bg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538940932");
     height: 930px;
     width: 50%;
     margin-top: 10px;
@@ -127,17 +128,17 @@ box-shadow: 0px 10px 161px -17px;
     text-align: center;
 }
 #salwaar-section .sect1{
-    background: url("../images/salwaar-suits.jpg");
+    background: url("https://ik.imagekit.io/modernattire/salwaar-suits.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538941035");
     width: 50%;
     height: 930px;
-    margin-top: 10px;
+    margin-top: 15px;
     position: relative;
 }
 #salwaar-section .sect2{
-    background: url("../images/salwaar-suits.jpg");
+    background: url("https://ik.imagekit.io/modernattire/salwaar-suits.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538941035");
     height: 930px;
     width: 50%;
-    margin-top: 10px;
+    margin-top: 15px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

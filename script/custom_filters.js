@@ -3,21 +3,17 @@ function redirect(){
     
 }
 
-sendkey = (key) =>{
-    window.alert((key))
-}
 
 //custom filters
-filter = (material) =>{
+filter = (fval) =>{
     var productsN = document.getElementsByClassName('product-name')
     var productsC = document.getElementsByClassName('products-container')
     var outputR = document.getElementById('output-txt')
 
-    outputR.innerHTML = "Clothing Material : "+material;
+    outputR.innerHTML = "Clothing Material : "+fval;
     outputR.style.display = "block";
-    // window.alert(material)
     var items = document.getElementsByClassName('material')
-    var filter_text = material;
+    var filter_text = fval;
 
     for(i=0; i<productsC.length; i++){
         elemtxt = items[i].textContent || items[i].innerText;

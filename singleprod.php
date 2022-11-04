@@ -1,4 +1,4 @@
-
+<?php $x = $_GET['key']; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,22 +41,19 @@
     <!-- Single Product Cotainer Desktop -->
     <div class="sp-container-desktop">
         <div class="sp-left">
-            <img src="./images/collection4.jpg" alt="">
+            <img src="<?php echo $response[$x][11] ?>" alt="img-not-found">
         </div>
         <div class="sp-right">
-            <h1 id="product-name"><?php echo $response[2][1] ?></h1>
+            <h1 id="product-name"><?php echo $response[$x][1] ?></h1>
             <h4>Description</h4>
-            <p id="product-desc">Wearing this heaenly green fancy Kurta on Georgette 
-                fabric, adorned with digital print and synchronized 
-                with the design of the dress, you'll be at the peak 
-                of style and elegance 
+            <p id="product-desc"><?php echo $response[$x][4] ?>
             </p>
             <h4>Details</h4>
             <ul class="sp-details">
-                <li>Fabric : </li>
-                <li>Color : </li>
-                <li>Print : </li>
-                <li>Lining : </li>
+                <li>Fabric : <?php echo $response[$x][5] ?></li>
+                <li>Color : <?php echo $response[$x][6] ?></li>
+                <li>Print : <?php echo $response[$x][8] ?></li>
+                <li>Lining : <?php echo $response[$x][9] ?></li>
             </ul>
             <h4>Manufactured and Packed by</h4>
             <p>The Modern Attire, PS Arcade, 2nd Floor, 11 Sudder Street, Kolkata - 700016,
