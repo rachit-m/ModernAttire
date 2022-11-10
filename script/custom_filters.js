@@ -1,7 +1,3 @@
-function redirect(){
-    window.location.href='./singleprod.php'
-    
-}
 
 
 //custom filters
@@ -24,6 +20,30 @@ filter = (fval) =>{
             productsC[i].style.display = "none";
             productsN[i].style.display = "none"; 
     }
+
+
 }}
 
+apparelsfilter = (fval) =>{
+    var productsN = document.getElementsByClassName('product-name')
+    var productsC = document.getElementsByClassName('products-container')
+    var outputR = document.getElementById('output-txt')
+    outputR.innerHTML = "Apparel Type : "+fval;
+    outputR.style.display = "block";
+
+    var apparels = document.getElementsByClassName('apparels')
+    var filter_text = fval;
+
+
+    for(i=0; i<productsC.length; i++){
+        apprsrch = apparels[i].textContent || apparels[i].innerText;
+        if(apprsrch.toUpperCase() === filter_text.toUpperCase()){
+            productsN[i].style.display = "";
+            productsC[i].style.display = "";
+        }else{
+            productsC[i].style.display = "none";
+            productsN[i].style.display = "none"; 
+    }}
+    
+}
 

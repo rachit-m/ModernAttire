@@ -72,7 +72,7 @@
             for($i=1; $i <= $count; $i++)
             {         
             ?>
-            <a href="#" class='apparel' onclick="filter('<?php echo $response[$i][14] ?>')"><?php echo $response[$i][14] ?></a>
+            <a href="#" class='apparel' onclick="apparelsfilter('<?php echo $response[$i][14] ?>')"><?php echo $response[$i][14] ?></a>
             <?php 
             }
             ?>
@@ -84,7 +84,7 @@
                 if($response[$i][10] == 'New'){
             ?>
 
-            <a href="#" class='new-arrivals'><?php echo $response[$i][1] ?></a>
+            <a href="singleprod.php?key=<?php echo $i ?>" class='new-arrivals'><?php echo $response[$i][1] ?></a>
             <?php }
             }
             ?>
@@ -99,10 +99,11 @@
         ?>
         <div class="products-container">
             
-            <div class="product" onclick="redirect()">
+            <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&src=salwaar&data=def';">
                 <img src="<?php echo $response[$i][11] ?>">
                 <a href="singleprod.php?key=<?php echo $i ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
                 <p class='material' style="display: none" ><?php echo ($response[$i][5]) ?></p>
+                <p class='apparels' style="display: none" ><?php echo ($response[$i][3]) ?></p>
             </div>
           
         </div>

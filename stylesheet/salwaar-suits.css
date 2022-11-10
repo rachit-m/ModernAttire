@@ -68,7 +68,7 @@
 }
 #search-box{
     padding: 7px;
-    width: 350px;
+    width: 100;
     outline: none;
     border: 1px solid var(--garnet);
     color: var(--garnet);
@@ -161,6 +161,7 @@
 @media screen and (max-width: 450px) {
     .main-container{display: flex; flex-direction: column; align-items: center;}
     .filtersec{width: 100%; margin-top: 40px;}
+    #salwaar-suits-container{border: none;}
 }
 
 
