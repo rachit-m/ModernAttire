@@ -1,0 +1,27 @@
+.wrapper{
+    max-width: 400px;
+}
+.wrapper img{
+    /* width: 400px; */
+}
+.owl-nav{
+    margin: 10px;
+}
+.owl-nav button span{
+    border-radius: 50%;
+    background: white;
+    color: black;
+    padding: 5px 15px 5px 15px;
+}
+.owl-next
+{
+    margin-left: 311px;
+}
+.owl-nav{
+    display: flex;
+    justify-content: space-around;
+    top: 10px;
+    position: absolute;
+    margin-top: 65%;
+}
+.owl-dots{display: none;}

@@ -112,8 +112,8 @@
           <div class="sect2">
               </div> 
           <div class="sect1">
-                <h2>SALWAAR DRESSES</h2>
-                <button type="submit">Discover</button>
+                <h2>SALWAAR SUITS</h2>
+                <button type="submit" onclick="window.location='salwaar-suits.php'">Discover</button>
           </div>
       </div>
 

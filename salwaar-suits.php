@@ -4,6 +4,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="The Modern Attire - Collection of Handworked Unstitched Suits and Kurtis from Kolkata - Work from Local Karigars, suits, sarees, lehangas">
+    <meta name="keywords" content="web fashion,sari , modern clothes, clothes deals online, fashion clothes, export"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Attire | Salwaar Suits</title>
@@ -11,7 +13,7 @@
     <link rel="stylesheet" href="stylesheet/footer.css">
     <link rel="stylesheet" href="stylesheet/nav.css">
 </head>
-
+ 
 <body>
 <div class="preloader"> </div>
 
@@ -37,9 +39,6 @@
         $response = $response->{'values'};
      
         $totalProd = count($response);
-        
-        // echo $totalProd;
-        // $count = 5;
     ?>
 
     <!-- Products Container -->
@@ -99,7 +98,7 @@
         ?>
         <div class="products-container">
             
-            <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&src=salwaar&data=def';">
+            <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&src=salwaar&pg=single&prcode=<?php echo $response[$i][0] ?>';">
                 <img src="<?php echo $response[$i][11] ?>">
                 <a href="singleprod.php?key=<?php echo $i ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
                 <p class='material' style="display: none" ><?php echo ($response[$i][5]) ?></p>

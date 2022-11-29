@@ -2,6 +2,9 @@
 html{
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar-thumb {
+    background: red;
+  }
 /* MQUERIES FOR DESKTOP WIDTH  */
 @media screen and (min-width: 451px)
 {

@@ -26,6 +26,10 @@
         height: 550px;
         width: 380px;
     }
+    .slider_images{
+        display: flex;
+        
+    }
     .sp-right{
         padding: 0px 35px;
         color: var(--garnet);
@@ -60,17 +64,20 @@
     }
     .sp-details p{
         width: 30rem;
+        margin-bottom: 40px;
     }
     #enquire-btn{
         background: none;
-        padding: 8px;
+        padding: 7px 20px 7px 20px;
         border-radius: 30px;
         border: 1px solid var(--coconut);
-        width: 120px;
         color: var(--coconut);
-        cursor: pointer;
         margin-top: 30px;
         transition: 0.2s;
+    }
+    a#enquire-btn{
+        text-decoration: none;
+        font-size: 15px;
     }
     #enquire-btn:hover{
         background: var(--coconut);
