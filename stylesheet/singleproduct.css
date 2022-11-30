@@ -94,6 +94,9 @@
         flex-direction: column;
 
     }
+    .phone-container .top{
+        margin: 15px;
+    }
     .top img{
         width: 100vw;
         height: 615.71px;

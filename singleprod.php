@@ -135,7 +135,12 @@
     <div class="sp-container-phone">
         <div class="phone-container">
             <div class="top">
-                <img src="<?php echo $response[$x][11] ?>" alt="img-not-found">
+                <!-- <img src="<?php echo $response[$x][11] ?>" alt="img-not-found"> -->
+                <?php 
+                $firstImg = $lr;
+                $lastImg = $ur;
+                include './gallery.php' 
+            ?>
             </div>
             <div class="bottom">
                 <h1 id="product-name"><?php echo $response[$x][1] ?></h1>
