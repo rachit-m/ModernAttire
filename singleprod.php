@@ -28,11 +28,6 @@
             $response = json_decode($response);
             $response = $response->{'values'};
             $totalProd = count($response);
-
-            $gallery = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/ProductGallery?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
-            $gallery = json_decode($gallery);
-            $gallery = $gallery->{'values'};
-            
         }
         else if($y == 'carousel' && $pg == 'LatestCollection'){
             $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/LatestCollection?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
@@ -46,6 +41,10 @@
             $response = $response->{'values'};
             $totalProd = count($response);
         }
+
+        $gallery = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/ProductGallery?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
+        $gallery = json_decode($gallery);
+        $gallery = $gallery->{'values'};
     ?>
     
 

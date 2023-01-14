@@ -34,5 +34,8 @@
     .-owl-nav{
         margin-top: 50%;
     }
+    .owl-nav{
+        top: 200px;
+    }
     
 }

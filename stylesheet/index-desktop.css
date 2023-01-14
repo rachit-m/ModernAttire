@@ -1,14 +1,28 @@
+/* @import url('http://fonts.cdnfonts.com/css/trirong'); */
+@import url('https://fonts.googleapis.com/css2?family=Trirong&display=swap');
 
+:root
+{
+    --coconut : #955448;
+    --garnet : #683A32;
+    --linen : #FFEEEB;
+    --spanis_pink : #FFC7BD;
+    --pale_chestnut : #D5BOA9;
+}
 html{
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar-thumb {
     background: red;
   }
+
+  
 /* MQUERIES FOR DESKTOP WIDTH  */
 @media screen and (min-width: 451px)
 {
-
+    body{
+        font-family: 'Trirong', sans-serif; 
+      }
  /* Preloader animation  */
 .preloader{
     position: fixed;
@@ -73,6 +87,7 @@ box-shadow: 0px 10px 161px -17px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Trirong', sans-serif; 
 }
 #dress-section .sect1{
     /* tr:w-300,h-300 */
@@ -177,6 +192,50 @@ box-shadow: 0px 10px 161px -17px;
     background: var(--garnet);
     color: white;
 }
+.categories-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    background:whitesmoke;
+    font-family: 'Trirong', sans-serif; 
+    /* flex-direction: row; */
+}
+
+.cat1 img, .cat2 img{
+    /* height: 612.69px;
+    width: 716px; */
+    height: 481px;
+    width: 600px;
+    /* border: 1px solid lightgrey; */
+}
+.cat1 img:hover, .cat2 img:hover{
+    transition: 0.3s;
+    filter: brightness(30%);
+    cursor: pointer;
+}
+}
+.cat1 a{
+    position: absolute;
+    top: 1157px;
+    font-size: 20px;
+    left: 408px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.cat2 a{
+    position: absolute;
+    top: 1157px;
+    font-size: 20px;
+    right: 408px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+#cat1_text, #cat2_text {display : none}
+
 .breaker{
     width: 100%;
     height: 1px;
@@ -256,4 +315,3 @@ box-shadow: 0px 10px 161px -17px;
 
 
 
-}

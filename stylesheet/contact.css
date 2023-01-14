@@ -58,6 +58,9 @@ p {
 
 /* Queries for phone witdth  */
 @media screen and (max-width: 450px) {
+  #main-content-desktop{
+    display: none;
+   }
     body{
         background: var(--pale_chestnut)
     }
@@ -127,4 +130,112 @@ p {
   .el2{
     margin-left: 50px;
   }
+}
+
+/* Queries for Desktop  */
+@media screen and (min-width: 451px) {
+   #main-content-phone{
+    display: none;
+   }
+   #main-content-desktop{
+    display: block;
+    margin-top: 120px;
+   }
+   h5.subheading,h4.titlet{
+    /* text-align: center; */
+    font-family: 'Trirong',sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: var(--garnet);
+   }
+   .container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 15px;
+   }
+   .contact-form{
+    width: 35%;
+    border-right: 1px solid var(--coconut);
+    font-size: 14px;
+    font-family: 'Trirong',sans-serif;
+    padding: 20px;
+    color: var(--coconut);
+   }
+   .contact-details{
+    width: 35%;
+   }
+   h3.heading{
+    font-size: 48px;
+    color: var(--garnet);
+    font-weight: 250;
+    margin: 10px
+   }
+   [type=text],[type=number],[type=tel],[type=email],#country
+   {
+    padding: 5px;
+    border: 1px solid var(--coconut);
+    outline: none;
+   }
+   #country{
+    width: 11rem;
+    color: var(--coconut)
+   }
+   .contact-form .formr1{
+    display: flex;
+    justify-content: start;
+    gap: 5em;
+    margin: 15px 0px 15px 0px;
+   }
+
+   .contact-details{
+    padding: 20px;
+   }
+   .message
+    {
+    width: 24.8rem;
+    border: 1px solid var(--coconut);
+    padding: 10px;
+    height: 150px;
+    outline: none;
+    color: var(--coconut);
+    font-family: 'Trirong',sans-serif;
+    }
+    #sendbtn{
+      background: none;
+      border: 1px solid var(--garnet);
+      border-radius: 30px;
+      width: 8rem;
+      padding: 10px;
+      cursor: pointer;
+      color: var(--garnet);
+      font-size: 12px;
+    }
+    #sendbtn:hover{
+      background: var(--garnet);
+      color: white;
+    }
+    .r{
+      display: flex;
+      justify-content: start;
+      gap: 7rem;
+      color: var(--coconut);
+    }
+    .r-title{
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .locationadd{
+      width: 17rem;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .loc{
+      margin-right: 2px;
+    }
+    .r1mail{
+      margin-left: 1rem;
+    }
 }
