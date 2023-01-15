@@ -66,10 +66,10 @@ box-shadow: 0px 10px 161px -17px;
 
 /* Hero Section  */
 #hero-image {
-    background: url("https://ik.imagekit.io/modernattire/hero-img.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667536603955");
+    background: url("https://ik.imagekit.io/modernattire/tr:w-3080,h-2080/hero-img.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667536603955");
     height: 800px;
     width: 100%;
-    background-position: center;
+    background-position: center;    
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -91,14 +91,14 @@ box-shadow: 0px 10px 161px -17px;
 }
 #dress-section .sect1{
     /* tr:w-300,h-300 */
-    background: url("https://ik.imagekit.io/modernattire/dresses-bg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538940932");
+    background: url("https://ik.imagekit.io/modernattire/tr:w-3080,h-2080/dresses-bg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538940932");
     width: 50%;
     height: 930px;
     margin-top: 10px;
     position: relative;
 }
 #dress-section .sect2{
-    background: url("https://ik.imagekit.io/modernattire/dresses-bg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538940932");
+    background: url("https://ik.imagekit.io/modernattire/tr:w-3080,h-2080/dresses-bg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538940932");
     height: 930px;
     width: 50%;
     margin-top: 10px;
@@ -146,14 +146,14 @@ box-shadow: 0px 10px 161px -17px;
     text-align: center;
 }
 #salwaar-section .sect1{
-    background: url("https://ik.imagekit.io/modernattire/salwaar-suits.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538941035");
+    background: url("https://ik.imagekit.io/modernattire/tr:w-3080,h-2080/salwaar-suits.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538941035");
     width: 50%;
     height: 930px;
     margin-top: 15px;
     position: relative;
 }
 #salwaar-section .sect2{
-    background: url("https://ik.imagekit.io/modernattire/salwaar-suits.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538941035");
+    background: url("https://ik.imagekit.io/modernattire/tr:w-3080,h-2080/salwaar-suits.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538941035");
     height: 930px;
     width: 50%;
     margin-top: 15px;
@@ -203,11 +203,8 @@ box-shadow: 0px 10px 161px -17px;
 }
 
 .cat1 img, .cat2 img{
-    /* height: 612.69px;
-    width: 716px; */
-    height: 481px;
-    width: 600px;
-    /* border: 1px solid lightgrey; */
+    height: 450px;
+    width: 650px;
 }
 .cat1 img:hover, .cat2 img:hover{
     transition: 0.3s;
@@ -236,12 +233,7 @@ box-shadow: 0px 10px 161px -17px;
 }
 #cat1_text, #cat2_text {display : none}
 
-.breaker{
-    width: 100%;
-    height: 1px;
-    background: lightgrey;
-    
-}
+
 
 /* Latest Collection  */
 #latest-collection .collections{
@@ -257,7 +249,7 @@ box-shadow: 0px 10px 161px -17px;
 
 /* Branding Section  */
 #ma-branding .branding-text{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://ik.imagekit.io/modernattire/ma-branding.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938749");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://ik.imagekit.io/modernattire/tr:w-3080,h-2080/ma-branding.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938749");
     height: 900px;
     width: 100%;
     margin-top: -1px;

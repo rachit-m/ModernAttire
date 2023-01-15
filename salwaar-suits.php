@@ -43,6 +43,7 @@
 
     <!-- Products Container -->
     <div class="main-container"> 
+    <input id="srchph" name="search-box" type="text" onkeyup="searchp()" ondblclick="reset()" placeholder="Search products" >
     <div class="filtersec">
             <h2>Filters</h2>
             <input type="text" name="search-box" id="search-box" onkeyup="search()" ondblclick="reset()" placeholder="Search products" >
@@ -83,7 +84,7 @@
                 if($response[$i][10] == 'New'){
             ?>
 
-            <a href="singleprod.php?key=<?php echo $i ?>" class='new-arrivals'><?php echo $response[$i][1] ?></a>
+            <a href="singleprod.php?key=<?php echo $i ?>&src=salwaar&pg=single&prcode=<?php echo $response[$i][0] ?>" class='new-arrivals'><?php echo $response[$i][1] ?></a>
             <?php }
             }
             ?>

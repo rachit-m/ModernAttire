@@ -1,4 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/trirong');
 
 :root
 {
@@ -8,6 +7,7 @@
     --spanis_pink : #FFC7BD;
     --pale_chestnut : #D5BOA9;
 }
+
 
 /* Preloader animation  */
 .preloader {
@@ -62,7 +62,8 @@ p {
     display: none;
    }
     body{
-        background: var(--pale_chestnut)
+        background: var(--pale_chestnut);
+        text-align: left;
     }
   .heading {
     margin-top: 150px;
@@ -134,12 +135,14 @@ p {
 
 /* Queries for Desktop  */
 @media screen and (min-width: 451px) {
+ 
    #main-content-phone{
     display: none;
    }
    #main-content-desktop{
     display: block;
-    margin-top: 120px;
+    margin-top: 110px;
+    background: #FFFFFF;
    }
    h5.subheading,h4.titlet{
     /* text-align: center; */
@@ -156,6 +159,7 @@ p {
     padding: 15px;
    }
    .contact-form{
+    text-align: left;
     width: 35%;
     border-right: 1px solid var(--coconut);
     font-size: 14px;
@@ -165,6 +169,7 @@ p {
    }
    .contact-details{
     width: 35%;
+    text-align: left;
    }
    h3.heading{
     font-size: 48px;
@@ -203,13 +208,13 @@ p {
     font-family: 'Trirong',sans-serif;
     }
     #sendbtn{
-      background: none;
+      background: var(--coconut);
       border: 1px solid var(--garnet);
       border-radius: 30px;
       width: 8rem;
       padding: 10px;
       cursor: pointer;
-      color: var(--garnet);
+      color: white;
       font-size: 12px;
     }
     #sendbtn:hover{

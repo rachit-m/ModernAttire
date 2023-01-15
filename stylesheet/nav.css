@@ -36,6 +36,7 @@ body{margin: 0; padding: 0;font-family: 'Trirong', sans-serif;}
         background: var(--linen);
         font-family: 'Trirong', sans-serif; 
     }
+    #menubtn{padding-top: 5px;}
     #menubtn div{
         background: var(--coconut);
         width: 35px;
