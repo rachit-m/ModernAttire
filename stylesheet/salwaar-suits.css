@@ -42,6 +42,16 @@
         transform: rotate(1turn);
     }
 }
+@keyframes show{
+    0%{
+    	opacity:0;
+    	transform: scale(0.9);
+    }
+    100%{
+    	opacity:1;
+    	transform: scale(1);
+    }
+}
 
 
 .header{margin-top: 130px;}
@@ -115,6 +125,8 @@
     margin: 20px;
     margin-top: 50px;
     transition: 0.3s;
+    animation: show 0.7s ease;
+    
 }
 .products-container:hover{
     cursor: pointer;
@@ -160,13 +172,38 @@
 }
 #srchph{display: none;}
 
+.pagination{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.pagination a{
+    text-decoration: none;
+    color: var(--coconut);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.next.disabled,.prev.disabled{
+    font-weight: 500;
+    color: grey;
+    cursor: not-allowed;
+}
+.pgno{
+    color: var(--coconut);
+    font-size: 14px;
+}
+.hide{display: none;}
+.show{display: block;}
+
 
 @media screen and (max-width: 450px) {
     .main-container{display: flex; flex-direction: column; margin: 0px;}
     .filtersec{display: none;width: 100%; margin-top: 40px;}
     #salwaar-suits-container{border: none; margin: 0px; padding: 7px;width: 100%;
     }
-    #srchph{display: block; padding: 7px; margin: 5px; outline: none;}
+    #srchph{display: block; padding: 10px; margin: 8px; outline: none;}
     .main-container{
         margin-top: 85px;
     }

@@ -31,13 +31,12 @@
         <h1>Salwaar Suits</h1>
     </div>
 
-    <!-- Header Section -->
+   
     <?php
         
         $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/AllProducts?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
         $response = json_decode($response);
         $response = $response->{'values'};
-     
         $totalProd = count($response);
     ?>
 
@@ -90,7 +89,7 @@
             ?>
         </div>
 
-
+    <!-- Products listing  -->
     <div id="salwaar-suits-container">
         <h3 id="output-txt"></h3>
         <?php
@@ -111,9 +110,15 @@
         <?php
             }
         ?>
-        
     </div>
-    </div>
+</div>
+
+<!-- Pagination  -->
+<div class="pagination">
+    <a class="prev" href="#"> < </a>
+    <div class="pgno"></div>
+    <a class="next" href="#"> > </a>
+</div>
    
 
     <!-- Footer Section  -->
@@ -122,6 +127,7 @@
     ?>
 
 <script src="./script/custom_filters.js"></script>
+<script src="./script/pagination.js"></script>
 <script src="./script/filter.js"></script>
 <script>
     window.addEventListener("load",()=>{
