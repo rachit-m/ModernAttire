@@ -1,5 +1,5 @@
 <!-- Stylesheets  -->
-<link rel="stylesheet" href="stylesheet/carousel.css">
+<link rel="stylesheet" href="stylesheet/gallery.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Scripts -->
@@ -9,12 +9,11 @@
 <!-- Carousel Slider -->
 <div class="wrapper">
     <div class="carousel owl-carousel">
-        <?php  for($i=1; $i < $totalProd; $i++)
+        <?php  for($i=$firstImg; $i <= $lastImg; $i++)
             {    
         ?>
-        <div class="card" 
-            onclick="window.location='singleprod.php?key=<?php echo $i ?>&pg=<?php echo $response[0][26] ?>&src=carousel&prcode=<?php echo ($response[$i][0])?>';">
-            <img src="<?php echo ($response[$i][11]); ?>" alt="img-not-found"><h5><?php echo ($response[$i][1]); ?></h5>
+        <div class="card" >
+          <img src="<?php echo ($gallery[$i][1]); ?>" alt="img-not-found">
         </div>
         <?php
             }
@@ -27,25 +26,11 @@
     $(".carousel").owlCarousel({ 
         margin: 0,
         loop: true,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
+        autoplay: false,
         responsive: {
             0:{
                 items: 1,
-                nav: false
-            },
-            600:{
-                items: 3,
-                nav: false
-            },
-            1000:{
-                items: 5,
-                nav: false
-            },
-            1400:{
-                items: 6,
-                nav: false
+                nav: true
             }
         }
     });

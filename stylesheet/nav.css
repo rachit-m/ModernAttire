@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/trirong');
+@import url('https://fonts.googleapis.com/css2?family=Trirong&display=swap');
 
 :root
 {
@@ -8,7 +8,7 @@
     --spanis_pink : #FFC7BD;
     --pale_chestnut : #D5BOA9;
 }
-body{margin: 0; padding: 0;font-family: sans-serif;}
+body{margin: 0; padding: 0;font-family: 'Trirong', sans-serif;}
 
 /* Queries for Phone Screen  */
 @media screen and (max-width: 450px){
@@ -36,6 +36,7 @@ body{margin: 0; padding: 0;font-family: sans-serif;}
         background: var(--linen);
         font-family: 'Trirong', sans-serif; 
     }
+    #menubtn{padding-top: 5px;}
     #menubtn div{
         background: var(--coconut);
         width: 35px;

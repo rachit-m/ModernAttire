@@ -4,6 +4,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="The Modern Attire - Collection of Handworked Unstitched Suits and Kurtis from Kolkata - Work from Local Karigars, suits, sarees, lehangas">
+    <meta name="keywords" content="web fashion,sari , modern clothes, clothes deals online, fashion clothes, export"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Attire | Salwaar Suits</title>
@@ -11,7 +13,7 @@
     <link rel="stylesheet" href="stylesheet/footer.css">
     <link rel="stylesheet" href="stylesheet/nav.css">
 </head>
-
+ 
 <body>
 <div class="preloader"> </div>
 
@@ -29,21 +31,18 @@
         <h1>Salwaar Suits</h1>
     </div>
 
-    <!-- Header Section -->
+   
     <?php
         
         $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/AllProducts?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
         $response = json_decode($response);
         $response = $response->{'values'};
-     
         $totalProd = count($response);
-        
-        // echo $totalProd;
-        // $count = 5;
     ?>
 
     <!-- Products Container -->
     <div class="main-container"> 
+    <input id="srchph" name="search-box" type="text" onkeyup="searchp()" ondblclick="reset()" placeholder="Search products" >
     <div class="filtersec">
             <h2>Filters</h2>
             <input type="text" name="search-box" id="search-box" onkeyup="search()" ondblclick="reset()" placeholder="Search products" >
@@ -84,13 +83,13 @@
                 if($response[$i][10] == 'New'){
             ?>
 
-            <a href="singleprod.php?key=<?php echo $i ?>" class='new-arrivals'><?php echo $response[$i][1] ?></a>
+            <a href="singleprod.php?key=<?php echo $i ?>&src=salwaar&pg=single&prcode=<?php echo $response[$i][0] ?>" class='new-arrivals'><?php echo $response[$i][1] ?></a>
             <?php }
             }
             ?>
         </div>
 
-
+    <!-- Products listing  -->
     <div id="salwaar-suits-container">
         <h3 id="output-txt"></h3>
         <?php
@@ -99,7 +98,7 @@
         ?>
         <div class="products-container">
             
-            <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&src=salwaar&data=def';">
+            <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&src=salwaar&pg=single&prcode=<?php echo $response[$i][0] ?>';">
                 <img src="<?php echo $response[$i][11] ?>">
                 <a href="singleprod.php?key=<?php echo $i ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
                 <p class='material' style="display: none" ><?php echo ($response[$i][5]) ?></p>
@@ -111,9 +110,15 @@
         <?php
             }
         ?>
-        
     </div>
-    </div>
+</div>
+
+<!-- Pagination  -->
+<div class="pagination">
+    <a class="prev" href="#"> < </a>
+    <div class="pgno"></div>
+    <a class="next" href="#"> > </a>
+</div>
    
 
     <!-- Footer Section  -->
@@ -122,6 +127,7 @@
     ?>
 
 <script src="./script/custom_filters.js"></script>
+<script src="./script/pagination.js"></script>
 <script src="./script/filter.js"></script>
 <script>
     window.addEventListener("load",()=>{

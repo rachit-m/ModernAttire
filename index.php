@@ -42,14 +42,44 @@
     </div>
 
     <!-- Shop By Category -->
-    <!-- <div id="shop-category-desktop">
+    <div id="shop-category-desktop">
         <h1 class="title-text">Shop by Category</h1>
-        <div class="categories">
-            <div class="category1">
-                <a href="salwaar-suits.php"><h1>Salwaar Suits</h1></a>
+        <div class="categories-container">
+            <div class="cat1">
+                <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/designer-dresses.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938392" alt="" srcset="">
+                <a id="cat1_text" href="salwaar-suits.php"><h1>Salwaar Suits</h1></a>
             </div>
-            <div class="category2">
-                <h1>Designer Dresses</h1>
+            <div class="cat2">
+                <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/designer-dresses.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938392" alt="" srcset="">
+                <a id="cat2_text" href="salwaar-suits.php"><h1>Designer Dresses</h1></a>
+            </div>
+           
+        </div>
+    </div>
+    <div id="shop-category-phone">
+        <h1 class="title-text">Shop by Category</h1>
+        <div class="categories-container">
+            <div class="cat cat1">
+                <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/designer-dresses.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938392" alt="" srcset="">
+                <a href="salwaar-suits.php">Salwaar Suits</a>
+            </div>
+            <div class="cat cat2">
+                <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/designer-dresses.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938392" alt="" srcset="">
+                <a href="salwaar-suits.php">Designer Dresses</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="shop-category-phone">
+        <h1 class="title-text">Shop by Category</h1>
+        <div class="categories-container">
+            <div class="cat">
+                <img src="images/png/salwaar.png" alt="">
+                <h3>Designer Dresses</h3>
+            </div>
+            <div class="cat">
+            <img src="images/png/dress.png" alt="">
+                <a href="./salwaar-suits.php">Salwaar-Suits</a>
             </div>
         </div>
     </div> -->
@@ -68,19 +98,7 @@
     ?>
     </div>
 
-    <div id="shop-category-phone">
-        <h1 class="title-text">Shop by Category</h1>
-        <div class="categories-container">
-            <div class="cat">
-                <img src="images/png/salwaar.png" alt="">
-                <h3>Designer Dresses</h3>
-            </div>
-            <div class="cat">
-            <img src="images/png/dress.png" alt="">
-                <a href="./salwaar-suits.php">Salwaar-Suits</a>
-            </div>
-        </div>
-    </div>
+    
 
     
     <!-- Dresses Section  -->
@@ -112,14 +130,14 @@
           <div class="sect2">
               </div> 
           <div class="sect1">
-                <h2>SALWAAR DRESSES</h2>
-                <button type="submit">Discover</button>
+                <h2>SALWAAR SUITS</h2>
+                <button type="submit" onclick="window.location='salwaar-suits.php'">Discover</button>
           </div>
       </div>
 
     
     
-<div class="breaker"></div>
+
 
     
    
@@ -157,7 +175,8 @@
         document.querySelector(".preloader").classList.add("preloader--hidden");
     })
     </script>
-    <!-- <script src="./script/reveal.js"></script> -->
+    <script src="./script/reveal.js"></script>
+    
 </body>
 
 </html>

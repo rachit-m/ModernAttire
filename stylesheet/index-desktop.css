@@ -1,11 +1,28 @@
+/* @import url('http://fonts.cdnfonts.com/css/trirong'); */
+@import url('https://fonts.googleapis.com/css2?family=Trirong&display=swap');
 
+:root
+{
+    --coconut : #955448;
+    --garnet : #683A32;
+    --linen : #FFEEEB;
+    --spanis_pink : #FFC7BD;
+    --pale_chestnut : #D5BOA9;
+}
 html{
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar-thumb {
+    background: red;
+  }
+
+  
 /* MQUERIES FOR DESKTOP WIDTH  */
 @media screen and (min-width: 451px)
 {
-
+    body{
+        font-family: 'Trirong', sans-serif; 
+      }
  /* Preloader animation  */
 .preloader{
     position: fixed;
@@ -49,10 +66,10 @@ box-shadow: 0px 10px 161px -17px;
 
 /* Hero Section  */
 #hero-image {
-    background: url("https://ik.imagekit.io/modernattire/hero-img.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667536603955");
+    background: url("https://ik.imagekit.io/modernattire/tr:w-3080,h-2080/hero-img.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667536603955");
     height: 800px;
     width: 100%;
-    background-position: center;
+    background-position: center;    
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -70,17 +87,18 @@ box-shadow: 0px 10px 161px -17px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Trirong', sans-serif; 
 }
 #dress-section .sect1{
     /* tr:w-300,h-300 */
-    background: url("https://ik.imagekit.io/modernattire/dresses-bg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538940932");
+    background: url("https://ik.imagekit.io/modernattire/tr:w-3080,h-2080/dresses-bg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538940932");
     width: 50%;
     height: 930px;
     margin-top: 10px;
     position: relative;
 }
 #dress-section .sect2{
-    background: url("https://ik.imagekit.io/modernattire/dresses-bg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538940932");
+    background: url("https://ik.imagekit.io/modernattire/tr:w-3080,h-2080/dresses-bg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538940932");
     height: 930px;
     width: 50%;
     margin-top: 10px;
@@ -128,14 +146,14 @@ box-shadow: 0px 10px 161px -17px;
     text-align: center;
 }
 #salwaar-section .sect1{
-    background: url("https://ik.imagekit.io/modernattire/salwaar-suits.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538941035");
+    background: url("https://ik.imagekit.io/modernattire/tr:w-3080,h-2080/salwaar-suits.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538941035");
     width: 50%;
     height: 930px;
     margin-top: 15px;
     position: relative;
 }
 #salwaar-section .sect2{
-    background: url("https://ik.imagekit.io/modernattire/salwaar-suits.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538941035");
+    background: url("https://ik.imagekit.io/modernattire/tr:w-3080,h-2080/salwaar-suits.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538941035");
     height: 930px;
     width: 50%;
     margin-top: 15px;
@@ -174,12 +192,48 @@ box-shadow: 0px 10px 161px -17px;
     background: var(--garnet);
     color: white;
 }
-.breaker{
-    width: 100%;
-    height: 1px;
-    background: lightgrey;
-    
+.categories-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    background:whitesmoke;
+    font-family: 'Trirong', sans-serif; 
+    /* flex-direction: row; */
 }
+
+.cat1 img, .cat2 img{
+    height: 450px;
+    width: 650px;
+}
+.cat1 img:hover, .cat2 img:hover{
+    transition: 0.3s;
+    filter: brightness(30%);
+    cursor: pointer;
+}
+}
+.cat1 a{
+    position: absolute;
+    top: 1157px;
+    font-size: 20px;
+    left: 408px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.cat2 a{
+    position: absolute;
+    top: 1157px;
+    font-size: 20px;
+    right: 408px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+#cat1_text, #cat2_text {display : none}
+
+
 
 /* Latest Collection  */
 #latest-collection .collections{
@@ -195,7 +249,7 @@ box-shadow: 0px 10px 161px -17px;
 
 /* Branding Section  */
 #ma-branding .branding-text{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://ik.imagekit.io/modernattire/ma-branding.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938749");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://ik.imagekit.io/modernattire/tr:w-3080,h-2080/ma-branding.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938749");
     height: 900px;
     width: 100%;
     margin-top: -1px;
@@ -253,4 +307,3 @@ box-shadow: 0px 10px 161px -17px;
 
 
 
-}

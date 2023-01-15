@@ -1,4 +1,5 @@
-@import url('http://fonts.cdnfonts.com/css/trirong');
+@import url('https://fonts.googleapis.com/css2?family=Trirong&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
 
 :root
 {
@@ -16,7 +17,7 @@
     .sp-container-desktop{
         display: block;
         height: 80vh;
-        margin-top: 200px;
+        margin: 200px 0px 100px 0px;
         display: flex;
         justify-content: center;
         padding: 0px 70px;
@@ -26,10 +27,14 @@
         height: 550px;
         width: 380px;
     }
+    .slider_images{
+        display: flex;
+        
+    }
     .sp-right{
         padding: 0px 35px;
         color: var(--garnet);
-        
+        text-align: left;
     }
     .sp-right h1{
         line-height: 50px;
@@ -42,13 +47,13 @@
         font-size: 15px;
         font-weight: bold;
         margin: 30px 0px -15px;
-        font-family: sans-serif;
+        font-family: 'Cabinet Grotesk', sans-serif;
     }
     .sp-right p{
         line-height: 18px;
         font-size: 13px;
         width: 36rem;
-        margin-top: 20px;
+        margin: 20px 0px 50px 0px;
     }
     .sp-details {
         margin-top: 22px;
@@ -60,17 +65,20 @@
     }
     .sp-details p{
         width: 30rem;
+        margin-bottom: 40px;
     }
     #enquire-btn{
         background: none;
-        padding: 8px;
+        padding: 7px 20px 7px 20px;
         border-radius: 30px;
         border: 1px solid var(--coconut);
-        width: 120px;
         color: var(--coconut);
-        cursor: pointer;
         margin-top: 30px;
         transition: 0.2s;
+    }
+    a#enquire-btn{
+        text-decoration: none;
+        font-size: 15px;
     }
     #enquire-btn:hover{
         background: var(--coconut);
@@ -85,7 +93,9 @@
     .phone-container{
         display: flex;
         flex-direction: column;
-
+    }
+    .phone-container .top{
+        margin: 15px;
     }
     .top img{
         width: 100vw;
@@ -97,23 +107,26 @@
         text-align: left;
         margin-left: 20px;
         font-family: 'Trirong', sans-serif;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 32px;
         line-height: 38px;
     }
     .bottom details{
         font-weight: 400;
+        font-family: 'Cabinet Grotesk', sans-serif;
         color: var(--coconut);
         margin: 5px;
         padding: 5px;
     }
     summary{
         color: var(--garnet);
+        font-family: 'Cabinet Grotesk', sans-serif;
         font-size: 18px;
         margin: 8px;
     }
     details p {
         margin: 10px 0px 10px 0px;
+        font-family: 'Cabinet Grotesk', sans-serif;
         font-size: 15px;
         line-height: 25px;
         padding: 12px;
@@ -129,5 +142,5 @@
         margin: 60px 50px 0px 120px;
     }
     .sp-details{list-style: none; padding: 0px 0px 0px 10px}
-
+    
 }

@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/trirong');
+
 
 :root
 {
@@ -9,33 +9,46 @@
     --pale_chestnut : #D5BOA9;
 } 
 
-.card 
-{
-    height: 500px;
-    max-width: 354px;
-    text-align: center;
-    color: var(--garnet);
-    border-right: 5px solid white;
-    /* border-radius: 18px; */
-    font-family: 'Trirong', sans-serif; 
-    transition: 0.2s;
-    cursor: pointer;
-}
-
-.card h5{
-    font-size: 15px;
-    font-weight: 380;
-}
-.card h5:hover{
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.2s;
-    text-decoration: underline;
-}
 @media screen and (max-width: 450px) {
     .owl-carousel.owl-drag .owl-item{
         display: flex;
         justify-content: center;
         align-items: center;
+        /* height: 600px; */
+    }
+    .owl-item .card{
+        height: 600px;
+    }
+    .card h5{
+        font-size: 12px;
+        font-weight: 380;
+        margin: 0px; padding: 5px;
+        border: 1px solid lightgrey;
+        text-align: left;
+    }
+    
+}
+@media screen and (min-width: 451px) {      
+    .card 
+    {
+        height: 500px;
+        max-width: 354px;
+        text-align: center;
+        color: var(--garnet);
+        border-right: 5px solid white;
+        font-family: 'Trirong', sans-serif; 
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    .card h5{
+        font-size: 15px;
+        font-weight: 380;
+    }
+    .card h5:hover{
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.2s;
+        text-decoration: underline;
     }
 }
