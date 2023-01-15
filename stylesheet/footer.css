@@ -1,0 +1,109 @@
+@import url('http://fonts.cdnfonts.com/css/trirong');
+
+:root
+{
+    --coconut : #955448;
+    --garnet : #683A32;
+    --linen : #FFEEEB;
+    --spanis_pink : #FFC7BD;
+    --pale_chestnut : #D5BOA9;
+}
+
+/* DESKTOP WIDTH QUERIES  */
+@media screen and (min-width: 451px) {
+   #footer-section-phone{display: none;}
+   body{margin: 0;padding: 0;}
+   #footer-section-desktop{padding: 0rem; width: 100%;margin-top: 200px;;font-family: 'Trirong', sans-serif; }
+   #footer-section-desktop h3{color: var(--garnet);font-family: 'Trirong', sans-serif; font-weight: 450; color: var(--garnet); font-size: 30px; }
+   .top-footer{margin-top: 50px; display: flex; justify-content: center;align-items: center;}  
+   .top-footer img{height: 180px; width: 180px;}
+   .top-footer-collection{display: flex; flex-direction: column; text-align: center; margin-right: 40px;}
+   .top-footer-contact{display: flex; flex-direction: column; text-align: center; margin-left: 40px;}
+   .top-footer-collection a{color: var(--coconut); text-decoration: none; font-size: 12px;}
+   .top-footer-contact a{color: var(--coconut); text-decoration: none; font-size: 12px;}
+   .top-footer-collection a:hover{color: var(--garnet);}
+   .top-footer-contact a:hover{color: var(--garnet);}
+   .bottom-footer{display: flex; justify-content: space-between; align-items: center; margin-top: 50px;}
+   .bottom-footer .copyright-text h6{font-family: 'Trirong', sans-serif; font-size: 12px; color: var(--coconut);}
+   .links{margin: 10px;}
+   .links a{text-decoration: none; font-size: 12px; margin: 10px; color: var(--coconut);}
+   .links a:hover{color: var(--garnet);}
+}
+
+/* PHONE WIDTH QUERIES */
+@media screen and (max-width:450px) {
+  #footer-section-desktop{display: none;}
+  body{margin: 0; padding: 0;}
+  #footer-section-phone{
+    margin-top: 200px;
+    background: var(--spanis_pink);
+  }
+  #footer-section-phone h2{
+    font-family: 'Trirong', sans-serif;
+    color: var(--garnet);   
+  }
+  #footer-section-phone .top-footer{
+    font-family: 'Trirong', sans-serif;   
+    color: var(--garnet);
+  }
+  .top-footer{
+    padding: 5px;
+  }
+  details > summary{
+    list-style: none;
+  }
+  details{
+    border-bottom: 1px solid black;
+    margin: 20px 10px 0px 10px;
+  }
+  summary{
+    color: var(--garnet);
+  }
+  details a{
+    text-decoration: none;
+    display: block;
+    margin: 17px;
+    color: var(--coconut);
+  }
+  .fold-down{
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    
+  }
+  
+  /* Breaker  */
+  .breaker{
+    width: 150px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .breaker img{
+    height: 150px;
+    width: 150px;
+  }
+  /* Bottom Footer  */
+  .bottom-footer{
+    align-items: center;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+  }
+  .links a{
+    text-decoration: none;
+    color: var(--coconut);
+    font-size: 12px;
+  }
+  .copyright-text h6{
+    color: var(--coconut);
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 20px 0px 0px 0px;
+  }
+}

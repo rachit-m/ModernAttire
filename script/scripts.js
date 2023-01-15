@@ -1,13 +1,5 @@
 
-// function populateBestSelling(json)
-// {
-//   var products = json["values"];
-//   var target = document.getElementsByClassName('best-seller');
-//   debugger;
-//   target[0].innerHTML = products[1][0];
-// }
-
-
+ 
 // Accordion
 document.getElementById("fabric_nav").onclick = function (event) {
   var target = event.target || event.srcElement;
@@ -29,9 +21,6 @@ function myAccFunc() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
-
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-//document.getElementById("myBtn").click();
 
 // Open and close sidebar
 function w3_open() {
@@ -68,3 +57,5 @@ function w3_close() {
 );
 fbq("init", "837966090480815");
 fbq("track", "PageView");
+
+

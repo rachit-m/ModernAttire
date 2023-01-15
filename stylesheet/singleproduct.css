@@ -1,0 +1,133 @@
+@import url('http://fonts.cdnfonts.com/css/trirong');
+
+:root
+{
+    --coconut : #955448;
+    --garnet : #683A32;
+    --linen : #FFEEEB;
+    --spanis_pink : #FFC7BD;
+    --pale_chestnut : #D5BOA9;
+}
+
+
+/* Desktop Queries  */
+@media screen and (min-width: 451px) {
+    .sp-container-phone{display: none;}
+    .sp-container-desktop{
+        display: block;
+        height: 80vh;
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        padding: 0px 70px;
+        font-family: 'Trirong', sans-serif; 
+    }
+    .sp-left img{
+        height: 550px;
+        width: 380px;
+    }
+    .sp-right{
+        padding: 0px 35px;
+        color: var(--garnet);
+        
+    }
+    .sp-right h1{
+        line-height: 50px;
+        width: 29rem;
+        padding: 0px 40px 5px 0px;
+        font-size: 2.5rem;
+        font-weight: 450;
+    }
+    .sp-right h4{
+        font-size: 15px;
+        font-weight: bold;
+        margin: 30px 0px -15px;
+        font-family: sans-serif;
+    }
+    .sp-right p{
+        line-height: 18px;
+        font-size: 13px;
+        width: 36rem;
+        margin-top: 20px;
+    }
+    .sp-details {
+        margin-top: 22px;
+        list-style: none;
+        padding: 0;
+        line-height: 20px;
+        font-size: 13px;
+        font-weight: 450;
+    }
+    .sp-details p{
+        width: 30rem;
+    }
+    #enquire-btn{
+        background: none;
+        padding: 8px;
+        border-radius: 30px;
+        border: 1px solid var(--coconut);
+        width: 120px;
+        color: var(--coconut);
+        cursor: pointer;
+        margin-top: 30px;
+        transition: 0.2s;
+    }
+    #enquire-btn:hover{
+        background: var(--coconut);
+        color: white;
+        transition: 0.2s;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sp-container-desktop{display: none}
+    .sp-container-phone{display: block;}
+    .phone-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .top img{
+        width: 100vw;
+        height: 615.71px;
+        margin-top: 120px;
+    }
+    .bottom h1{
+        color: var(--garnet);
+        text-align: left;
+        margin-left: 20px;
+        font-family: 'Trirong', sans-serif;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .bottom details{
+        font-weight: 400;
+        color: var(--coconut);
+        margin: 5px;
+        padding: 5px;
+    }
+    summary{
+        color: var(--garnet);
+        font-size: 18px;
+        margin: 8px;
+    }
+    details p {
+        margin: 10px 0px 10px 0px;
+        font-size: 15px;
+        line-height: 25px;
+        padding: 12px;
+    }
+   li{margin-top: 10px;}
+    .bottom button{
+        background: none;
+        border: 1px solid var(--garnet);
+        color: var(--garnet);
+        border-radius: 32px;
+        width: 128px;
+        padding: 12px;
+        margin: 60px 50px 0px 120px;
+    }
+    .sp-details{list-style: none; padding: 0px 0px 0px 10px}
+
+}
