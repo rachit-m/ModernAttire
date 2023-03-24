@@ -1,0 +1,246 @@
+
+:root
+{
+    --coconut : #955448;
+    --garnet : #683A32;
+    --linen : #FFEEEB;
+    --spanis_pink : #FFC7BD;
+    --pale_chestnut : #D5BOA9;
+}
+
+
+/* Preloader animation  */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.preloader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #ddd;
+  border-top-color: var(--garnet);
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+h3 {
+  font-size: 5rem;
+  text-align: center;
+}
+p {
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Queries for phone witdth  */
+@media screen and (max-width: 450px) {
+  #main-content-desktop{
+    display: none;
+   }
+    body{
+        background: var(--pale_chestnut);
+        text-align: left;
+    }
+  .heading {
+    margin-top: 150px;
+    color: var(--garnet);
+    text-align: center;
+    font-size: 2rem;
+  }
+  .contact-form {
+    font-family: 'Trirong',sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: var(--garnet);
+  }
+  .subheading{
+    color: var(--garnet);
+    font-size: 1rem;
+    font-family: 'Trirong',sans-serif;
+    margin: 0px 0px 25px 0px;
+    font-weight: 350;
+  }
+  .contact-form .text,[type=number],[type=email]{
+    outline: none;
+    border: 1px solid var(--coconut);
+    width: 92%;
+    padding: 10px;
+    margin: 5px;
+  }
+  .message
+  {
+    width: 92%;
+    border: 1px solid var(--coconut);
+    padding: 10px;
+    height: 150px;
+    margin: 5px;
+  }
+  .contact_btn{
+    background: none;
+    border: 1px solid var(--garnet);
+    border-radius: 15px;
+    padding: 8px;
+    color: var(--garnet);
+    font-size: 13px;
+    margin: 10px;
+  }
+  .contact-details{
+    padding: 10px;
+    color: var(--coconut);
+  }
+  .contact-details h4{
+    font-weight: bold;
+    font-family: 'Trirong',sans-serif;
+  }
+  .contact-details h6{
+    font-weight: lighter;
+  }
+  h4.titlet{font-size: 19px;}
+  h5{font-size: 15px;}
+  h6{font-size: 14px;}
+  .row1el{
+    display: inline-block;
+    margin: 5px 20px 5px 10px;
+  }
+  .el2{
+    margin-left: 50px;
+  }
+}
+
+/* Queries for Desktop  */
+@media screen and (min-width: 451px) {
+ 
+   #main-content-phone{
+    display: none;
+   }
+   #main-content-desktop{
+    display: block;
+    margin-top: 110px;
+    background: #FFFFFF;
+   }
+   h5.subheading,h4.titlet{
+    /* text-align: center; */
+    font-family: 'Trirong',sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: var(--garnet);
+   }
+   .container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 15px;
+   }
+   .contact-form{
+    text-align: left;
+    width: 35%;
+    border-right: 1px solid var(--coconut);
+    font-size: 14px;
+    font-family: 'Trirong',sans-serif;
+    padding: 20px;
+    color: var(--coconut);
+   }
+   .contact-details{
+    width: 35%;
+    text-align: left;
+   }
+   h3.heading{
+    font-size: 48px;
+    color: var(--garnet);
+    font-weight: 250;
+    margin: 10px
+   }
+   [type=text],[type=number],[type=tel],[type=email],#country
+   {
+    padding: 5px;
+    border: 1px solid var(--coconut);
+    outline: none;
+   }
+   #country{
+    width: 11rem;
+    color: var(--coconut)
+   }
+   .contact-form .formr1{
+    display: flex;
+    justify-content: start;
+    gap: 5em;
+    margin: 15px 0px 15px 0px;
+   }
+
+   .contact-details{
+    padding: 20px;
+   }
+   .message
+    {
+    width: 24.8rem;
+    border: 1px solid var(--coconut);
+    padding: 10px;
+    height: 150px;
+    outline: none;
+    color: var(--coconut);
+    font-family: 'Trirong',sans-serif;
+    }
+    #sendbtn{
+      background: var(--coconut);
+      border: 1px solid var(--garnet);
+      border-radius: 30px;
+      width: 8rem;
+      padding: 10px;
+      cursor: pointer;
+      color: white;
+      font-size: 12px;
+    }
+    #sendbtn:hover{
+      background: var(--garnet);
+      color: white;
+    }
+    .r{
+      display: flex;
+      justify-content: start;
+      gap: 7rem;
+      color: var(--coconut);
+    }
+    .r-title{
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .locationadd{
+      width: 17rem;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .loc{
+      margin-right: 2px;
+    }
+    .r1mail{
+      margin-left: 1rem;
+    }
+}
