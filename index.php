@@ -105,7 +105,7 @@
     <div id="dress-section">
         <div class="sect1">
           <h2>DRESSES</h2>
-          <button type="submit">Discover</button>
+          <button type="submit" onclick="window.location='dresses.php'">Discover</button>
         </div>
         <div class="sect2">
         </div>
