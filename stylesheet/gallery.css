@@ -33,7 +33,13 @@
 @media  screen and (max-width: 450px){ 
     
     .owl-nav button span{
-        padding: 8px 15px 10px 15px;
+        border: 1px solid lightgrey;
+        border-radius: 50%;
+        background: white;
+        padding: 6px 17px 6px 17px 
+    }
+    .owl-nav button span{
+       margin-left: 50px;
     }
     .-owl-nav{
         display: flex;
@@ -44,7 +50,9 @@
         margin-top: 100%;
         }
     .owl-nav{
-        top: 200px;
+        position: absolute;
+        margin-top: -265px;
     }
+    
 }
 

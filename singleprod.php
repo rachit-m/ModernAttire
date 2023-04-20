@@ -76,12 +76,6 @@
         $i++;
     }
 
-    // $ur = $lr;
-    // for($i=$lr; $gallery[$i][0] !== $prid; $i++){
-    //     if($gallery[$i][0] == "null"){break;}
-    //     $ur++;
-    // }
-
     $ur--;
     ?>
     
