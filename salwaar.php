@@ -51,7 +51,7 @@
             <h2>Filters</h2>
             <input type="text" name="search-box" id="search-box" onkeyup="search()" ondblclick="reset()" placeholder="Search products" >
             <h5>Categories</h5>
-            <a href="./salwaar-suits.php">Women's Salwaar's  [Unstitched]</a>
+            <a href="./salwaar.php">Women's Salwaar's  [Unstitched]</a>
             <a href="./dresses.php">Women's Dresses [Stitched]</a>
 
             <!-- Clothing Materials  -->
