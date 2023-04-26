@@ -1,1 +1,14 @@
 ErrorDocument 404 http://localhost/pulls/ModernAttire/404.html
+
+RewriteEngine ON
+#Remove all php file extensions
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# www to non-www
+# RewriteCond %{HTTP_HOST} !^www.themodernattire.com/ [NC]
+# RewriteRule (.*) themodernattire.com [L,R=301]
+
+
+

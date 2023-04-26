@@ -5,13 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="The Modern Attire - Collection of Handworked Unstitched Suits and Kurtis from Kolkata - Work from Local Karigars, suits, sarees, lehangas">
-    <meta name="keywords" content="web fashion,sari , modern clothes, clothes deals online, fashion clothes, export"> 
+    <meta name="keywords" content="collection, latest, best, salwaar, suits, dresses, designer, clothes, export"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Attire | Designer Dresses</title>
     <link rel="stylesheet" href="stylesheet/salwaar-suits.css">
     <link rel="stylesheet" href="stylesheet/footer.css">
     <link rel="stylesheet" href="stylesheet/nav.css">
+    <link rel="shortcut icon" href="https://ik.imagekit.io/modernattire//tr:w-1000,h-700/modern_attire_logo-03.png?updatedAt=1678042505261" type="image/x-icon">
 </head>
  
 <body>
@@ -47,10 +48,8 @@
             <h2>Filters</h2>
             <input type="text" name="search-box" id="search-box" onkeyup="search()" ondblclick="reset()" placeholder="Search products" >
             <h5>Categories</h5>
-            <a href="./salwaar-suits.php">Women's Salwaar Suits</a>
-            <a href="#">Women's Dresses Unstitched</a>
-            <a href="#">Women's Kurtas and Kurtis</a>
-            <a href="#">MA Fashion</a>
+            <a href="./salwaar-suits.php">Women's Salwaar's  [Unstitched]</a>
+            <a href="./dresses.php">Women's Dresses [Stitched]</a>
 
             <!-- Clothing Materials  -->
             <h5>Clothing Materials</h5>
@@ -100,7 +99,7 @@
         <div class="products-container">
             
             <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&src=salwaar&pg=single&prcode=<?php echo $response[$i][0] ?>';">
-                <img src="<?php echo $response[$i][11] ?>">
+                <img src="<?php echo $response[$i][11] ?>" alt="<?php echo $response[$i][1] ?>">
                 <a href="singleprod.php?key=<?php echo $i ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
                 <p class='material' style="display: none" ><?php echo ($response[$i][5]) ?></p>
                 <p class='apparels' style="display: none" ><?php echo ($response[$i][3]) ?></p>

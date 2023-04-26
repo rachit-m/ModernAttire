@@ -216,9 +216,8 @@ box-shadow: 0px 10px 161px -17px;
     position: absolute;
     top: 1157px;
     font-size: 20px;
-    left: 408px;
+    left: 300px;
     text-decoration: none;
-    text-align: center;
     color: white;
 }
 
@@ -226,10 +225,9 @@ box-shadow: 0px 10px 161px -17px;
     position: absolute;
     top: 1157px;
     font-size: 20px;
-    right: 408px;
+    right: 300px;
     text-decoration: none;
     color: white;
-    text-align: center;
 }
 #cat1_text, #cat2_text {display : none}
 

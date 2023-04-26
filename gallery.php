@@ -13,7 +13,7 @@
             {    
         ?>
         <div class="card" >
-          <img src="<?php echo ($gallery[$i][1]); ?>" alt="img-not-found">
+          <img src="<?php echo ($gallery[$i][1]); ?>" alt="">
         </div>
         <?php
             }
