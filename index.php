@@ -36,11 +36,11 @@
         <div class="categories-container">
             <div class="cat1">
                 <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/designer-dresses.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938392" alt="Salwaars thumbnail" srcset="">
-                <a id="cat1_text" href="salwaar"><h1>Salwaar Suits</h1></a>
+                <a id="cat1_text" href="salwaar.php"><h1>Salwaar Suits</h1></a>
             </div>
             <div class="cat2">
                 <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/designer-dresses.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938392" alt="Dresses thumbnail" srcset="">
-                <a id="cat2_text" href="salwaar"><h1>Designer Dresses</h1></a>
+                <a id="cat2_text" href="dresses.php"><h1>Designer Dresses</h1></a>
             </div>
            
         </div>
@@ -50,11 +50,11 @@
         <div class="categories-container">
             <div class="cat cat1">
                 <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/designer-dresses.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938392" alt="Salwaars thumbnail" srcset="">
-                <a href="salwaar">Salwaar Suits</a>
+                <a href="salwaar.php">Salwaar Suits</a>
             </div>
             <div class="cat cat2">
                 <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/designer-dresses.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938392" alt="Dresses thumbnail" srcset="">
-                <a href="salwaar">Designer Dresses</a>
+                <a href="dresses.php">Designer Dresses</a>
             </div>
         </div>
     </div>
@@ -79,7 +79,7 @@
     <div id="dress-section">
         <div class="sect1">
           <h2>DRESSES</h2>
-          <button type="submit" onclick="window.location='dresses'">Discover</button>
+          <button type="submit" onclick="window.location='dresses.php'">Discover</button>
         </div>
         <div class="sect2">
         </div>
@@ -105,7 +105,7 @@
               </div> 
           <div class="sect1">
                 <h2>SALWAAR SUITS</h2>
-                <button type="submit" onclick="window.location='salwaar'">Discover</button>
+                <button type="submit" onclick="window.location='salwaar.php'">Discover</button>
           </div>
       </div>
 
