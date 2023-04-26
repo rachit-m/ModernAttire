@@ -8,7 +8,7 @@
     <meta name="keywords" content="collection, latest, best, salwaar, suits, dresses, designer, clothes, export"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Attire | Designer Dresses</title>
+    <title>Modern Attire | Salwaar Suits</title>
     <link rel="stylesheet" href="stylesheet/salwaar-suits.css">
     <link rel="stylesheet" href="stylesheet/footer.css">
     <link rel="stylesheet" href="stylesheet/nav.css">
@@ -29,7 +29,7 @@
 
     <!-- Heading  -->
     <div class="header">
-        <h1>Designer Dresses</h1>
+        <h1>Salwaar Suits</h1>
     </div>
 
    
@@ -38,6 +38,9 @@
         $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/AllProducts?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
         $response = json_decode($response);
         $response = $response->{'values'};
+
+        
+        
         $totalProd = count($response);
     ?>
 
@@ -48,7 +51,7 @@
             <h2>Filters</h2>
             <input type="text" name="search-box" id="search-box" onkeyup="search()" ondblclick="reset()" placeholder="Search products" >
             <h5>Categories</h5>
-            <a href="./salwaar.php">Women's Salwaar's  [Unstitched]</a>
+            <a href="./salwaar-suits.php">Women's Salwaar's  [Unstitched]</a>
             <a href="./dresses.php">Women's Dresses [Stitched]</a>
 
             <!-- Clothing Materials  -->
@@ -94,7 +97,7 @@
         <?php
             for($i=1; $i < $totalProd; $i++)
             {   
-                if($response[$i][7] == 'Stitched') {               
+                if($response[$i][7] == 'Unstitched') {               
         ?>
         <div class="products-container">
             
