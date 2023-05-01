@@ -1,14 +1,10 @@
-ErrorDocument 404 /404.html
+ErrorDocument 404 https://themodernattire.com/404.html
 DirectoryIndex index.php
 
 RewriteEngine ON
 #Remove all php file extensions
-RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
-
-
-
 
 # www to non-www
 # RewriteCond %{HTTP_HOST} !^www.themodernattire.com/ [NC]
