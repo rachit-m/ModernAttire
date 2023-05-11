@@ -2,9 +2,6 @@
     .wrapper{
         max-width: 400px;
     }
-    .wrapper img{
-        /* width: 400px; */
-    }
     .owl-nav{
         margin: 10px;
     }
@@ -39,20 +36,17 @@
         padding: 6px 17px 6px 17px 
     }
     .owl-nav button span{
-       margin-left: 50px;
+       margin-right: 43px;
+       margin-left: 12px;
     }
-    .-owl-nav{
-        display: flex;
-        justify-content: center;
-        top: 10px;
-        left: -27px;
-        position: absolute;
-        margin-top: 100%;
-        }
     .owl-nav{
         position: absolute;
-        margin-top: -265px;
-    }
+        top: 57%;
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+        }
+ 
     
 }
 

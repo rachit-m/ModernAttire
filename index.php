@@ -99,10 +99,10 @@
         </div>
       </div>
   
-      <!-- Best Selling -->
+    <!-- Best Selling -->
     <div id="best-selling">
     <h1 class="title-text">Best Selling</h1>
-    <!--  Corousel -->
+    <!--  Carousel -->
     <?php
         $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/BestSelling?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
         $response = json_decode($response);

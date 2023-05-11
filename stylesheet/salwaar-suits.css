@@ -188,13 +188,14 @@
 }
 
 .next.disabled,.prev.disabled{
-    font-weight: 500;
-    color: grey;
-    cursor: not-allowed;
+    display: none;
 }
 .pgno{
-    color: var(--coconut);
-    font-size: 14px;
+    background: var(--coconut);
+    font-size: 12px;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
 }
 .hide{display: none;}
 .show{display: block;}
