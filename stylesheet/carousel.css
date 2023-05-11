@@ -31,7 +31,8 @@
 @media screen and (min-width: 451px) {      
     .card 
     {
-        height: 500px;
+        min-height: 520px;
+        display: inline-block;
         max-width: 354px;
         text-align: center;
         color: var(--garnet);

@@ -6,6 +6,13 @@ RewriteEngine ON
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
+#Root 
+RewriteCond %{THE_REQUEST} /index\.php [NC]
+RewriteRule ^(.*?)index\.php$ /$1 [L,R=301,NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ /index.php?url=$1 [L,QSA]
+
 # www to non-www
 # RewriteCond %{HTTP_HOST} !^www.themodernattire.com/ [NC]
 # RewriteRule (.*) themodernattire.com [L,R=301]
