@@ -1,0 +1,52 @@
+@media  screen and (min-width: 450px){
+    .wrapper{
+        max-width: 400px;
+    }
+    .owl-nav{
+        margin: 10px;
+    }
+    .owl-nav button span{
+        border-radius: 50%;
+        background: white;
+        color: black;
+        padding: 4px 14px 6px 18px;
+    }
+    .owl-next
+    {
+        margin-left: 311px;
+    }
+    .owl-nav{
+        display: flex;
+        justify-content: space-around;
+        top: 10px;
+        left: -3px;
+        position: absolute;
+        margin-top: 65%;
+    }
+    .owl-dots{display: none;}
+}
+
+
+@media  screen and (max-width: 450px){ 
+    
+    .owl-nav button span{
+        border: 1px solid lightgrey;
+        border-radius: 50%;
+        background: white;
+        padding: 6px 17px 6px 17px 
+    }
+    .owl-nav button span{
+       margin-right: 43px;
+       margin-left: 12px;
+    }
+    .owl-nav{
+        position: absolute;
+        top: 57%;
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+        }
+ 
+    
+}
+

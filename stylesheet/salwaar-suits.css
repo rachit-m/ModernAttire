@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Trirong&display=swap');
+
+:root
+{
+    --coconut : #955448;
+    --garnet : #683A32;
+    --linen : #FFEEEB;
+    --spanis_pink : #FFC7BD;
+    --pale_chestnut : #D5BOA9;
+}
+/* Preloader animation  */
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+.preloader--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.preloader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #ddd;
+    border-top-color: var(--garnet);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+@keyframes loading{
+    from{
+        transform: rotate(0turn)
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+@keyframes show{
+    0%{
+    	opacity:0;
+    	transform: scale(0.9);
+    }
+    100%{
+    	opacity:1;
+    	transform: scale(1);
+    }
+}
+
+
+.header{margin-top: 130px;}
+.header h1{
+    font-family: 'Trirong', sans-serif;
+    text-align: center;
+    color: var(--garnet);
+    
+}
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.filtersec{
+    width: 25vw;
+    margin: 5px;
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    border: 1px solid lightgrey;
+}
+#search-box{
+    padding: 7px;
+    width: 100;
+    outline: none;
+    border: 1px solid var(--garnet);
+    color: var(--garnet);
+    margin: 10px;
+}
+::placeholder{
+    color: var(--coconut);
+}
+#search-btn:hover{
+    background: var(--garnet);
+    border: 1px solid var(--garnet);
+}
+.filtersec h2{
+    text-align: center;
+    font-weight: 150;
+    font-size: 25px;
+    font-family: 'Trirong', sans-serif;
+}
+.filtersec h5{
+    margin-left: 15px;
+    text-align: left;
+}
+.filtersec a{
+    color: var(--coconut);
+    font-size: 11.8px;
+    margin: 7px 0px 0px 20px;
+    text-decoration: none;
+    text-align: left;
+}
+.filtersec a:hover{
+    text-decoration: underline;
+}
+#salwaar-suits-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    width: 80vw;
+    margin: 5px;
+    border: 1px solid lightgrey;
+}
+.products-container{
+    margin: 20px;
+    margin-top: 50px;
+    transition: 0.3s;
+    animation: show 0.7s ease;
+    
+}
+.products-container:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    /* border: 1px solid lightgrey; */
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+.product-name{
+    text-overflow: ellipsis;
+    color: var(--garnet);
+    font-size: 11px;
+    text-align: left;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: 300;
+    cursor: pointer;
+    padding: 10px;
+    width: 276px;
+    overflow: hidden;
+}
+.products-container a:hover{
+    font-weight: 550;
+    
+}
+
+.product{
+    display: flex;
+    width: 275px;
+    flex-direction: column;
+}
+
+.product img
+{ 
+    height: 392px;
+    width: 275px;
+}
+#output-txt{
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    margin: 5px 0px -10px 22px;
+    color: var(--garnet);
+    font-family: 'Trirong',sans-serif;
+    display: none;
+}
+#srchph{display: none;}
+
+.pagination{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.pagination a{
+    text-decoration: none;
+    color: var(--coconut);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.next.disabled,.prev.disabled{
+    display: none;
+}
+.pgno{
+    background: var(--coconut);
+    font-size: 12px;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    text-align: center;
+}
+.hide{display: none;}
+.show{display: block;}
+
+
+@media screen and (max-width: 450px) {
+    .main-container{display: flex; flex-direction: column; margin: 0px;}
+    .filtersec{display: none;width: 100%; margin-top: 40px;}
+    #salwaar-suits-container{margin: 0px;border: none;width: 100%;
+    }
+    #srchph{display: block; padding: 10px; margin: 8px; outline: none;}
+    .main-container{
+        margin-top: 85px;
+    }
+    .products-container{margin: 0px;}
+    .product {
+        width: 170px;
+        height: 340px;
+    }
+    .product img {
+        height: 275px;
+        width: 195px;
+        border: 3px solid white;
+    }
+    .product-name{
+        text-overflow: ellipsis;
+        color: var(--garnet);
+        font-size: 11px;
+        text-align: left;
+        text-decoration: none;
+        white-space: nowrap;
+        font-weight: 300;
+        cursor: pointer;
+        padding: 10px;
+        width: 276px;
+        overflow: hidden;
+    }
+   
+}
+
+
+   

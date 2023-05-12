@@ -1,0 +1,127 @@
+
+
+:root
+{
+    --coconut : #955448;
+    --garnet : #683A32;
+    --linen : #FFEEEB;
+    --spanis_pink : #FFC7BD;
+    --pale_chestnut : #D5BOA9;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trirong', sans-serif; 
+    /* overflow: hidden; */
+    background-color: var(--linen);
+    color: var(--garnet)
+}
+@media screen and (max-width : 360px) {
+    .product-image  
+    {
+        width: 360px;
+        height: 538.71px;
+    }
+    .product-image img
+    {
+        /* height: 538.71px; */
+        height: 538.71px;
+        width: 360px;
+    }
+    .product-details
+    {
+        display: flex;
+        flex-direction: column;
+        /* padding: 15px; */
+        margin-top: 30px;
+        height: 310px;
+        width: 360px;
+    }
+    .product-details h1
+    {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+    .product-details details
+    {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 22px;
+        margin-right: 22px;
+        border-bottom: 1px solid var(--garnet);
+
+    }
+    #enquire
+    {
+        width: 134px;
+        margin: auto;
+        margin-top: 30px;
+        background: none;
+        border-radius: 50px;
+        border: 1px solid var(--garnet);
+        padding: 10px;
+        font-size: 14.7px;
+        color: var(--garnet);
+    }
+    /* Footer section  */
+    details > summary {
+        list-style: none;
+      }
+      details > summary::-webkit-details-marker {
+        display: none;
+      }
+    .footer-phone
+    {
+        height: 456px;
+        margin-top: 100px;
+        background: var(--spanis_pink);
+        padding-top: 20px;
+    }
+    .footer-phone .logop img
+    {
+        height: 100px;
+        width: 100px;
+        margin-left: 36.5%;
+        margin-top: 30px;
+    }
+    .footer-upper
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+
+    }
+    .footer-upper details
+    {
+        text-decoration: none;
+        color: var(--garnet);
+        border-bottom: 1px solid var(--garnet);
+        margin-top: 15px;
+    }
+    .footer-lower
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .footer-lower a
+    {
+        text-decoration: none;
+        color: var(--garnet);
+        font-size: 12px;
+    }
+    .copyright-text
+    {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 25px;
+    }
+}

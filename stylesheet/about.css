@@ -1,0 +1,26 @@
+ #contactpage input[type=text], #contactpage select, textarea,input[type=number],input[type=email] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: vertical;
+    /* margin-right: 20px; */
+    /* width: 20px; */
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  @media screen and (max-width: 600px) {
+    #contactpage{
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  table{
+    border-collapse: separate;
+    border-spacing: 50px 0;
+  }
+  

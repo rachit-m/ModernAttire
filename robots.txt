@@ -1,0 +1,5 @@
+User-agent: Googlebot
+Disallow: /contactus
+Allow: /salwwaar-suits
+Allow: /dresses
+Crawl-delay: 10

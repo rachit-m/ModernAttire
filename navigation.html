@@ -1,0 +1,65 @@
+
+    <!-- Navigation Phone  -->
+    <div id="navigation-phone">
+        <div class="topnav">
+            <h4>To place order contact 
+                +91 9830702746</h4>
+        </div>
+        <div id="bottomnav">
+                 <div id="menubtn">
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                 </div>
+                 <div id="malogo">
+                    <img src="https://ik.imagekit.io/modernattire/modern_attire_logo-03.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678042505261" alt="">
+                 </div>
+                 <div id="links">
+                    <a href="index.php">Home</a>
+                    <a href="salwaar.php">Salwaar Suits</a>
+                    <a href="dresses.php">Designer Dresses</a>
+                    <a href="contactus.php">Contact us</a>
+                 </div>
+        </div>
+    </div>
+
+    <!-- Navigtion Desktop  -->
+    <div id="navigation-desktop">
+        <div class="topnav">
+            <h4>To place order contact +91 9830702746</h4>
+        </div>
+        <div class="bottomnav">
+                 <div id="malogo">
+                    <img src="https://ik.imagekit.io/modernattire/modern_attire_logo-03.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678042505261" alt="">
+                 </div>
+                 <div id="links">
+                    <a href="index.php">Home</a>
+                    <a href="salwaar.php">Salwaar Suits</a>
+                    <a href="dresses.php">Designer Dresses</a>
+                    <a href="contactus.php">Contact us</a>
+                 </div>
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector('#menubtn')
+        const links = document.querySelector('#links')
+        const logo = document.querySelector('#malogo')
+        const bottomnav = document.getElementById('bottomnav')
+        menu.addEventListener('click',function(){
+            if(logo.style.display != "none"){
+                bottomnav.setAttribute('class','bottomnavph')
+                bottomnav.style.display = "block"
+                logo.style.display = "none"
+                links.style.display = "flex"
+            }
+            else{
+                bottomnav.removeAttribute('class','bottomnavph')
+                bottomnav.style.display = "flex"
+                bottomnav.style.alignItems = "center"
+                logo.style.display = "block"
+                links.style.display = "none"
+            }
+            
+        })
+    </script>

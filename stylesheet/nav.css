@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Trirong&display=swap');
+
+:root
+{
+    --coconut : #955448;
+    --garnet : #683A32;
+    --linen : #FFEEEB;
+    --spanis_pink : #FFC7BD;
+    --pale_chestnut : #D5BOA9;
+}
+body{margin: 0; padding: 0;font-family: 'Trirong', sans-serif;}
+
+/* Queries for Phone Screen  */
+@media screen and (max-width: 450px){
+    #navigation-desktop{display: none;}
+    #navigation-phone{
+        height: 104px;
+        position: fixed; width: 100%;
+        z-index: 1000;
+
+    }
+    .navs{
+        margin-top: -120px;
+    }
+    .topnav{
+        text-align: center; 
+        color: white; 
+        background: var(--coconut); 
+        margin: -10px; padding: 1px;
+        font-family: 'Trirong', sans-serif; 
+    }
+    h4{font-weight: 150; letter-spacing: 0.8px;}
+    #bottomnav{
+        display: flex;
+        align-items: center;
+        background: var(--linen);
+        font-family: 'Trirong', sans-serif; 
+    }
+    #menubtn{padding-top: 5px;}
+    #menubtn div{
+        background: var(--coconut);
+        width: 35px;
+        height: 5px;
+        margin: 5px 5px 5px 10px;
+    }
+    #malogo img{
+        height: 70px; width: 70px;
+        margin-left: 112px;
+    }
+    #links{
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        margin: auto;
+    }
+    #links a{
+        text-decoration: none;
+        margin: 15px;
+        text-align: center;
+        color: var(--coconut);
+        font-family: 'Trirong', sans-serif; 
+    }
+    .bottomnavph{
+        transition: 0.5s;
+        height: 270px;
+        
+    }
+    
+}
+
+    /* Queries for Desktop Screen  */
+@media screen and (min-width: 451px){
+    body{margin: 0;}
+    #navigation-phone{display: none;}
+    #navigation-desktop{
+        height: 40px; width: 100%;
+        margin: 0; padding: 0;
+        position: relative;
+        
+
+    }
+    .topnav{
+        text-align: center;
+        color: white;
+        background: var(--garnet); 
+        padding: 0.1px;
+        font-family: 'Trirong', sans-serif; 
+    }
+    h4{font-weight: 130; letter-spacing: 1px;}
+    .bottomnav{
+        background: var(--linen);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 1px solid lightgrey;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.2), 0px 0px 5px rgba(0,0,0,0.2);
+    }
+    #links{
+        margin-right: 150px;
+    }
+    #links a{
+        text-decoration: none;
+        margin: 20px;
+        color: var(--coconut);
+        cursor: pointer;
+        font-family: 'Trirong', sans-serif; 
+    }
+    #links a:hover{
+        color: var(--garnet);
+    }
+    #malogo img{
+        height: 70px; width: 70px;
+        margin-left: 112px;
+    }
+    
+}
