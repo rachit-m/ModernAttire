@@ -6,9 +6,9 @@ RewriteEngine ON
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-#Root 
+Options +FollowSymLinks
 RewriteRule ^index\.php$ / [R=301,L]
 
 # www to non-www
-# RewriteCond %{HTTP_HOST} !^www.themodernattire.com/ [NC]
-# RewriteRule (.*) themodernattire.com [L,R=301]
+#RewriteCond %{HTTP_HOST} !^www.themodernattire.com/ [NC]
+#RewriteRule (.*) themodernattire.com [L,R=301]
