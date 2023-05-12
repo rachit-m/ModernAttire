@@ -196,6 +196,7 @@
     color: white;
     border-radius: 50%;
     width: 20px;
+    text-align: center;
 }
 .hide{display: none;}
 .show{display: block;}
@@ -233,6 +234,7 @@
         width: 276px;
         overflow: hidden;
     }
+   
 }
 
 
