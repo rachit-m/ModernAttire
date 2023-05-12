@@ -114,10 +114,16 @@
             <p>The Modern Attire, PS Arcade, 2nd Floor, 11 Sudder Street, Kolkata - 700016,
                 West Bengal, India 
             </p>
+
+            <div class="price">
+                    <p class="product-price"><sup>₹</sup><?php echo $response[$x][2]?></p>
+                    <p class="no-mar">Inclusive of all Taxes</p>
+            </div>
+            <hr class = "divider">
             <a href="https://api.whatsapp.com/send?phone=+919830702746&text=I%20like%20your%20product%20and%20I%20want%20to%20deal%20with%20you.%20Can%20we%20talk%20in%20much%20detail?%20" id="enquire-btn">Enquire</a>
         </div>
     </div>
-<hr>
+
 
 
 <!-- Single Product Contaier Phone  -->
