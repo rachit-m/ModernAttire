@@ -102,7 +102,7 @@
         <div class="products-container">
             
             <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&src=salwaar&pg=single&prcode=<?php echo $response[$i][0] ?>';">
-                <img src="<?php echo $response[$i][11] ?>" alt="<?php echo $response[$i][1] ?>">
+                <img src="<?php echo str_replace("open", "thumbnail", $response[$i][11]) ?>&sz=w275-h356" alt="<?php echo $response[$i][1] ?>">
                 <a href="singleprod.php?key=<?php echo $i ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
                 <p class='material' style="display: none" ><?php echo ($response[$i][5]) ?></p>
                 <p class='apparels' style="display: none" ><?php echo ($response[$i][3]) ?></p>
