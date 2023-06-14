@@ -12,9 +12,9 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 # RewriteRule ^index\.php$ / [R=301,L]
 
-#e.g : products/Shop/1/ShararaNew  products/LatestCollection/1/prid
-RewriteRule ^Shop/([^/]+)/([^/]+)/([^/]+)/([^/]+)$ ./singleprod.php?pg=$1&key=$2&prcode=$3&keywords=$4 [L]
 #Clean url
+#e.g : Shop/Collections/1/ShararaNew  Shop/LatestCollection/1/prid
+RewriteRule ^Shop/([^/]+)/([^/]+)/([^/]+)/([^/]+)$ ./singleprod.php?pg=$1&key=$2&prcode=$3&keywords=$4 [L]
 
 
 

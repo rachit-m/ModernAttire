@@ -1,9 +1,9 @@
 <?php 
-    $x = $_GET['key'];
+    $x = $_GET['key']; //need to be removed
     $pg = $_GET['pg'];
     $prid = $_GET['prcode'];
     $initials = $_GET['keywords'];
-    $initials = str_replace("-"," ", $initials);
+    $eninitials = str_replace("-"," ", $initials);
     $prid = str_replace("-", "/", $prid);
 ?>
 
@@ -39,12 +39,12 @@
         $gallery = $gallery->{'values'};
     ?>
 
-    <title>Buy <?php echo $initials ?> | <?php echo $response[$x][0] ?> </title>
+    <title>Buy <?php echo $eninitials ?> | <?php echo $prid ?> </title>
     <link rel="stylesheet" href="/ModernAttire/stylesheet/index-desktop.css">
     <link rel="stylesheet" href="/ModernAttire/stylesheet/nav.css">
     <link rel="stylesheet" href="/ModernAttire/stylesheet/singleproduct.css">
     <link rel="stylesheet" href="/ModernAttire/stylesheet/footer.css">
-    <link rel="canonical" href="https://themodernattire.com/shop.php">
+    <link rel="canonical" href="https://themodernattire.com/<?php echo $response[0][26] ?>/<?php echo $i ?>/<?php echo $encpid ?>/<?php echo $initials ?>">
     <link rel="shortcut icon" href="https://ik.imagekit.io/modernattire//tr:w-1000,h-700/modern_attire_logo-03.png?updatedAt=1678042505261" type="image/x-icon">
 </head>
 
@@ -99,7 +99,6 @@
                 $lastImg = $ur;
                 include 'gallery.php' 
             ?>
-            <!-- <img src="<?php echo $response[$x][11] ?>" alt="img-not-found"> -->
         </div>
         <div class="sp-right">
             <h1 id="product-name"><?php echo $response[$x][1] ?></h1>
