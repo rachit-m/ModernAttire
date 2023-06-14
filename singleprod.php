@@ -123,7 +123,7 @@
             </div>
             <hr class = "divider">
             <a href="https://api.whatsapp.com/send?phone=+919830702746&text=I%20like%20your%20product%20and%20I%20want%20to%20deal%20with%20you.%20Can%20we%20talk%20in%20much%20detail?%20" id="enquire-btn">Enquire</a>
-        </div>
+		</div>
     </div>
 
 

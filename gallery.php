@@ -13,7 +13,7 @@
             {    
         ?>
         <div class="card" >
-          <img src="<?php echo ($gallery[$i][1]); ?>" alt="<?php echo ($gallery[$i][2]); ?>">
+          <img src="<?php echo (str_replace("open", "uc",$gallery[$i][1])); ?>" alt="<?php echo ($gallery[$i][2]); ?>">
         </div>
         <?php
             }
