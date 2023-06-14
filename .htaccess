@@ -1,13 +1,32 @@
+# Options +FollowSymLinks
+RewriteEngine ON
+
+# #Custom 404 page redirect
 ErrorDocument 404 https://themodernattire.com/404.html
 DirectoryIndex index.php
 
-RewriteEngine ON
-#Remove all php file extensions
+# #Remove all php file extensions
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php !-d
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-Options +FollowSymLinks
-RewriteRule ^index\.php$ / [R=301,L]
+# RewriteRule ^index\.php$ / [R=301,L]
+
+#e.g : products/Shop/1/ShararaNew  products/LatestCollection/1/prid
+RewriteRule ^Shop/([^/]+)/([^/]+)/([^/]+)/([^/]+)$ ./singleprod.php?pg=$1&key=$2&prcode=$3&keywords=$4 [L]
+#Clean url
+
+
+
+
+
+
+
+
+
+
+
+
 
 # www to non-www
 #RewriteCond %{HTTP_HOST} !^www.themodernattire.com/ [NC]

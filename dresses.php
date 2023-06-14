@@ -34,7 +34,6 @@
 
    
     <?php
-        
         $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/AllProducts?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
         $response = json_decode($response);
         $response = $response->{'values'};
@@ -82,7 +81,7 @@
                 if($response[$i][10] == 'New'){
             ?>
 
-            <a href="singleprod.php?key=<?php echo $i ?>&src=salwaar&pg=single&prcode=<?php echo $response[$i][0] ?>" class='new-arrivals'><?php echo $response[$i][1] ?></a>
+            <a href="singleprod.php?key=<?php echo $i ?>&pg=Shop&prcode=<?php echo $response[$i][0] ?>" class='new-arrivals'><?php echo $response[$i][1] ?></a>
             <?php }
             }
             ?>
@@ -97,12 +96,15 @@
                 if($response[$i][7] == 'Stitched') {               
         ?>
         <div class="products-container">
-            
-            <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&src=salwaar&pg=single&prcode=<?php echo $response[$i][0] ?>';">
-                <img src="<?php echo $response[$i][11] ?>" alt="<?php echo $response[$i][1] ?>">
-                <a href="singleprod.php?key=<?php echo $i ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
-                <p class='material' style="display: none" ><?php echo ($response[$i][5]) ?></p>
-                <p class='apparels' style="display: none" ><?php echo ($response[$i][3]) ?></p>
+            <?php 
+            $initials = str_replace(" ", "-", $response[$i][1]); 
+            $encpid = str_replace("/", "-", $response[$i][0])
+            ?>
+            <div class="product" onclick="window.location='Shop/Collections/<?php echo $i ?>/<?php echo $encpid ?>/<?php echo $initials ?>';">
+                <img src="<?php echo str_replace("open","thumbnail",$response[$i][11]) ?>" alt="<?php echo $response[$i][1] ?>">
+                <a href="Shop/Collections/<?php echo $i ?>/<?php echo $encpid ?>/<?php echo $initials ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
+                <p class='material' style="display: none" ><?php echo ($response[$i][3]) ?></p>
+                <p class='apparels' style="display: none" ><?php echo ($response[$i][5]) ?></p>
             </div>
           
         </div>

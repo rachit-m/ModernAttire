@@ -1,41 +1,33 @@
-<?php $x = $_GET['key']; ?>
-<?php $y = $_GET['src']; ?>
-<?php $pg = $_GET['pg']; ?>
-<?php $prid = $_GET['prcode']; ?>
+<?php 
+    $x = $_GET['key'];
+    $pg = $_GET['pg'];
+    $prid = $_GET['prcode'];
+    $initials = $_GET['keywords'];
+    $initials = str_replace("-"," ", $initials);
+    $prid = str_replace("-", "/", $prid);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salwaar-Suits</title>
-    <link rel="stylesheet" href="./stylesheet/index-desktop.css">
-    <link rel="stylesheet" href="./stylesheet/nav.css">
-    <link rel="stylesheet" href="./stylesheet/singleproduct.css">
-    <link rel="stylesheet" href="./stylesheet/footer.css">
-    <link rel="shortcut icon" href="https://ik.imagekit.io/modernattire//tr:w-1000,h-700/modern_attire_logo-03.png?updatedAt=1678042505261" type="image/x-icon">
-</head>
-
-<body>
-    <div class="preloader"> </div>
-
-
-<!-- fetch all products sheet data  -->
+    <!-- fetch all products sheet data  -->
     <?php
-        if($y == 'salwaar' && $pg == 'single'){
+        if($pg == 'Collections'){
             $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/AllProducts?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
             $response = json_decode($response);
             $response = $response->{'values'};
             $totalProd = count($response);
         }
-        else if($y == 'carousel' && $pg == 'LatestCollection'){
+        else if($pg == 'LatestCollection'){
             $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/LatestCollection?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
             $response = json_decode($response);
             $response = $response->{'values'};
             $totalProd = count($response);
         }
-        else if($y == 'carousel' && $pg == 'BestSelling'){
+        else if($pg == 'BestSelling'){
             $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/BestSelling?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
             $response = json_decode($response);
             $response = $response->{'values'};
@@ -46,11 +38,22 @@
         $gallery = json_decode($gallery);
         $gallery = $gallery->{'values'};
     ?>
-    
 
+    <title>Buy <?php echo $initials ?> | <?php echo $response[$x][0] ?> </title>
+    <link rel="stylesheet" href="/ModernAttire/stylesheet/index-desktop.css">
+    <link rel="stylesheet" href="/ModernAttire/stylesheet/nav.css">
+    <link rel="stylesheet" href="/ModernAttire/stylesheet/singleproduct.css">
+    <link rel="stylesheet" href="/ModernAttire/stylesheet/footer.css">
+    <link rel="canonical" href="https://themodernattire.com/shop.php">
+    <link rel="shortcut icon" href="https://ik.imagekit.io/modernattire//tr:w-1000,h-700/modern_attire_logo-03.png?updatedAt=1678042505261" type="image/x-icon">
+</head>
+
+<body>
+    <div class="preloader"> </div>
+    
     <!-- Navigation  -->
     <?php
-    include './navigation.html'
+    include 'navigation.html'
     ?>
     
     <?php
@@ -94,7 +97,7 @@
             <?php 
                 $firstImg = $lr;
                 $lastImg = $ur;
-                include './gallery.php' 
+                include 'gallery.php' 
             ?>
             <!-- <img src="<?php echo $response[$x][11] ?>" alt="img-not-found"> -->
         </div>
@@ -134,7 +137,7 @@
                 <?php 
                 $firstImg = $lr;
                 $lastImg = $ur;
-                include './gallery.php' 
+                include '/ModernAttire/gallery.php' 
             ?>
             </div>
             <div class="bottom">
@@ -167,8 +170,6 @@
     <?php 
         include './footer.html'
     ?>
-
-<script src="./script/fetchdata.js"></script>
     <script>
         window.addEventListener("load", () => {
             document.querySelector(".preloader").classList.add("preloader--hidden");
