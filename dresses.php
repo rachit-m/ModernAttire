@@ -100,10 +100,13 @@
         <div class="products-container">
             <?php 
             $initials = str_replace(" ", "-", $response[$i][1]); 
-            $encpid = str_replace("/", "-", $response[$i][0])
+            $encpid = str_replace("/", "-", $response[$i][0]);
+            $imgsrc = str_replace("open","thumbnail",$response[$i][11]);
+            $sz = "&sz=w275-h356";
+            $imgsrc = $imgsrc.$sz;
             ?>
             <div class="product" onclick="window.location='Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>';">
-                <img src="<?php echo str_replace("open","thumbnail",$response[$i][11]) ?>" alt="<?php echo $response[$i][1] ?>">
+                <img src="<?php echo $imgsrc ?>" alt="<?php echo $response[$i][1] ?>">
                 <a href="Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
                 <p class='material' style="display: none" ><?php echo ($response[$i][3]) ?></p>
                 <p class='apparels' style="display: none" ><?php echo ($response[$i][5]) ?></p>
