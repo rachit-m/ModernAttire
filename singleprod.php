@@ -165,7 +165,7 @@
                 <?php 
                 $firstImg = $lr;
                 $lastImg = $ur;
-                include '/ModernAttire/gallery.php' 
+                include 'gallery.php' 
             ?>
             </div>
             <div class="bottom">

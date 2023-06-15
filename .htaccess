@@ -14,7 +14,9 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 #Clean url
 #e.g : Shop/Collections/1/ShararaNew  Shop/LatestCollection/1/prid
+
 RewriteRule ^Shop/([^/]+)/([^/]+)/([^/]+)$ ./singleprod.php?pg=$1&prcode=$2&keywords=$3 [L]
+
 
 
 
