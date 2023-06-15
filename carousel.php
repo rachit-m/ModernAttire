@@ -20,7 +20,7 @@
             $encpid = str_replace("/", "-", $response[$i][0])
         ?>
         <div class="card" 
-            onclick="window.location='Shop/<?php echo $response[0][26] ?>/<?php echo $i ?>/<?php echo $encpid ?>/<?php echo $initials ?>';">
+            onclick="window.location='Shop/<?php echo $response[0][26] ?>/<?php echo $encpid ?>/<?php echo $initials ?>';">
         <!-- <div class="card" 
             onclick="window.location='singleprod.php?key=<?php echo $i ?>&pg=<?php echo $response[0][26] ?>&prcode=<?php echo ($response[$i][0])?>';"> -->
             <img src="<?php echo ($response[$i][11]); ?>" alt="<?php echo ($response[$i][1]); ?>"><h5><?php echo ($response[$i][1]); ?></h5>

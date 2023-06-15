@@ -1,10 +1,9 @@
 <?php 
-    $x = $_GET['key']; //need to be removed
     $pg = $_GET['pg'];
     $prid = $_GET['prcode'];
     $initials = $_GET['keywords'];
     $eninitials = str_replace("-"," ", $initials);
-    $prid = str_replace("-", "/", $prid);
+    $deprid = str_replace("-","/", $prid);
 ?>
 
 <!DOCTYPE html>
@@ -20,18 +19,48 @@
             $response = json_decode($response);
             $response = $response->{'values'};
             $totalProd = count($response);
+            $idees = array($totalProd);
+            for($i = 0; $i < $totalProd; $i++){
+                $idees[$i] = $response[$i][0];
+            }
+            
+            for($j = 0; $j < $totalProd; $j++){
+                if($idees[$j] == $deprid){
+                    $x = $j;
+                }
+            }
         }
         else if($pg == 'LatestCollection'){
             $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/LatestCollection?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
             $response = json_decode($response);
             $response = $response->{'values'};
             $totalProd = count($response);
+            $idees = array($totalProd);
+            for($i = 0; $i < $totalProd; $i++){
+                $idees[$i] = $response[$i][0];
+            }
+            
+            for($j = 0; $j < $totalProd; $j++){
+                if($idees[$j] == $deprid){
+                    $x = $j;
+                }
+            }
         }
         else if($pg == 'BestSelling'){
             $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/BestSelling?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
             $response = json_decode($response);
             $response = $response->{'values'};
             $totalProd = count($response);
+            $idees = array($totalProd);
+            for($i = 0; $i < $totalProd; $i++){
+                $idees[$i] = $response[$i][0];
+            }
+            
+            for($j = 0; $j < $totalProd; $j++){
+                if($idees[$j] == $deprid){
+                    $x = $j;
+                }
+            }
         }
 
         $gallery = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/ProductGallery?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
@@ -39,7 +68,7 @@
         $gallery = $gallery->{'values'};
     ?>
 
-    <title>Buy <?php echo $eninitials ?> | <?php echo $prid ?> </title>
+    <title>Buy  <?php echo $eninitials ?> | <?php echo $deprid ?> </title>
     <link rel="stylesheet" href="/ModernAttire/stylesheet/index-desktop.css">
     <link rel="stylesheet" href="/ModernAttire/stylesheet/nav.css">
     <link rel="stylesheet" href="/ModernAttire/stylesheet/singleproduct.css">
@@ -64,14 +93,14 @@
 
     //lower range
     $lr = 0;
-    for($i=0; $gallery[$i][0] != $prid; $i++)
+    for($i=0; $gallery[$i][0] != $deprid; $i++)
     {
         if($gallery[$i][0] == "null"){break;}
         $lr++;
     }
     //upper range
     $ur = $lr;
-    while($gallery[$i][0] == $prid){
+    while($gallery[$i][0] == $deprid){
         if($gallery[$i][0] == "null"){break;}
         $ur++;
         $i++;

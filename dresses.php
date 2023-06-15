@@ -100,9 +100,9 @@
             $initials = str_replace(" ", "-", $response[$i][1]); 
             $encpid = str_replace("/", "-", $response[$i][0])
             ?>
-            <div class="product" onclick="window.location='Shop/Collections/<?php echo $i ?>/<?php echo $encpid ?>/<?php echo $initials ?>';">
+            <div class="product" onclick="window.location='Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>';">
                 <img src="<?php echo str_replace("open","thumbnail",$response[$i][11]) ?>" alt="<?php echo $response[$i][1] ?>">
-                <a href="Shop/Collections/<?php echo $i ?>/<?php echo $encpid ?>/<?php echo $initials ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
+                <a href="Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
                 <p class='material' style="display: none" ><?php echo ($response[$i][3]) ?></p>
                 <p class='apparels' style="display: none" ><?php echo ($response[$i][5]) ?></p>
             </div>

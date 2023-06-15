@@ -3,7 +3,7 @@ RewriteEngine ON
 
 # #Custom 404 page redirect
 ErrorDocument 404 https://themodernattire.com/404.html
-DirectoryIndex index.php
+# DirectoryIndex index.php
 
 # #Remove all php file extensions
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -14,7 +14,8 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 #Clean url
 #e.g : Shop/Collections/1/ShararaNew  Shop/LatestCollection/1/prid
-RewriteRule ^Shop/([^/]+)/([^/]+)/([^/]+)/([^/]+)$ ./singleprod.php?pg=$1&key=$2&prcode=$3&keywords=$4 [L]
+RewriteRule ^Shop/([^/]+)/([^/]+)/([^/]+)$ ./singleprod.php?pg=$1&prcode=$2&keywords=$3 [L]
+
 
 
 
