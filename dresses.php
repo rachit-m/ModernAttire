@@ -76,13 +76,15 @@
 
             <h5>New Arrivals</h5>
             <?php
-            for($i=1; $i < $totalProd; $i++)
-            {         
-                if($response[$i][10] == 'New'){
+            for($i=($totalProd-3); $i < $totalProd; $i++)
+            {    
+                $initialsn = str_replace(" ","-", $response[$i][1]);  
+                $encpidn = str_replace("/", "-", $response[$i][0]);
             ?>
 
-            <a href="singleprod.php?key=<?php echo $i ?>&pg=Shop&prcode=<?php echo $response[$i][0] ?>" class='new-arrivals'><?php echo $response[$i][1] ?></a>
-            <?php }
+            <a href="Shop/Collections/<?php echo $encpidn ?>/<?php echo $initialsn ?>" class='new-arrivals'><?php echo $response[$i][1] ?></a>
+            <!-- <a href="singleprod.php?key=<?php echo $i ?>&pg=Shop&prcode=<?php echo $response[$i][0] ?>" class='new-arrivals'><?php echo $response[$i][1] ?></a> -->
+            <?php 
             }
             ?>
         </div>
