@@ -3,7 +3,7 @@ RewriteEngine ON
 
 # #Custom 404 page redirect
 ErrorDocument 404 https://themodernattire.com/404.html
-# DirectoryIndex index.php
+DirectoryIndex index.php
 
 # #Remove all php file extensions
 RewriteCond %{REQUEST_FILENAME} !-f
