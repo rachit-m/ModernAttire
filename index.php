@@ -50,11 +50,11 @@
         <div class="categories-container">
             <div class="cat1">
                 <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/designer-dresses.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938392" alt="Salwaars thumbnail" srcset="">
-                <a id="cat1_text" href="salwaar.php"><h1>Salwaar Suits</h1></a>
+                <a id="cat1_text" href="https://themodernattire.com/salwaar"><h1>Salwaar Suits</h1></a>
             </div>
             <div class="cat2">
                 <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/designer-dresses.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938392" alt="Dresses thumbnail" srcset="">
-                <a id="cat2_text" href="dresses.php"><h1>Designer Dresses</h1></a>
+                <a id="cat2_text" href="https://themodernattire.com/dresses"><h1>Designer Dresses</h1></a>
             </div>
            
         </div>
@@ -64,11 +64,11 @@
         <div class="categories-container">
             <div class="cat cat1">
                 <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/designer-dresses.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938392" alt="Salwaars thumbnail" srcset="">
-                <a href="salwaar.php">Salwaar Suits</a>
+                <a href="https://themodernattire.com/salwaar">Salwaar Suits</a>
             </div>
             <div class="cat cat2">
                 <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/designer-dresses.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938392" alt="Dresses thumbnail" srcset="">
-                <a href="dresses.php">Designer Dresses</a>
+                <a href="https://themodernattire.com/dresses">Designer Dresses</a>
             </div>
         </div>
     </div>
@@ -136,7 +136,7 @@
     <div id="discover-banner">
         <div class="discover-inner">
             <h1>Get your self the best Indian wear collection</h1>
-            <button class="discover-button" type="submit">Discover</button>
+            <button class="discover-button" type="submit" onclick="scrollToElement('#shop-category-desktop')">Discover</button>
         </div>
     </div>
 

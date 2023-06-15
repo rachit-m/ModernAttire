@@ -35,3 +35,10 @@ cat2.addEventListener('mouseover',()=>{
 cat2.addEventListener('mouseout',()=>{
     text2.style.display = "none";
 })
+
+function scrollToElement(selector) {
+    const element = document.querySelector(selector);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
