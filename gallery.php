@@ -1,5 +1,6 @@
 <!-- Stylesheets  -->
 <link rel="stylesheet" href="/ModernAttire/stylesheet/gallery.css">
+<link rel="stylesheet" href="/ModernAttire/stylesheet/singleproduct.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Scripts -->
@@ -10,10 +11,13 @@
 <div class="wrapper">
     <div class="carousel owl-carousel">
         <?php  for($i=$firstImg; $i <= $lastImg; $i++)
-            {    
+        {    
+                $imgsrc = str_replace("open", "thumbnail",$gallery[$i][1]);
+                $sz = "&sz=w380-h550";
+                $imgsrc = $imgsrc.$sz;
         ?>
         <div class="card" >
-          <img src="<?php echo (str_replace("open", "uc",$gallery[$i][1])); ?>" alt="<?php echo ($gallery[$i][2]); ?>">
+          <img src="<?php echo $imgsrc ?>" alt="<?php echo $gallery[$i][2] ?>">
         </div>
         <?php
             }

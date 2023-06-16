@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="stylesheet/salwaar-suits.css">
     <link rel="stylesheet" href="stylesheet/footer.css">
     <link rel="stylesheet" href="stylesheet/nav.css">
+    
     <link rel="shortcut icon" href="https://ik.imagekit.io/modernattire//tr:w-1000,h-700/modern_attire_logo-03.png?updatedAt=1678042505261" type="image/x-icon">
 </head>
  
