@@ -49,7 +49,7 @@
         <h1 class="title-text">Shop by Category</h1>
         <div class="categories-container">
             <div class="cat1">
-                <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/designer-dresses.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938392" alt="Salwaars thumbnail" srcset="">
+                <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/salwar-suits.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538931432" alt="Salwaars thumbnail" srcset="">
                 <a id="cat1_text" href="https://themodernattire.com/salwaar"><h1>Salwaar Suits</h1></a>
             </div>
             <div class="cat2">
@@ -63,7 +63,7 @@
         <h1 class="title-text">Shop by Category</h1>
         <div class="categories-container">
             <div class="cat cat1">
-                <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/designer-dresses.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538938392" alt="Salwaars thumbnail" srcset="">
+                <img src="https://ik.imagekit.io/modernattire/tr:w-1000,h-700/salwar-suits.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1667538931432" alt="Salwaars thumbnail" srcset="">
                 <a href="https://themodernattire.com/salwaar">Salwaar Suits</a>
             </div>
             <div class="cat cat2">
