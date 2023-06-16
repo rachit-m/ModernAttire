@@ -25,11 +25,14 @@
     }
     .sp-left img{
         height: 550px;
-        width: 380px;
+        width: 100%;
     }
     .slider_images{
         display: flex;
-        
+        /* width: 100%; */
+    }
+    .sp-left{
+        width: 60vh;
     }
     .sp-right{
         padding: 0px 35px;
