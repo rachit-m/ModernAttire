@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="The Modern Attire - Collection of Handworked Unstitched Suits and Kurtis from Kolkata - Work from Local Karigars, suits, sarees, lehangas">
@@ -34,13 +33,9 @@
 
    
     <?php
-        
         $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/AllProducts?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
         $response = json_decode($response);
-        $response = $response->{'values'};
-
-        
-        
+        $response = $response->{'values'}; 
         $totalProd = count($response);
     ?>
 
@@ -54,8 +49,8 @@
             <a href="./salwaar.php">Women's Salwaar's  [Unstitched]</a>
             <a href="./dresses.php">Women's Dresses [Stitched]</a>
 
-            <!-- Clothing Materials  -->
-            <h5>Clothing Materials</h5>
+            <!-- Clothing Category  -->
+            <h5>Clothing Type</h5>
             <?php
             $count = $response[0][17];
             for($i=1; $i <= $count; $i++)
@@ -80,13 +75,15 @@
 
             <h5>New Arrivals</h5>
             <?php
-            for($i=1; $i < $totalProd; $i++)
-            {         
-                if($response[$i][10] == 'New'){
+            for($i=($totalProd-3); $i < $totalProd; $i++)
+            {    
+                $initialsn = str_replace(" ","-", $response[$i][1]);  
+                $encpidn = str_replace("/", "-", $response[$i][0]);
             ?>
 
-            <a href="singleprod.php?key=<?php echo $i ?>&src=salwaar&pg=single&prcode=<?php echo $response[$i][0] ?>" class='new-arrivals'><?php echo $response[$i][1] ?></a>
-            <?php }
+            <a href="Shop/Collections/<?php echo $encpidn ?>/<?php echo $initialsn ?>" class='new-arrivals'><?php echo $response[$i][1] ?></a>
+            <!-- <a href="singleprod.php?key=<?php echo $i ?>&pg=Shop&prcode=<?php echo $response[$i][0] ?>" class='new-arrivals'><?php echo $response[$i][1] ?></a> -->
+            <?php 
             }
             ?>
         </div>
@@ -97,15 +94,22 @@
         <?php
             for($i=1; $i < $totalProd; $i++)
             {   
-                if($response[$i][7] == 'Unstitched') {               
+                if($response[$i][7] == 'Unstitched') {  
         ?>
         <div class="products-container">
-            
-            <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&src=salwaar&pg=single&prcode=<?php echo $response[$i][0] ?>';">
-                <img src="<?php echo str_replace("open", "thumbnail", $response[$i][11]) ?>&sz=w275-h356" alt="<?php echo $response[$i][1] ?>">
-                <a href="singleprod.php?key=<?php echo $i ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
-                <p class='material' style="display: none" ><?php echo ($response[$i][5]) ?></p>
-                <p class='apparels' style="display: none" ><?php echo ($response[$i][3]) ?></p>
+            <?php 
+            $initials = str_replace(" ", "-", $response[$i][1]); 
+            $encpid = str_replace("/", "-", $response[$i][0]);
+            $imgsrc = str_replace("open","thumbnail",$response[$i][11]);
+            $sz = "&sz=w275-h356";
+            $imgsrc = $imgsrc.$sz;
+            ?>
+            <!-- <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&pg=Shop&prcode=<?php echo $response[$i][0] ?>';"> -->
+            <div class="product" onclick="window.location='Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>';">
+                <img src="<?php echo $imgsrc ?>" alt="<?php echo $response[$i][1] ?>">
+                <a href="Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
+                <p class='material' style="display: none" ><?php echo ($response[$i][3]) ?></p>
+                <p class='apparels' style="display: none" ><?php echo ($response[$i][5]) ?></p>
             </div>
           
         </div>

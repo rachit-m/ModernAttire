@@ -6,7 +6,7 @@ filter = (fval) =>{
     var productsC = document.getElementsByClassName('products-container')
     var outputR = document.getElementById('output-txt')
 
-    outputR.innerHTML = "Clothing Material : "+fval;
+    outputR.innerHTML = "Clothing Type : "+fval;
     outputR.style.display = "block";
     var items = document.getElementsByClassName('material')
     var filter_text = fval;
