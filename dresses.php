@@ -1,3 +1,14 @@
+<?php 
+    $filter = $_GET['filter'] ?? '';
+    
+//Getting all products
+    $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/AllProducts?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
+    $response = json_decode($response);
+    $response = $response->{'values'}; 
+    $totalProd = count($response);
+
+    
+?> 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,9 +20,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Attire | Designer Dresses</title>
-    <link rel="stylesheet" href="stylesheet/salwaar-suits.css">
-    <link rel="stylesheet" href="stylesheet/footer.css">
-    <link rel="stylesheet" href="stylesheet/nav.css">
+    <link rel="stylesheet" href="./stylesheet/salwaar-suits.css">
+    <link rel="stylesheet" href="./stylesheet/footer.css">
+    <link rel="stylesheet" href="./stylesheet/nav.css">
     
     <link rel="shortcut icon" href="https://ik.imagekit.io/modernattire//tr:w-1000,h-700/modern_attire_logo-03.png?updatedAt=1678042505261" type="image/x-icon">
 </head>
@@ -33,13 +44,6 @@
         <h1>Designer Dresses</h1>
     </div>
 
-   
-    <?php
-        $response = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/AllProducts?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
-        $response = json_decode($response);
-        $response = $response->{'values'};
-        $totalProd = count($response);
-    ?>
 
     <!-- Products Container -->
     <div class="main-container"> 
@@ -90,44 +94,122 @@
             ?>
         </div>
 
-    <!-- Products listing  -->
-    <div id="salwaar-suits-container">
-        <h3 id="output-txt"></h3>
-        <?php
-            for($i=1; $i < $totalProd; $i++)
-            {   
-                if($response[$i][7] == 'Stitched') {               
-        ?>
-        <div class="products-container">
-            <?php 
-            $initials = str_replace(" ", "-", $response[$i][1]); 
-            $encpid = str_replace("/", "-", $response[$i][0]);
-            $imgsrc = str_replace("open","thumbnail",$response[$i][11]);
-            $sz = "&sz=w275-h356";
-            $imgsrc = $imgsrc.$sz;
-            ?>
-            <div class="product" onclick="window.location='Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>';">
-                <img src="<?php echo $imgsrc ?>" alt="<?php echo $response[$i][1] ?>">
-                <a href="Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
-                <p class='material' style="display: none" ><?php echo ($response[$i][3]) ?></p>
-                <p class='apparels' style="display: none" ><?php echo ($response[$i][5]) ?></p>
-            </div>
-          
+        <!-- Filter for Phone view  -->
+        <div class="filterphone">
+            <div class="filters">
+                <!-- Clothing type  -->
+                <div class="dropdown">
+                <button class="dropbtn">Clothing Type</button>
+                <div class="dropdown-content">
+                <?php
+                    $count = $response[0][17];
+                    for($i=1; $i <= $count; $i++)
+                    {         
+                    ?>
+                    <a href="#" class='cloth-type' onclick="filter('<?php echo $response[$i][16] ?>')"><?php echo $response[$i][16] ?></a>
+                    <?php 
+                    }
+                    ?>
+                </div>
+                </div>
+
+                <!-- Apparels -->
+                
+                
+
         </div>
-               
-        <?php
-                } 
+        </div>
+
+
+<!-- Products ModernAttire  -->
+<!-- Dresses with filter  -->
+<?php 
+        if(!empty($filter))
+            { 
+            ?>
+                <!-- Products listing  -->
+                <div id="salwaar-suits-container">
+                    <h3 id="output-txt"></h3>
+                    <?php
+                        for($i=1; $i < $totalProd; $i++)
+                        {   
+                            $curprod = str_replace(array(' ', '%'), '', $response[$i][3]);
+                            if($curprod == $filter) {  
+                    ?>
+                       <div class="products-container">
+                        <?php 
+                        $initials = str_replace(" ", "-", $response[$i][1]); 
+                        $encpid = str_replace("/", "-", $response[$i][0]);
+                        $imgsrc = str_replace("open","thumbnail",$response[$i][11]);
+                        $sz = "&sz=w275-h356";
+                        $imgsrc = $imgsrc.$sz;
+                        ?>
+                        <!-- <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&pg=Shop&prcode=<?php echo $response[$i][0] ?>';"> -->
+                        <div class="product" onclick="window.location='Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>';">
+                            <img src="<?php echo $imgsrc ?>" alt="<?php echo $response[$i][1] ?>">
+                            <a href="Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
+                            <p class='material' style="display: none" ><?php echo ($response[$i][3]) ?></p>
+                            <p class='apparels' style="display: none" ><?php echo ($response[$i][5]) ?></p>
+                        </div>
+                    
+                    </div>
+                        
+                    <?php
+                            } 
+                        }
+                    ?> 
+                </div>
+                </div>
+
+            <?php
             }
-        ?> 
-    </div>
-</div>
+
+//All Salwaar Suits listing
+else if(empty($filter))
+            { 
+            ?>
+                <!-- Products listing  -->
+                <div id="salwaar-suits-container">
+                    <h3 id="output-txt"></h3>
+                    <?php
+                        for($i=1; $i < $totalProd; $i++)
+                        {   
+                            if($response[$i][7] == 'Stitched') {  
+                    ?>
+                    <div class="products-container">
+                        <?php 
+                        $initials = str_replace(" ", "-", $response[$i][1]); 
+                        $encpid = str_replace("/", "-", $response[$i][0]);
+                        $imgsrc = str_replace("open","thumbnail",$response[$i][11]);
+                        $sz = "&sz=w275-h356";
+                        $imgsrc = $imgsrc.$sz;
+                        ?>
+                        <!-- <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&pg=Shop&prcode=<?php echo $response[$i][0] ?>';"> -->
+                        <div class="product" onclick="window.location='Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>';">
+                            <img src="<?php echo $imgsrc ?>" alt="<?php echo $response[$i][1] ?>">
+                            <a href="Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
+                            <p class='material' style="display: none" ><?php echo ($response[$i][3]) ?></p>
+                            <p class='apparels' style="display: none" ><?php echo ($response[$i][5]) ?></p>
+                        </div>
+                    
+                    </div>
+                        
+                    <?php
+                            } 
+                        }
+                    ?> 
+                </div>
+                </div>
+
+            <?php
+}?>
 
 <!-- Pagination  -->
-<div class="pagination">
+<!-- <div class="pagination">
     <a class="prev" href="#"> < </a>
     <div class="pgno"></div>
     <a class="next" href="#"> > </a>
-</div>
+</div> -->
    
 
     <!-- Footer Section  -->

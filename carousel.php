@@ -1,5 +1,5 @@
 <!-- Stylesheets  -->
-<link rel="stylesheet" href="stylesheet/carousel.css">
+<link rel="stylesheet" href="https://themodernattire.com/stylesheet/carousel.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Scripts -->
@@ -16,11 +16,19 @@
             {    
         ?>
         <?php 
-            $initials = str_replace(" ", "-", $response[$i][1]); 
-            $encpid = str_replace("/", "-", $response[$i][0])
+            if($response[$i][7] == "Unstitched"){
+                $pg = "Salwaar";
+            }
+                else{
+                $pg = "Dresses";
+            }
+            // $initials = str_replace(" ", "-", $response[$i][1]); 
+            // $encpid = str_replace("/", "-", $response[$i][0]);
+            $subcat = $response[$i][3];
+            $subcat = str_replace(array(' ', '%'), '', $subcat);
+            $uri = "window.location='$pg.php?filter=$subcat';";
         ?>
-        <div class="card" 
-            onclick="window.location='Shop/<?php echo $response[0][26] ?>/<?php echo $encpid ?>/<?php echo $initials ?>';">
+        <div class="card" onclick="<?php echo $uri ?>">
         <!-- <div class="card" 
             onclick="window.location='singleprod.php?key=<?php echo $i ?>&pg=<?php echo $response[0][26] ?>&prcode=<?php echo ($response[$i][0])?>';"> -->
             <img src="<?php echo ($response[$i][11]); ?>" alt="<?php echo ($response[$i][1]); ?>"><h5><?php echo ($response[$i][1]); ?></h5>
