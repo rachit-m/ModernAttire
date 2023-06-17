@@ -66,6 +66,24 @@
         $gallery = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/ProductGallery?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
         $gallery = json_decode($gallery);
         $gallery = $gallery->{'values'};
+
+// fixing gallery for single product 
+        // $totalpictures = count($gallery);
+
+        // // Getting all the images of the requested product
+        // $imagesrc = array();
+        // for($i = 0; $i < $totalpictures; $i++){
+        //     if($gallery[$i][0] == $deprid){
+        //         $pt = $i+1;
+        //         $imagsrc[$i] = $pt;
+        //     }
+        // }
+        // echo $imagesrc[1];
+        // // echo $imgsrc;
+        // //  $productpics = array($imagescount);
+        // //  for($i = 0; $i < $imagescount; $i++){
+        // //     $productspics[$i] = 
+        // //  }
     ?>
 
     <title>Buy  <?php echo $eninitials ?> | <?php echo $deprid ?> </title>
@@ -73,7 +91,7 @@
     <link rel="stylesheet" href="/stylesheet/nav.css">
     <link rel="stylesheet" href="/stylesheet/singleproduct.css">
     <link rel="stylesheet" href="/stylesheet/footer.css">
-    <link rel="canonical" href="https://themodernattire.com/<?php echo $response[0][26] ?>/<?php echo $i ?>/<?php echo $encpid ?>/<?php echo $initials ?>">
+    <link rel="canonical" href="https://themodernattire.com/<?php echo $response[0][26] ?>/<?php echo $encpid ?>/<?php echo $initials ?>">
     <link rel="shortcut icon" href="https://ik.imagekit.io/modernattire//tr:w-1000,h-700/modern_attire_logo-03.png?updatedAt=1678042505261" type="image/x-icon">
 </head>
 
