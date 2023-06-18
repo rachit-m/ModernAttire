@@ -94,8 +94,8 @@
             ?>
         </div>
 
-        <!-- Filter for Phone view  -->
-        <div class="filterphone">
+          <!-- Filter for Phone view  -->
+          <div class="filterphone">
             <div class="filters">
                 <!-- Clothing type  -->
                 <div class="dropdown">
@@ -113,7 +113,24 @@
                 </div>
                 </div>
 
+                <!-- Apparels type  -->
+                <div class="dropdown">
+                <button class="dropbtn">Apparels</button>
+                <div class="dropdown-content">
+                <?php
+                $count = $response[0][15];
+                for($i=1; $i <= $count; $i++)
+                {         
+                ?>
+                <a href="#" class='apparel' onclick="apparelsfilter('<?php echo $response[$i][14] ?>')"><?php echo $response[$i][14] ?></a>
+                <?php 
+                }
+                ?>
+                </div>
+                </div>
+
                 <!-- Apparels -->
+                <button class="dropbtn clrbtn" onclick="window.location='dresses'">Clear Filters</button>
                 
                 
 
