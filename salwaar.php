@@ -120,13 +120,24 @@
                 <div class="dropdown">
                 <button class="dropbtn">Clothing Type</button>
                 <div class="dropdown-content">
-                <?php
-                    $count = $response[0][17];
-                    for($i=1; $i <= $count; $i++)
-                    {         
-                    ?>
-                    <a href="#" class='cloth-type' onclick="filter('<?php echo $response[$i][16] ?>')"><?php echo $response[$i][16] ?></a>
-                    <?php 
+                        <?php
+                        $allsubcat = array();
+                        $totalct = $totalProd-1;
+                        $mov = 0;
+                        for($i=1; $i<=$totalct; $i++){
+                            if($response[$i][7] == 'Unstitched'){
+                                $allsubcat[$mov] = $response[$i][3];
+                                $mov++;
+                            }
+                        }
+                        $unsubcat = array_unique($allsubcat);
+                        $clothingtypes = array_values(array_filter($unsubcat));
+                        // print_r($clothingtypes);
+                        for($i=0; $i<count($clothingtypes); $i++)
+                        {    
+                        ?>
+                        <a href="#" class='cloth-type' onclick="filter('<?php echo $clothingtypes[$i] ?>')"><?php echo $clothingtypes[$i] ?></a>
+                        <?php 
                     }
                     ?>
                 </div>
@@ -137,14 +148,24 @@
                 <button class="dropbtn">Apparels</button>
                 <div class="dropdown-content">
                 <?php
-                $count = $response[0][15];
-                for($i=1; $i <= $count; $i++)
-                {         
-                ?>
-                <a href="#" class='apparel' onclick="apparelsfilter('<?php echo $response[$i][14] ?>')"><?php echo $response[$i][14] ?></a>
-                <?php 
+                $allapparels = array();
+                $mov = 0;
+                for($i=1; $i<=$totalct; $i++){
+                    if($response[$i][7] == 'Unstitched'){
+                        $allapparels[$mov] = $response[$i][5];
+                        $mov++;
+                    }
                 }
+                $unapparels = array_unique($allapparels);
+                $appareltypes = array_values(array_filter($unapparels));
+                // print_r($clothingtypes);
+                for($i=0; $i<count($appareltypes); $i++)
+                {    
                 ?>
+                <a href="#" class='apparel' onclick="apparelsfilter('<?php echo $appareltypes[$i] ?>')"><?php echo $appareltypes[$i] ?></a>
+                <?php 
+            }
+            ?>
                 </div>
                 </div>
 
