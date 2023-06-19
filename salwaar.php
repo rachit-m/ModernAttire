@@ -18,10 +18,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Attire | Salwaar Suits</title>
-    <link rel="stylesheet" href="https://themodernattire.com/stylesheet/salwaar-suits.css">
+    <link rel="stylesheet" href="./stylesheet/salwaar-suits.css">
     <link rel="stylesheet" href="https://themodernattire.com/stylesheet/footer.css">
     <link rel="stylesheet" href="https://themodernattire.com/stylesheet/nav.css">
     <link rel="shortcut icon" href="https://ik.imagekit.io/modernattire//tr:w-1000,h-700/modern_attire_logo-03.png?updatedAt=1678042505261" type="image/x-icon">
+
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" defer></script>
+    <script>
+    window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+        OneSignal.init({
+        appId: "01cf5b8b-d890-4d1d-b4da-f4f10d3d28bf",
+        });
+    });
+    </script>
 </head>
  
 <body>
@@ -238,13 +248,14 @@ else if(empty($filter))
                         $initials = str_replace(" ", "-", $response[$i][1]); 
                         $encpid = str_replace("/", "-", $response[$i][0]);
                         $imgsrc = str_replace("open","thumbnail",$response[$i][11]);
+                        // $imgsrc = str_replace("open","thumbnail",$response[$i][11]);
                         $sz = "&sz=w275-h356";
                         $imgsrc = $imgsrc.$sz;
                         ?>
                         <!-- <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&pg=Shop&prcode=<?php echo $response[$i][0] ?>';"> -->
                         <div class="product" onclick="window.location='Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>';">
                             <img src="<?php echo $imgsrc ?>" alt="<?php echo $response[$i][1] ?>">
-                            <a href="Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
+                                <a href="Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>" class="product-name"><?php echo ($response[$i][1]);  ?></a>
                             <p class='material' style="display: none" ><?php echo ($response[$i][3]) ?></p>
                             <p class='apparels' style="display: none" ><?php echo ($response[$i][5]) ?></p>
                         </div>
@@ -278,6 +289,7 @@ else if(empty($filter))
     ?>
 
 <script src="./script/custom_filters.js"></script>
+<!-- <script src="./script/reveal.js"></script> -->
 <script src="./script/pagination.js"></script>
 <script src="./script/filter.js"></script>
 <script>

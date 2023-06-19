@@ -47,3 +47,5 @@ apparelsfilter = (fval) =>{
     
 }
 
+
+    
