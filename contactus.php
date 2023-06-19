@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Modern Attire</title>
-    <link rel="stylesheet" href="stylesheet/contact.css">
-    <link rel="stylesheet" href="stylesheet/footer.css">
-    <link rel="stylesheet" href="stylesheet/nav.css">
+    <link rel="stylesheet" href="https://themodernattire.com/stylesheet/contact.css">
+    <link rel="stylesheet" href="https://themodernattire.com/stylesheet/footer.css">
+    <link rel="stylesheet" href="https://themodernattire.com/stylesheet/nav.css">
 </head>
 
 <body>

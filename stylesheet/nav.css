@@ -25,14 +25,16 @@ body{margin: 0; padding: 0;font-family: 'Trirong', sans-serif;}
     .topnav{
         text-align: center; 
         color: white; 
+        width: 100vw;
         background: var(--coconut); 
-        margin: -10px; padding: 1px;
+        margin-top: -10px; padding: 1px;
         font-family: 'Trirong', sans-serif; 
     }
     h4{font-weight: 150; letter-spacing: 0.8px;}
     #bottomnav{
         display: flex;
         align-items: center;
+        width: 100vw;
         background: var(--linen);
         font-family: 'Trirong', sans-serif; 
     }

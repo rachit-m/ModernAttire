@@ -52,6 +52,9 @@
     	transform: scale(1);
     }
 }
+.disable{
+    display: none;
+}
 
 
 .header{margin-top: 130px;}
@@ -146,6 +149,7 @@
     padding: 10px;
     width: 276px;
     overflow: hidden;
+    max-width: -webkit-fill-available;
 }
 .products-container a:hover{
     font-weight: 550;
@@ -200,12 +204,14 @@
 }
 .hide{display: none;}
 .show{display: block;}
+.filterphone{display: none;}
 
 
 @media screen and (max-width: 450px) {
+    .filterphone{display: block;}
     .main-container{display: flex; flex-direction: column; margin: 0px;}
     .filtersec{display: none;width: 100%; margin-top: 40px;}
-    #salwaar-suits-container{margin: 0px;border: none;width: 100%;
+    #salwaar-suits-container{margin: 0px;border: none;width: 100vw;align-self: center;place-content: space-between;
     }
     #srchph{display: block; padding: 10px; margin: 8px; outline: none;}
     .main-container{
@@ -213,13 +219,15 @@
     }
     .products-container{margin: 0px;}
     .product {
-        width: 170px;
-        height: 340px;
+        width: 180px;
+        height: 290px;
+        margin-top: 6px;
+        border: 1px solid whitesmoke;
     }
     .product img {
-        height: 275px;
-        width: 195px;
-        border: 3px solid white;
+        height: 240px;
+        width: 170px;
+        align-self: center;
     }
     .product-name{
         text-overflow: ellipsis;
@@ -233,7 +241,59 @@
         padding: 10px;
         width: 276px;
         overflow: hidden;
+        max-width: -webkit-fill-available;
     }
+
+    #output-txt{font-size: 10px; margin: 15px;}
+    .filterphone{background: whitesmoke; padding: 8px; display: block;}
+    /* Styles for the dropdown container */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    /* Styles for the dropdown button */
+    .dropbtn {
+        background-color: #955448;
+        font-family: 'Trirong','sans-serif';
+        color: white;
+        padding: 5px;
+        font-size: 11px;
+        border: none;
+        cursor: pointer;
+    }
+    .clrbtn{
+        float: right;
+        width: 100px;
+        margin-right: 12px;
+    }
+    
+    /* Styles for the dropdown content */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100px;
+        margin-left: 8px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    /* Styles for the dropdown content links */
+    .dropdown-content a {
+        color: black;
+        padding: 10px 7px;
+        text-decoration: none;
+        display: block;
+        font-size: 10px;
+    }
+    
+    
+    /* Show the dropdown content when the dropdown button is hovered over */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
    
 }
 

@@ -1,10 +1,14 @@
 const galleryItems = document.querySelector("#salwaar-suits-container").children;
+// const clothfilter = document.querySelector(".cloth-type");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const page = document.querySelector(".pgno");
-const maxItem = 9;
+
+const maxItem = 50;
+let cf = false;
 let index = 1;
 
+// clothfilter.addEventListener("")
 
 const pagination=Math.ceil(galleryItems.length/maxItem);
 console.log(pagination)
@@ -38,6 +42,12 @@ function check(){
 
 function showItems() {
      for(let i=0;i<galleryItems.length; i++){
+      //  if(cf = true){
+      //   for(let i=0;i<galleryItems.length; i++){}
+      //     galleryItems[i].classList.remove("hide");
+      //     galleryItems[i].classList.add("show");
+      //     break;
+      //  }
          galleryItems[i].classList.remove("show");
          galleryItems[i].classList.add("hide");
 
@@ -57,4 +67,5 @@ function showItems() {
 window.onload=function(){
     showItems();
     check();
+
 }
