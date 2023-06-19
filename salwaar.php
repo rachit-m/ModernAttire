@@ -22,16 +22,6 @@
     <link rel="stylesheet" href="https://themodernattire.com/stylesheet/footer.css">
     <link rel="stylesheet" href="https://themodernattire.com/stylesheet/nav.css">
     <link rel="shortcut icon" href="https://ik.imagekit.io/modernattire//tr:w-1000,h-700/modern_attire_logo-03.png?updatedAt=1678042505261" type="image/x-icon">
-
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" defer></script>
-    <script>
-    window.OneSignal = window.OneSignal || [];
-    OneSignal.push(function() {
-        OneSignal.init({
-        appId: "01cf5b8b-d890-4d1d-b4da-f4f10d3d28bf",
-        });
-    });
-    </script>
 </head>
  
 <body>
