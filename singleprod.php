@@ -67,31 +67,27 @@
         $gallery = json_decode($gallery);
         $gallery = $gallery->{'values'};
 
-// fixing gallery for single product 
-        // $totalpictures = count($gallery);
+// Gallery for single product page
+        $totalpictures = count($gallery);
 
-        // // Getting all the images of the requested product
-        // $imagesrc = array();
-        // for($i = 0; $i < $totalpictures; $i++){
-        //     if($gallery[$i][0] == $deprid){
-        //         $pt = $i+1;
-        //         $imagsrc[$i] = $pt;
-        //     }
-        // }
-        // echo $imagesrc[1];
-        // // echo $imgsrc;
-        // //  $productpics = array($imagescount);
-        // //  for($i = 0; $i < $imagescount; $i++){
-        // //     $productspics[$i] = 
-        // //  }
+        // Getting all the images of the requested product
+        $imagesrc = array();
+        $p = 0;
+        for($i = 1; $i < $totalpictures; $i++){
+            if($deprid == $gallery[$i][0]){
+                $imagesrc[$p] = $gallery[$i][1];
+                $p++;
+            }
+        }
+
     ?>
 
-    <title>Buy  <?php echo $eninitials ?> | <?php echo $deprid ?> </title>
-    <link rel="stylesheet" href="/stylesheet/index-desktop.css">
-    <link rel="stylesheet" href="/stylesheet/nav.css">
-    <link rel="stylesheet" href="/stylesheet/singleproduct.css">
-    <link rel="stylesheet" href="/stylesheet/footer.css">
-    <link rel="canonical" href="https://themodernattire.com/<?php echo $response[0][26] ?>/<?php echo $encpid ?>/<?php echo $initials ?>">
+    <title>Buy <?php echo str_replace(".php","",$eninitials) ?> | <?php echo $deprid ?> </title>
+    <link rel="stylesheet" href="https://themodernattire.com/stylesheet/index-desktop.css">
+    <link rel="stylesheet" href="https://themodernattire.com/stylesheet/nav.css">
+    <link rel="stylesheet" href="https://themodernattire.com/stylesheet/singleproduct.css">
+    <link rel="stylesheet" href="https://themodernattire.com/stylesheet/footer.css">
+    <link rel="canonical" href="https://themodernattire.com/<?php echo $pg ?>/<?php echo $encpid ?>/<?php echo $initials ?>">
     <link rel="shortcut icon" href="https://ik.imagekit.io/modernattire//tr:w-1000,h-700/modern_attire_logo-03.png?updatedAt=1678042505261" type="image/x-icon">
 </head>
 
@@ -103,50 +99,20 @@
     include 'navigation.html'
     ?>
     
+    <!-- Image slider  -->
     <?php
-    $gallery = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/ProductGallery?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
-    $gallery = json_decode($gallery);
-    $gallery = $gallery->{'values'};
     $totalImg = count($gallery);
-
-    //lower range
-    $lr = 0;
-    for($i=0; $gallery[$i][0] != $deprid; $i++)
-    {
-        if($gallery[$i][0] == "null"){break;}
-        $lr++;
-    }
-    //upper range
-    $ur = $lr;
-    while($gallery[$i][0] == $deprid){
-        if($gallery[$i][0] == "null"){break;}
-        $ur++;
-        $i++;
-    }
-
-    $ur--;
     ?>
-    
-    
+      
     <!-- Single Product Cotainer Desktop -->
     <div class="sp-container-desktop"> 
         <div class="sp-left">
-            <!-- <?php
-            for($i=$lr; $i<$ur; $i++){ 
-            ?>
-                <div class='slider_images'>
-                <img src="<?php echo $gallery[$i][1] ?>" alt="img-not-found">
-                </div>
-            <?php
-            }
-            ?> -->
-
             <?php 
-                $firstImg = $lr;
-                $lastImg = $ur;
+                $totalproductimages = $p-1;
                 include 'gallery.php' 
             ?>
         </div>
+
         <div class="sp-right">
             <h1 id="product-name"><?php echo $response[$x][1] ?></h1>
             <h4>Description</h4>
@@ -169,7 +135,7 @@
                     <p class="no-mar">Inclusive of all Taxes</p>
             </div>
             <hr class = "divider">
-            <a href="https://api.whatsapp.com/send?phone=+919830702746&text=I%20like%20your%20product%20and%20I%20want%20to%20deal%20with%20you.%20Can%20we%20talk%20in%20much%20detail?%20" id="enquire-btn">Enquire</a>
+	    <a href="https://api.whatsapp.com/send?phone=+919830702746&text=I%20like%20your%20product%20<?php echo $prid; ?> and%20I%20want%20to%20deal%20with%20you.%20Can%20we%20talk%20in%20detail?%20" id="enquire-btn">Enquire</a>
 		</div>
     </div>
 
@@ -179,10 +145,7 @@
     <div class="sp-container-phone">
         <div class="phone-container">
             <div class="top">
-                <!-- <img src="<?php echo $response[$x][11] ?>" alt="img-not-found"> -->
                 <?php 
-                $firstImg = $lr;
-                $lastImg = $ur;
                 include 'gallery.php' 
             ?>
             </div>
@@ -207,7 +170,7 @@
                 West Bengal, India </p>
                 </details>
                 
-                <button type="submit" id="enquire-btn">Enquire</button>
+                <button type="submit" href="https://api.whatsapp.com/send?phone=+919830702746&text=I%20like%20your%20product%20<?php echo $prid; ?>and%20I%20want%20to%20deal%20with%20you.%20Can%20we%20talk%20in%20much%20detail?%20" id="enquire-btn">Enquire</button>
             </div>
         </div>
     </div>
