@@ -197,9 +197,9 @@
                         <?php 
                         $initials = str_replace(" ", "-", $response[$i][1]); 
                         $encpid = str_replace("/", "-", $response[$i][0]);
-                        $imgsrc = str_replace("open","thumbnail",$response[$i][11]);
-                        $sz = "&sz=w275-h356";
-                        // $imgsrc = $imgsrc.$sz;
+                        $imgid = str_replace("/","",$response[$i][0]);
+                        $disturi = "https://dh2vi420y4kyj.cloudfront.net/";
+                        $imgsrc = $disturi.$imgid."jpeg";
                         ?>
                         <!-- <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&pg=Shop&prcode=<?php echo $response[$i][0] ?>';"> -->
                         <div class="product" onclick="window.location='Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>';">
@@ -237,10 +237,9 @@ else if(empty($filter))
                         <?php 
                         $initials = str_replace(" ", "-", $response[$i][1]); 
                         $encpid = str_replace("/", "-", $response[$i][0]);
-                        $imgsrc = str_replace("open","thumbnail",$response[$i][11]);
-                        // $imgsrc = str_replace("open","thumbnail",$response[$i][11]);
-                        $sz = "&sz=w275-h356";
-                        // $imgsrc = $imgsrc.$sz;
+                        $imgid = str_replace("/","",$response[$i][0]);
+                        $disturi = "https://dh2vi420y4kyj.cloudfront.net/";
+                        $imgsrc = $disturi.$imgid."jpeg";
                         ?>
                         <!-- <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&pg=Shop&prcode=<?php echo $response[$i][0] ?>';"> -->
                         <div class="product" onclick="window.location='Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>';">

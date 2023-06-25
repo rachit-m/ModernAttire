@@ -18,7 +18,7 @@
         $totalProd = count($response);
 
 //Download all the images
-        for($i=1 ; $i<2; $i++){
+        for($i=1 ; $i<= $totalProd; $i++){
             $customFileName = $response[$i][0];
             $customFileName = str_replace("/","",$response[$i][0]).".jpeg";
             $fileUrl = str_replace("open","thumbnail",$response[$i][11])."&sz=w275-h356&export=download";
