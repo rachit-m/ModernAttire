@@ -199,7 +199,7 @@
                         $encpid = str_replace("/", "-", $response[$i][0]);
                         $imgid = str_replace("/","",$response[$i][0]);
                         $disturi = "https://dh2vi420y4kyj.cloudfront.net/";
-                        $imgsrc = $disturi.$imgid."jpeg";
+                        $imgsrc = $disturi.$imgid.".jpeg";
                         ?>
                         <!-- <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&pg=Shop&prcode=<?php echo $response[$i][0] ?>';"> -->
                         <div class="product" onclick="window.location='Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>';">
@@ -239,7 +239,7 @@ else if(empty($filter))
                         $encpid = str_replace("/", "-", $response[$i][0]);
                         $imgid = str_replace("/","",$response[$i][0]);
                         $disturi = "https://dh2vi420y4kyj.cloudfront.net/";
-                        $imgsrc = $disturi.$imgid."jpeg";
+                        $imgsrc = $disturi.$imgid.".jpeg";
                         ?>
                         <!-- <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&pg=Shop&prcode=<?php echo $response[$i][0] ?>';"> -->
                         <div class="product" onclick="window.location='Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>';">
