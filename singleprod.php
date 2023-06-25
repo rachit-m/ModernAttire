@@ -135,7 +135,7 @@
                     <p class="no-mar">Inclusive of all Taxes</p>
             </div>
             <hr class = "divider">
-            <a href="https://api.whatsapp.com/send?phone=+919830702746&text=I%20like%20your%20product%20and%20I%20want%20to%20deal%20with%20you.%20Can%20we%20talk%20in%20much%20detail?%20" id="enquire-btn">Enquire</a>
+	    <a href="https://api.whatsapp.com/send?phone=+919830702746&text=I%20like%20your%20product%20<?php echo $prid; ?> and%20I%20want%20to%20deal%20with%20you.%20Can%20we%20talk%20in%20detail?%20" id="enquire-btn">Enquire</a>
 		</div>
     </div>
 
@@ -170,7 +170,7 @@
                 West Bengal, India </p>
                 </details>
                 
-            <a href="https://api.whatsapp.com/send?phone=+919830702746&text=I%20like%20your%20product%20and%20I%20want%20to%20deal%20with%20you.%20Can%20we%20talk%20in%20much%20detail?%20" id="enquire-btn">Enquire</a>
+                <button type="submit" href="https://api.whatsapp.com/send?phone=+919830702746&text=I%20like%20your%20product%20<?php echo $prid; ?>and%20I%20want%20to%20deal%20with%20you.%20Can%20we%20talk%20in%20much%20detail?%20" id="enquire-btn">Enquire</button>
             </div>
         </div>
     </div>

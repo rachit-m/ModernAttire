@@ -23,7 +23,7 @@
             // $encpid = str_replace("/", "-", $response[$i][0]);
             $subcat = $response[$i][3];
             $subcat = str_replace(array(' ', '%'), '', $subcat);
-            $uri = "window.location='$pg.php?filter=$subcat';";
+            $uri = "window.location='https://themodernattire.com/$pg?filter=$subcat';";
         ?>
         <div class="card" onclick="<?php echo $uri ?>">
         <!-- <div class="card" 

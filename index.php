@@ -84,11 +84,11 @@
         $response = $response->{'values'};
         $totalProd = count($response);
 
-        $allproducts = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/AllProducts?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
+        /*$allproducts = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/AllProducts?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
         $allproducts = json_decode($allproducts);
         $allproducts = $allproducts->{'values'};
         $totalProds = count($allproducts);
-        
+	 */
         include "carousel.php";
     ?>
     </div>
@@ -113,12 +113,12 @@
         $response = json_decode($response);
         $response = $response->{'values'};
         $totalProd = count($response);
-
+/*
         $allproducts = file_get_contents('https://sheets.googleapis.com/v4/spreadsheets/1PhDr3cH-4gn4G1Gcz8H9EPQw5uCf2Dxd90Ay_nDgEbE/values/AllProducts?key=AIzaSyDNBeKsUnqKFzJ54MNJKn-H82fuSTtXApI');
         $allproducts = json_decode($allproducts);
         $allproducts = $allproducts->{'values'};
         $totalProds = count($allproducts);
-
+ */
         include "carousel.php";
     ?>
     </div>
