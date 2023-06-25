@@ -20,7 +20,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Attire | Designer Dresses</title>
-    <link rel="stylesheet" href="https://themodernattire.com/stylesheet/salwaar-suits.css">
+    <link rel="stylesheet" href="./stylesheet/salwaar-suits.css">
     <link rel="stylesheet" href="https://themodernattire.com/stylesheet/footer.css">
     <link rel="stylesheet" href="https://themodernattire.com/stylesheet/nav.css">
     
@@ -201,7 +201,7 @@
                         $encpid = str_replace("/", "-", $response[$i][0]);
                         $imgsrc = str_replace("open","thumbnail",$response[$i][11]);
                         $sz = "&sz=w275-h356";
-                        $imgsrc = $imgsrc.$sz;
+                        // $imgsrc = $imgsrc.$sz;
                         ?>
                         <!-- <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&pg=Shop&prcode=<?php echo $response[$i][0] ?>';"> -->
                         <div class="product" onclick="window.location='Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>';">
@@ -241,7 +241,7 @@ else if(empty($filter))
                         $encpid = str_replace("/", "-", $response[$i][0]);
                         $imgsrc = str_replace("open","thumbnail",$response[$i][11]);
                         $sz = "&sz=w275-h356";
-                        $imgsrc = $imgsrc.$sz;
+                        // $imgsrc = $imgsrc.$sz;
                         ?>
                         <!-- <div class="product" onclick="window.location='singleprod.php?key=<?php echo $i ?>&pg=Shop&prcode=<?php echo $response[$i][0] ?>';"> -->
                         <div class="product" onclick="window.location='Shop/Collections/<?php echo $encpid ?>/<?php echo $initials ?>';">
