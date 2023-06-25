@@ -14,10 +14,10 @@
         ?>
         <?php 
             if($response[$i][7] == "Unstitched"){
-                $pg = "Salwaar";
+                $pg = "salwaar";
             }
                 else{
-                $pg = "Dresses";
+                $pg = "dresses";
             }
             // $initials = str_replace(" ", "-", $response[$i][1]); 
             // $encpid = str_replace("/", "-", $response[$i][0]);
