@@ -3,23 +3,110 @@
 <head>
   <title>ModernAttire Sitemap</title>
 </head>
+<link rel="stylesheet" href="stylesheet/nav.css">
+<style>
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 10%;
+  }
+  a{
+    text-decoration: none;
+    color: darkred;
+  }
+  li{
+    list-style: none;
+    margin: 10px;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+</style>
 <body>
-    <h2>Top Navigation</h2>
-    <ul>
-      <li><a href="index">Home</a></li>
-      <li><a href="salwaar">Salwaar Suits</a></li>
-      <li><a href="dresses">Designer Dresses</a>
-      </li>
-      <li><a href="contactus">Contact Us</a></li>
-    </ul>
-    
-    <h2>Bootom Navigation</h2>
-    <ul>
-      <li><a href="dresses">Designer Dresses</a></li>
-      <li><a href="salwaar-suits">Salwaar Suits</a></li>
-      <li><a href="contactus">Contact Us</a></li>
-      <li><a href="privacy">Privacy Policy</a></li>
-    </ul>
+  
+    <!-- Navigation Phone  -->
+    <div id="navigation-phone">
+      <div class="topnav">
+          <h4>To place order contact 
+              +91 9830702746</h4>
+      </div>
+      <div id="bottomnav">
+               <div id="menubtn">
+                  <div class="lines"></div>
+                  <div class="lines"></div>
+                  <div class="lines"></div>
+               </div>
+               <div id="malogo">
+     <a href="https://themodernattire.com/index"><img src="https://ik.imagekit.io/modernattire/modern_attire_logo-03.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678042505261" alt=""></a>
+               </div>
+               <div id="links">
+                  <a href="https://themodernattire.com/index">Home</a>
+                  <a href="https://themodernattire.com/salwaar">Salwaar Suits</a>
+                  <a href="https://themodernattire.com/dresses">Designer Dresses</a>
+                  <a href="https://themodernattire.com/contactus">Contact us</a>
+               </div>
+      </div>
+  </div>
+
+  <!-- Navigtion Desktop  -->
+  <div id="navigation-desktop">
+      <div class="topnav">
+          <h4>To place order contact +91 9830702746</h4>
+      </div>
+      <div class="bottomnav">
+               <div id="malogo">
+     <a href="https://themodernattire.com/index"><img src="https://ik.imagekit.io/modernattire/modern_attire_logo-03.png?ik-sdk-version=javascript-1.4.3&updatedAt=1678042505261" alt=""></a>
+               </div>
+               <div id="links">
+                  <a href="https://themodernattire.com/index">Home</a>
+                  <a href="https://themodernattire.com/salwaar">Salwaar Suits</a>
+                  <a href="https://themodernattire.com/dresses">Designer Dresses</a>
+                  <a href="https://themodernattire.com/contactus">Contact us</a>
+               </div>
+      </div>
+  </div>
+
+  <script>
+      const menu = document.querySelector('#menubtn')
+      const links = document.querySelector('#links')
+      const logo = document.querySelector('#malogo')
+      const bottomnav = document.getElementById('bottomnav')
+      menu.addEventListener('click',function(){
+          if(logo.style.display != "none"){
+              bottomnav.setAttribute('class','bottomnavph')
+              bottomnav.style.display = "block"
+              logo.style.display = "none"
+              links.style.display = "flex"
+          }
+          else{
+              bottomnav.removeAttribute('class','bottomnavph')
+              bottomnav.style.display = "flex"
+              bottomnav.style.alignItems = "center"
+              logo.style.display = "block"
+              links.style.display = "none"
+          }
+          
+      })
+  </script>
+
+  <div class="main">
+    <div class="container">
+      <div class="sitemap">
+        <h1>ModernAttire Sitemap</h1>
+        <ul>
+          <li><a href="https://themodernattire.com/index">Home</a></li>
+          <li><a href="https://themodernattire.com/salwaar">Salwaar Suits</a></li>
+          <li><a href="https://themodernattire.com/dresses">Designer Dresses</a></li>
+          <li><a href="https://themodernattire.com/contactus">Contact us</a></li>
+          <li><a href="https://themodernattire.com/privacy-policy.html">Terms & Policies</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
  
