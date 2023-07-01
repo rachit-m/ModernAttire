@@ -1,831 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset>
+    <url>
+        <loc>https://themodernattire.com/</loc>
+        <lastmod>2023-06-30T16:39:13+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/salwaar</loc>
+        <lastmod>2023-06-30T16:39:13+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/dresses</loc>
+        <lastmod>2023-06-30T16:39:13+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/privacy-policy.html</loc>
+        <lastmod>2023-05-15T07:35:21+00:00</lastmod>
+        <priority>0.50</priority>
+    </url>
 
-
-<url>
-  <loc>https://themodernattire.com/</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/index</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/salwaar</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/404.html</loc>
-  <lastmod>2023-06-25T14:08:09+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/privacy-policy.html</loc>
-  <lastmod>2023-05-15T07:35:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/salwaar.php</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/dresses.php</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-776/Chinon-Chiffon</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-SK-109/Designer-gown-with-jacket</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-SK-150A/Peplum-top-skirt-with-dupatta</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-791/Organza-coords</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-787/Organza-coords</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-792/Organza-Coords-</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-786/Organza-coords</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-788/Organza-coords</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-725/Handwork-on-Georgette</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-749/Handwork-on-Georgette</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-707/Zardosi-on-Georgette</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-MK-789/Zardosi-on-Georgette</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-739/Handwork-on-Organza</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-649/Tie-and-Dye-Organza-Festive</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-745/Tie-Dye-Organza-</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-744/Tie-and-Dye-Organza</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-782/Tie-and-Dye-Organza-</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-MK-775/Heavy-dupatta-set</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-748/Georgette-to-Georgette-body</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-725/Georgette-to-Georgette-</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-794/Chinon-to-Chinon-Print</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-MK-660/Georgette-Handwork</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HM-752/Modern-gala-on-chinon</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-123/Georgette-sharara-design-with-heavy-handwork</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-782/Gharara-suit-with-handwork</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-783/Gharara-suit-with-handwork</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-785/Gharara-suit-with-handwork</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-796/Gharara-design-with-heavy-handwork</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-653/Gharara-suit-with-handwork</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-PB-194/Cotton-3pc-stitched-set</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-PB-221/Cotton-hakoba-3pc-stitched-set</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-PB-222/Hakoba-cotton-3pc-stitched-suit-set</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-776/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-776/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-776/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-776/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-SK-109/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-SK-109/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-SK-109/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-SK-109/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-SK-150A/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-SK-150A/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-SK-150A/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-SK-150A/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-791/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-791/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-791/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-791/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-787/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-787/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-787/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-787/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-792/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-792/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-792/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-792/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-786/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-786/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-786/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-786/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-788/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-788/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-788/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-788/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-725/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-725/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-725/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-725/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-749/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-749/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-749/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-749/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-707/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-707/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-707/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-707/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-MK-789/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-MK-789/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-MK-789/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-MK-789/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-739/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-739/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-739/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-739/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-649/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-649/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-649/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-649/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-745/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-745/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-745/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-745/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-744/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-744/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-744/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-744/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-782/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-782/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-782/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SK-782/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-MK-775/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-MK-775/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-MK-775/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-MK-775/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-748/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-748/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-748/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HK-748/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-794/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-794/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-794/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-794/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-MK-660/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-MK-660/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-MK-660/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-MK-660/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HM-752/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HM-752/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HM-752/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-HM-752/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-123/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-123/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-123/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-123/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-782/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-782/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-782/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-782/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-783/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-783/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-783/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-783/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-785/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-785/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-785/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-785/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-796/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-796/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-796/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-796/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-653/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-653/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-653/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/MA-SN-653/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-PB-194/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-PB-194/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-PB-194/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-PB-194/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-PB-221/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-PB-221/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-PB-221/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-PB-221/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-PB-222/dresses</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-PB-222/salwaar-suits</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-PB-222/contactus</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://themodernattire.com/Shop/Collections/K-PB-222/privacy-policy.html</loc>
-  <lastmod>2023-06-30T16:39:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
-
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SN-123/Georgette-sharara-design-with-heavy-handwork</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SK-791/Organza-coords</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SK-787/Organza-coords</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SK-792/Organza-Coords-</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SK-786/Organza-coords</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SK-788/Organza-coords</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SK-725/Handwork-on-Georgette</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-HK-749/Handwork-on-Georgette</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-HK-707/Zardosi-on-Georgette</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-MK-789/Zardosi-on-Georgette</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-HK-739/Handwork-on-Organza</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SN-649/Tie-and-Dye-Organza-Festive</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SK-745/Tie-Dye-Organza-</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SN-744/Tie-and-Dye-Organza</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SK-782/Tie-and-Dye-Organza-</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-MK-775/Heavy-dupatta-set</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-HK-748/Georgette-to-Georgette-body</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SK-725/Georgette-to-Georgette-</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SN-782/Gharara-suit-with-handwork</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SN-783/Gharara-suit-with-handwork</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SN-785/Gharara-suit-with-handwork</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SN-796/Gharara-design-with-heavy-handwork</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SN-653/Gharara-suit-with-handwork</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/K-PB-194/Cotton-3pc-stitched-set</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/K-PB-221/Cotton-hakoba-3pc-stitched-set</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/K-PB-222/Hakoba-cotton-3pc-stitched-suit-set</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/Jaipuri 1/Cotton-kurti-pant-set</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/Jaipuri 2/Cotton-kurti-pant-set</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-SN-794/Chinon-to-Chinon-Print</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-MK-660/Georgette-Handwork</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-HM-752/Modern-gala-on-chinon</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/MA-HK-776/Chinon-Chiffon</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/K-SK-109/Designer-gown-with-jacket</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://themodernattire.com/Shop/Collections/K-SK-150A/Peplum-top-skirt-with-dupatta</loc>
+        <lastmod>2023-07-01T11:42:02+02:00</lastmod>
+        <priority>0.64</priority>
+    </url>
 </urlset>

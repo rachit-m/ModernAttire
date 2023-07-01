@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://themodernattire.com/stylesheet/footer.css">
     <link rel="stylesheet" href="https://themodernattire.com/stylesheet/nav.css">
     <link rel="stylesheet" href="https://themodernattire.com/stylesheet/carousel.css">
-    <link rel="canonical" href="https://www.themodernattire.com">
+    <link rel="canonical" href="https://themodernattire.com">
     <link rel="shortcut icon" href="https://ik.imagekit.io/modernattire//tr:w-1000,h-700/modern_attire_logo-03.png?updatedAt=1678042505261" type="image/x-icon">
     <title>The Modern Attire - Handworked Unstitched Suits and Kurtis</title>
 </head>
