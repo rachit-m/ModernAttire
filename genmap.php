@@ -10,9 +10,17 @@
     //Sitemap file loaded
     $sitexml = new DOMDocument();
     $sitexml->load("sitemap.xml");
+    $tagname = 'url';
+    
+    function countTagOccurences($sitexml,$tag){
+        $count = $sitexml->getElementsByTagName($tag)->length;
+        return $count;
+    }
+    $urlcount = countTagOccurences($sitexml,$tagname);
+    $urlcount -= 4;
 
-//Generating url childs inside the urlset 
-    for($i=1;$i<$totalProd;$i++){
+    // Generating url childs inside the urlset 
+    for($i=$urlcount;$i<$totalProd;$i++){
         $prodId = str_replace("/","-",$response[$i][0]);
         $prodName = str_replace(" ", "-", $response[$i][1]);
 
@@ -31,6 +39,7 @@
         $loc->appendChild($sitexml->CreateTextNode("https://themodernattire.com/Shop/Collections/".$prodId."/".$prodName));
         $lastmod->appendChild($sitexml->CreateTextNode($currentDateTime));
         $priority->appendChild($sitexml->CreateTextNode("0.64"));
+
     }
 
     $sitexml->save("sitemap.xml");
