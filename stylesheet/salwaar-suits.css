@@ -255,13 +255,15 @@
     
     /* Styles for the dropdown button */
     .dropbtn {
-        background-color: #955448;
+        color: #955448;
         font-family: 'Trirong','sans-serif';
-        color: white;
+        color: #955448;
         padding: 5px;
         font-size: 11px;
-        border: none;
+        border: 1px solid #955448;
+        border-radius: 20px;
         cursor: pointer;
+        width: fit-content;
     }
     .clrbtn{
         float: right;
